@@ -75,8 +75,13 @@ INSTALLED_APPS = INSTALLED_APPS + (
 'debug_toolbar',
 )
 
-INTERNAL_IPS = ('127.0.0.1',)
+INTERNAL_IPS = ('127.0.0.1','192.168.50.1','0.0.0.0')
 
 DEBUG_TOOLBAR_CONFIG = {
 'INTERCEPT_REDIRECTS': False,
+'DISABLE_PANELS': [
+        'debug_toolbar.panels.redirects.RedirectsPanel',
+    ],
+    'SHOW_TEMPLATE_CONTEXT': True,
 }
+
