@@ -1,10 +1,11 @@
 from django.conf.urls import patterns, url
 
+from geonode.urls import *
+
 from wiki.urls import get_pattern as get_wiki_pattern
 
 from django_nyt.urls import get_pattern as get_nyt_pattern
 
-from geonode.urls import *
 
 urlpatterns = patterns('',
 

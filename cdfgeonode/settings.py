@@ -112,3 +112,4 @@ TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS  + (
     "django.contrib.messages.context_processors.messages",
     "sekizai.context_processors.sekizai",
 )
+
