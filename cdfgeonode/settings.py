@@ -72,8 +72,23 @@ MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + (
 
 INSTALLED_APPS = INSTALLED_APPS + (
 # ...
+'south',
 'debug_toolbar',
+'django.contrib.sites', # django 1.6.2
+'django.contrib.humanize',
+'django_nyt',
+'mptt',
+'sekizai',
+'sorl.thumbnail',
+'wiki',
+'wiki.plugins.attachments',
+'wiki.plugins.notifications',
+'wiki.plugins.images',
+'wiki.plugins.macros',
 )
+
+
+
 
 INTERNAL_IPS = ('127.0.0.1','192.168.50.1','0.0.0.0')
 
@@ -85,3 +100,15 @@ DEBUG_TOOLBAR_CONFIG = {
     'SHOW_TEMPLATE_CONTEXT': True,
 }
 
+
+TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS  + (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.request",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+    "sekizai.context_processors.sekizai",
+)
