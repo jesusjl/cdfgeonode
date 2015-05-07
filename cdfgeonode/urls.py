@@ -11,6 +11,7 @@ urlpatterns = patterns('',
 #    url(r'^$', 'polls.views.index', name='index'),
      url(r'^demo/$', 'demo.views.index'),
 	(r'^notifications/', get_nyt_pattern()),
+	(r'^wiki/_accounts/sign-up/$','demo.views.index'),
     	(r'^wiki/', get_wiki_pattern())
 
  ) + urlpatterns
