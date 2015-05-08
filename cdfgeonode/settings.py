@@ -27,7 +27,7 @@ from geonode.settings import *
 
 SITENAME = 'cdfgeonode'
 
-MEDIA_ROOT = '/var/www/geonode/uploaded'
+MEDIA_ROOT = '/var/www/geonode/uploaded/'
 STATIC_ROOT = '/var/www/geonode/static/'
 
 SITE_ID = 1
