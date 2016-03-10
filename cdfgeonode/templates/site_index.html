@@ -7,9 +7,13 @@
 This is where you can override the hero area block. You can simply modify the content below or replace it wholesale to meet your own needs.
 {% endcomment %}
   {% block hero %}
-  <div class="hero-unit">
-    <h1>{% trans "Welcome to the Charles Darwin Foundation Spatial Data Infraestructure" %}</h1>
-    <div class="hero-unit-content">
+  <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+          <h1>{% trans "Welcome to the Charles Darwin Foundation Spatial Data Infraestructure" %}</h1>
+        </div>
+      </div>
+    <!-- <div class="hero-unit-content">
       <div class="intro">
         <p>
           {% blocktrans %}
@@ -26,6 +30,6 @@ This is where you can override the hero area block. You can simply modify the co
           {% trans "Explore Maps" %}
         </a>
       </div>
-    </div>
+    </div> -->
   </div>
   {% endblock %}
