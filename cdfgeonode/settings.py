@@ -38,11 +38,6 @@ LOCAL_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 WSGI_APPLICATION = "cdfgeonode.wsgi.application"
 
-# Load more settings from a file called local_settings.py if it exists
-try:
-    from local_settings import *
-except ImportError:
-    pass
 
 # Additional directories which hold static files
 STATICFILES_DIRS.append(
@@ -57,6 +52,14 @@ TEMPLATE_DIRS = (
 
 # Location of url mappings
 ROOT_URLCONF = 'cdfgeonode.urls'
+
+
+from django.utils.translation import ugettext_lazy as _
+LANGUAGES = (
+    ('en', _('English')),
+    ('es', _('Spanish')),
+)
+
 
 # Location of locale files
 LOCALE_PATHS = (
@@ -89,9 +92,6 @@ INSTALLED_APPS = INSTALLED_APPS + (
 
 
 TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS + (
-   
+
     "sekizai.context_processors.sekizai",
 )
-
-
-

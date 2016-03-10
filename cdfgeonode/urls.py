@@ -11,11 +11,12 @@ urlpatterns = patterns('',
 #    url(r'^$', 'polls.views.index', name='index'),
      url(r'^demo/$', 'demo.views.index'),
 	(r'^notifications/', get_nyt_pattern()),
+     url(r'^/?$', TemplateView.as_view(template_name='site_index.html'), name='home'),
 	(r'^wiki/_accounts/sign-up/$','demo.views.index'),
     	(r'^wiki/', get_wiki_pattern())
 
  ) + urlpatterns
-
+ 
 
 if settings.DEBUG:
     import debug_toolbar
