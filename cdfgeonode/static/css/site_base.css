@@ -7,7 +7,7 @@
 #wrap {
     background: #fff none repeat scroll 0 0;
     padding-bottom: 40px;
-    padding-top: 100px;
+    padding-top: 40px;
     width: 100%;
 }
 
@@ -17,4 +17,28 @@
 
 body {
   padding-top: 0px !important;
+}
+
+
+body.layers li#nav_layers a {
+    color: #001032;
+}
+
+
+
+.form-control {
+  height: 37px;
+}
+
+
+
+.welcome {
+
+      color: #666;
+      display: block;
+      font-family: "Open Sans",sans-serif;
+      font-size: 28px;
+      font-weight: 200;
+      line-height: 35px;
+      margin-bottom: 12px;
 }
