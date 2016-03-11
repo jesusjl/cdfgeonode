@@ -24,21 +24,69 @@ body.layers li#nav_layers a {
     color: #001032;
 }
 
-
-
 .form-control {
   height: 37px;
 }
 
-
-
 .welcome {
 
-      color: #666;
-      display: block;
-      font-family: "Open Sans",sans-serif;
-      font-size: 28px;
-      font-weight: 200;
-      line-height: 35px;
-      margin-bottom: 12px;
+  color: #666;
+  display: block;
+  font-family: "Open Sans",sans-serif;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 35px;
+  margin-bottom: 12px;
+}
+
+.main-page {
+
+  margin-top: 0px;
+
+}
+
+/*logo*/
+.container-fluid.logo {
+    max-height: 80px;
+}
+
+h2.header-logo {
+    float: left;
+    margin: 0px 0;
+    padding-left: 100px;
+    margin-top: -10px;
+}
+
+.navbar-brand {
+    background:  0px 0 no-repeat;
+    height: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-indent: 0em;
+    width: 0px;
+}
+
+.blue.navbar-brand.logo.pull-left > img {
+    position: relative;
+    top: -27px;
+    width: 100px;
+    z-index: 1000;
+}
+
+.logo-letter {
+    font-size: 30.8px;
+    font-weight: bolder;
+}
+
+.logo-letter-before {
+    font-size: 14.58px;
+    font-style: italic;
+    vertical-align: bottom;
+}
+
+.logo-letter-after {
+    font-size: 14.58px;
+    vertical-align: top;
+    font-style: italic;
+    padding-left: 171px;
 }
