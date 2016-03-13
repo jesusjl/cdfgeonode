@@ -90,3 +90,45 @@ h2.header-logo {
     font-style: italic;
     padding-left: 171px;
 }
+
+nav.filter h4 {
+  background-color: #001032;
+}
+
+.fa.fa-chevron-down {
+    color: #fff;
+    font-size: 20px;
+}
+
+.fa.fa-chevron-down:hover {
+    color: #ddd;
+    font-size: 20px;
+}
+
+.fa.fa-chevron-right {
+    color: #fff;
+    font-size: 20px;
+}
+
+.fa.fa-chevron-right:hover {
+    color: #ddd;
+    font-size: 20px;
+}
+
+.filter > ul > li {
+  width: 100%;
+}
+
+/* from base/resource_baseinfo.html template */
+
+.dl-horizontal dt {
+    clear: left;
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-left: 1em;
+    text-align: justify;;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
