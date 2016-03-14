@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+{% load i18n %}
+{% load pagination_tags %}
+{% load staticfiles %}
+{% load url from future %}
+{% comment %}
+This is where you can override the hero area block. You can simply modify the content below or replace it wholesale to meet your own needs.
+{% endcomment %}
+  {% block hero %}
+
+
+           <div class="page-header main-page">
+             <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
+           <span>
+             The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents. </p>
+           </span>
+
+           </div>
+          <h3>
+
+    <!-- <div class="hero-unit-content">
+      <div class="intro">
+        <p>
+          {% blocktrans %}
+            GeoNode is an open source platform for sharing geospatial data and maps.  If you have any questions about the software or service, join our <a href="https://groups.google.com/d/forum/geonode-users">mailing list</a>.
+          {% endblocktrans %}
+        </p>
+        <span>{% trans 'Need help' %} <a href="http://geonode.github.com/workshops/user">{% trans 'Getting Started?' %}</a></span>
+      </div>
+      <div class="btns">
+        <a class="btn btn-large" href="{% url "layer_browse" %}">
+          {% trans "Explore Layers" %}
+        </a>
+        <a class="btn btn-large" href="{% url "maps_browse" %}">
+          {% trans "Explore Maps" %}
+        </a>
+      </div>
+    </div> -->
+
+  {% endblock %}

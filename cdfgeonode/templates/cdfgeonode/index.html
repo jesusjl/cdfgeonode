@@ -1,0 +1,106 @@
+{% extends "site_base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+{% load base_tags %}
+
+{% block title %} {% trans "Welcome!" %} - {{ block.super }} {% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block middle %}
+   {{ block.super }}
+   <div class="container">
+     <div class="row">
+       <div class="col-md-8">
+         {% block hero %}
+
+         {% endblock %}
+       </div>
+        {% block search_form %}
+       <div class = "col-md-4">
+         <form class="" id="search" action="{% url "search" %}" >
+
+             <div class="input-group">
+               {% if HAYSTACK_SEARCH %}
+
+               <input id="search_input" type="text" placeholder="Search" class="form-group" name="q">
+               {% else %}
+               <input id="search_input" type="text" placeholder="Search" class="form-control" name="title__icontains">
+               {% endif %}
+               <span class="input-group-btn">
+                 <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+               </span>
+
+           </div>
+         </form>
+       </div>
+     </div>
+        {% endblock  %}
+    {% block mainbody %}
+    <div class="row">
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+      <div class="row home-facets">
+
+      {% with facet_type='home' %}
+       {% facets as facets %}
+        <div class="col-md-12">
+          <p><a href="{% url "layer_browse" %}"><i class="fa fa-square-o fa-5x rotate-45"></i></a></p>
+          <h2><a href="{% url "layer_browse" %}">{{ facets.layer|default:_("No") }} {% blocktrans count counter=facets.layer %}Layer{% plural %}Layers{% endblocktrans %}</a></h2>
+          <p>{% trans "Click to search for geospatial data published by other users, organizations and public sources. Download data in standard formats." %}</p>
+          {% if user.is_authenticated %}
+          <p class="text-center"><a class="btn btn-default" href="{% url "layer_upload" %}" role="button">{% trans "Add layers" %} &raquo;</a></p>
+          {% else %}
+          <p class="text-center"><a class="btn btn-default" href="{% url "layer_browse" %}" role="button">{% trans "Explore layers" %} &raquo;</a></p>
+          {% endif %}
+        </div>
+        <div class="col-md-12">
+          <p><a href="{% url "maps_browse" %}"><i class="fa fa-map-marker fa-5x"></i></a></p>
+          <h2><a href="{% url "maps_browse" %}">{{ facets.map|default:_("No") }} {% blocktrans count counter=facets.map %}Map{% plural %}Maps{% endblocktrans %}</a></h2>
+          <p>{% trans "Data is available for browsing, aggregating and styling to generate maps which can be shared publicly or restricted to specific users only." %}</p>
+          {% if user.is_authenticated %}
+          <p><a class="btn btn-default" href="{% url "new_map" %}" role="button">{% trans "Create maps" %} &raquo;</a></p>
+          {% else %}
+          <p><a class="btn btn-default" href="{% url "maps_browse" %}" role="button">{% trans "Explore maps" %} &raquo;</a></p>
+          {% endif %}
+        </div>
+        <div class="col-md-12">
+          <p><a href="{% url "profile_browse" %}"><i class="fa fa-user fa-5x"></i></a></p>
+          <h2><a href="{% url "profile_browse" %}">{{ facets.user|default:_("No") }} {% blocktrans count counter=facets.user %}User{% plural %}Users{% endblocktrans %}</a></h2>
+          <p>{% trans "GeoNode allows registered users to easily upload geospatial data in several formats including shapefile and GeoTiff." %}</p>
+          <p><a class="btn btn-default" href="{% url "profile_browse" %}" role="button">{% trans "See users" %} &raquo;</a></p>
+        </div>
+      {% endwith %}
+      </div>
+    </div>
+  </div>
+</div>
+  {% verbatim %}
+  <div ng-app="featured">
+    <div ng-repeat="item in featured">
+      <!--{{ item.title }}-->
+    </div>
+  </div>
+  {% endverbatim %}
+  {% endblock %}
+
+{% endblock %}
+
+{% block extra_script %}
+{% if DEBUG_STATIC %}
+<script src="{{ STATIC_URL }}lib/js/angular.js"></script>
+{% endif %}
+  <script type="text/javascript">
+    FEATURED_URL = '{% url 'api_dispatch_list' api_name='api' resource_name='featured' %}'
+    'use strict';
+    (function(){
+      var module = angular.module('featured', []);
+      module.run(function($http, $rootScope){
+        $http.get(FEATURED_URL).success(function(data){
+          $rootScope.featured = data.objects;
+        });
+      });
+    })();
+  </script>
+
+{% endblock extra_script %}
