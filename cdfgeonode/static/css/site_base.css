@@ -1,3 +1,10 @@
+body {
+    color: #333;
+    font-family: "Lato",proxima-nova-sc-osf-ext-cond,proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+
+
 .navbar-brand {
     width: 373px;
     height: 79px;
@@ -20,7 +27,7 @@ body {
 }
 
 
-body.layers li#nav_layers a {
+body li#nav_layers a {
     color: #001032;
 }
 
