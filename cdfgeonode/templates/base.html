@@ -178,6 +178,7 @@
             {% avatar user 30 %} {{ user.username }}
           </a>
         </li>
+
         {% else %}
         <li>
           <a href="#" data-toggle="modal" data-target="#SigninModal" role="button" >
@@ -203,18 +204,49 @@
 
 
     {% block custom_search_form %}{% endblock %}
+    <div class="container">
+    {% block wiki_search %}
+    {% endblock %}
+  </div>
     {% block middle %}
 
 
-
     <div class="container">
+
+
+
       {% include "_status_message.html" %}
       {% include "_announcements.html" %}
       {% include "_messages.html" %}
       {% block body_outer %}
       <div class="row">
         <div class="col-md-8">
-        {% block body %}{% endblock %}
+
+
+          {% block wiki_body %}
+
+        {% block wiki_navbar %}
+
+                {% block wiki_header_branding %}
+
+                {% endblock %}
+
+                {% block wiki_header_navlinks %}
+
+                {% endblock %}
+
+          {% endblock %}
+
+          {% endblock %}
+        {% block body %}
+
+
+
+
+        {% endblock %}
+
+
+
         </div>
         <div class="col-md-4">
         {% block sidebar %}{% endblock %}
@@ -226,6 +258,8 @@
     {% endblock middle %}
 
   </div>
+
+
 
     {% block footer %}
     <footer class="footer navbar-fixed-bottom">
@@ -304,6 +338,9 @@
               <li><a href="{{ user.get_absolute_url }}"><i class="fa fa-user"></i> {% trans "Profile" %}</a></li>
               <li><a href="{% url "recent-activity" %}"><i class="fa fa-fire"></i> {% trans "Recent Activity" %}</a></li>
               <li><a href="{% url "messages_inbox" %}"><i class="fa fa-inbox"></i> {% trans "Inbox" %}</a></li>
+
+                 <li>{% include "wiki/plugins/notifications/menubaritem.html" %}</li>
+
               {% if USE_NOTIFICATIONS %}
                 <li><a href="{% url "notification_notice_settings" %}"><i class="fa fa-bell"></i> {% trans "Notifications" %}</a></li>
               {% endif %}

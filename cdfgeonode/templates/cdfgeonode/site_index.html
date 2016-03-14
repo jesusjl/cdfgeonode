@@ -1,13 +1,14 @@
 {% extends 'index.html' %}
-{% load i18n %}
+{% load i18n wiki_tags %}
 {% load pagination_tags %}
 {% load staticfiles %}
 {% load url from future %}
 {% comment %}
 This is where you can override the hero area block. You can simply modify the content below or replace it wholesale to meet your own needs.
 {% endcomment %}
-  {% block hero %}
 
+  {% block hero %}
+            
 
            <div class="page-header main-page">
              <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
