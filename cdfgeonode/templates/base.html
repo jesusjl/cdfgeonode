@@ -1,4 +1,6 @@
 {% load i18n avatar_tags %}
+{% load sekizai_tags  wiki_tags %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +25,19 @@
       <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}</style>
       {% block extra_head %}
       {% endblock %}
+
     {% endblock %}
+
+    <!-- Le styles -->
+    <link href="{{ STATIC_URL }}css/wiki-bootstrap.min.css" rel="stylesheet">
+
+    {% render_block "css" %}
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
     <!--[if IE]>
       <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <style>
@@ -394,6 +408,14 @@
     <script src="{{ STATIC_URL }}geonode/js/utils/utils.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}geonode/js/base/base.js?v={{ VERSION }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+    <script src="{{ STATIC_URL }}wiki/js/core.js"></script>
+
+    <!-- Optionally enable responsive features in IE8 -->
+    <script src="{{ STATIC_URL }}wiki/js/respond.min.js"></script>
+    {% render_block "js" %}
+
     {% include 'autocomplete_light/static.html' %}
     <script type="text/javascript" src="{% url 'django.views.i18n.javascript_catalog' %}"></script>
     {% block extra_script %}{% endblock extra_script %}

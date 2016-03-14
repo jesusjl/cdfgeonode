@@ -21,6 +21,7 @@
 # Django settings for the GeoNode project.
 import os
 from geonode.settings import *
+from django.conf import settings as django_settings
 #
 # General Django development settings
 #
@@ -95,3 +96,30 @@ TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS + (
 
     "sekizai.context_processors.sekizai",
 )
+
+
+# Non-configurable (at the moment)
+APP_LABEL = 'wiki'
+WIKI_LANGUAGE = 'markdown'
+
+# The editor class to use -- maybe a 3rd party or your own...? You can always
+# extend the built-in editor and customize it....
+EDITOR = getattr(
+    django_settings,
+    'WIKI_EDITOR',
+    'wiki.editors.markitup.MarkItUp')
+
+MARKDOWN_KWARGS = {
+    'extensions': [
+        'footnotes',
+        'attr_list',
+        'extra',
+        'codehilite',
+        'sane_lists',
+    ],
+    'safe_mode': 'replace',
+    'extension_configs': {
+        'toc': {
+            'title': _('Table of Contents')}},
+}
+MARKDOWN_KWARGS.update(getattr(django_settings, 'WIKI_MARKDOWN_KWARGS', {}))
