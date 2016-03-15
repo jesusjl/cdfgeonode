@@ -123,6 +123,7 @@ INSTALLED_APPS = INSTALLED_APPS + (
 'djangocms_teaser',
 'djangocms_video',
 'djangocms_link',
+'djangocms_text_ckeditor',
 #'djangocms_snippet',
 
 
