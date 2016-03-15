@@ -1,5 +1,5 @@
 {% load i18n avatar_tags %}
-{% load sekizai_tags  wiki_tags %}
+{% load cms_tags sekizai_tags  wiki_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,6 +54,11 @@
   </head>
 
   <body class="{% block body_class %}{% endblock %}">
+
+    {% block extra_body %}
+    {% endblock %}
+
+
 
     {% block header %}
 
@@ -278,6 +283,8 @@
     </div>
 
     {% endblock middle %}
+
+
 
   </div>
 

@@ -67,12 +67,30 @@ LOCALE_PATHS = (
     os.path.join(LOCAL_ROOT, 'locale'),
     ) + LOCALE_PATHS
 
+MIDDLEWARE_CLASSES = (
+    #'cms.middleware.utils.ApphookReloadMiddleware', # django-cms 3.2
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.language.LanguageCookieMiddleware',
 
-MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + (
-# ...
-'debug_toolbar.middleware.DebugToolbarMiddleware',
-# ...
+
+    # The setting below makes it possible to serve different languages per
+    # user depending on things like headers in HTTP requests.
+    'pagination.middleware.PaginationMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+
+
 )
+
 
 INSTALLED_APPS = INSTALLED_APPS + (
 # ...
@@ -87,6 +105,27 @@ INSTALLED_APPS = INSTALLED_APPS + (
 'wiki.plugins.notifications',
 'wiki.plugins.images',
 'wiki.plugins.macros',
+
+
+
+
+
+'cms',  # django CMS itself
+'treebeard',  # utilities for implementing a tree
+'menus',  # helper for model independent hierarchical website navigation
+'djangocms_admin_style',  # for the admin skin. You **must** add 'djangocms_admin_style' in the list **before** 'django.contrib.admin'.
+'reversion',
+'djangocms_file',
+'djangocms_flash',
+'djangocms_googlemap',
+'djangocms_inherit',
+'djangocms_picture',
+'djangocms_teaser',
+'djangocms_video',
+'djangocms_link',
+#'djangocms_snippet',
+
+
 'debug_toolbar',
 'south',
 )
@@ -123,3 +162,10 @@ MARKDOWN_KWARGS = {
             'title': _('Table of Contents')}},
 }
 MARKDOWN_KWARGS.update(getattr(django_settings, 'WIKI_MARKDOWN_KWARGS', {}))
+
+
+
+CMS_TEMPLATES = (
+    ('template_1.html', 'Template One'),
+    ('template_2.html', 'Template Two'),
+)
