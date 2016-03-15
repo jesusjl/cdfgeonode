@@ -1,9 +1,9 @@
-body {
+/*body {
     color: #333;
     font-family: "Lato",proxima-nova-sc-osf-ext-cond,proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     background-color: white;
-}
+}*/
 
 
 .navbar-brand {
@@ -143,4 +143,12 @@ nav.filter h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 200px;
+}
+
+
+/* wiki */
+
+
+.wiki_search_form {
+  margin: 20px 0;
 }

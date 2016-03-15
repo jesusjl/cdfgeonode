@@ -2,23 +2,33 @@
 {% load sekizai_tags i18n wiki_tags %}
 
 
-  {% block wiki_search_form %}
-    <form class="navbar-form navbar-right" id="wiki-search-form" method="GET" action="{% url 'wiki:search' %}">
-      <div class="input-group">
-        <input type="search" class="form-control search-query" name="q" placeholder="{% trans "Search..." %}" />
-        <span class="input-group-btn">
+{% block wiki_search_form %}
+<div class="row wiki_search_form">
+  <div class="col-sm-12">
+    <div class="container ">
+      <div class="row">
+      <div class="col-sm-12">
+        <form  method="GET" action="{% url 'wiki:search' %}">
+          <div class="input-group">
+          <input type="search" class="form-control search-query" name="q" placeholder="{% trans "Search..." %}" />
+          <span class="input-group-btn">
           <button class="btn btn-default" type="button">
-            <span class="fa fa-search"></span>
+          <span class="fa fa-search"></span>
           </button>
-        </span>
-      </div><!-- /input-group -->
-    </form>
+          </span>
+          </div><!-- /input-group -->
+        </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
-    {% block wiki_body %}
+  {% block wiki_body %}
 
 
 
-    <div class="container">
+    <div id="wikifcd" class="container">
 
       {% if messages %}
         <!-- Messages for this instance -->
@@ -36,7 +46,7 @@
       <!-- Main page contents go here -->
       {% block wiki_contents %}{% endblock %}
 
-      
+
       </div>
 
     </div> <!-- /container -->
