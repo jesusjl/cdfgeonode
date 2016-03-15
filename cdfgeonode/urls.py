@@ -11,10 +11,12 @@ urlpatterns = patterns('',
 #    url(r'^$', 'polls.views.index', name='index'),
      url(r'^demo/$', 'demo.views.index'),
 	(r'^notifications/', get_nyt_pattern()),
-     url(r'^/?$', TemplateView.as_view(template_name='base.html'),name='home'),
+    #  url(r'^/$',TemplateView.as_view(template_name='base.html'),name='home'),
+          url(r'^$',  include('cms.urls'),name='home'),
+
 	(r'^wiki/_accounts/sign-up/$','demo.views.index'),
     	(r'^wiki/', get_wiki_pattern()),
-         url(r'^cms', include('cms.urls')),
+
 
  ) + urlpatterns
 
