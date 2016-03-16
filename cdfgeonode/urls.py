@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, url
 from geonode.urls import *
-# from django.conf.urls.i18n import i18n_patterns
+from django.conf.urls.i18n import i18n_patterns
 
 from wiki.urls import get_pattern as get_wiki_pattern
 from django_nyt.urls import get_pattern as get_nyt_pattern
@@ -13,7 +13,7 @@ if settings.DEBUG:
 
 
 # urlpatterns +=  i18n_patterns('',
-urlpatterns +=  patterns('',
+urlpatterns +=  i18n_patterns('',
     # Static pages
 #    url(r'^$', 'polls.views.index', name='index'),
      url(r'^demo/$', 'demo.views.index'),

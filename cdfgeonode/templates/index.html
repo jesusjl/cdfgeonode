@@ -11,7 +11,24 @@
 
 {% block base_content %}
   {% placeholder caramillo %}
+  {% block hero %}
+  <div class="container-fluid ">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
 
+    <div class="page-header main-page">
+       <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
+      <span>
+       The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents. </p>
+      </span>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  {% endblock %}
 
 {% block middle %}
    {{ block.super }}
@@ -19,18 +36,7 @@
      <div class="row">
        <div class="col-md-8">
 
-         {% block hero %}
 
-
-                  <div class="page-header main-page">
-                    <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
-                  <span>
-                    The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents. </p>
-                  </span>
-
-                  </div>
-                 <h3>
-         {% endblock %}
 
        </div>
         {% block search_form %}

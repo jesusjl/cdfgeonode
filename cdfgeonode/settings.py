@@ -22,7 +22,25 @@
 import os
 from geonode.settings import *
 from django.conf import settings as django_settings
-#
+
+# from gettext import gettext
+gettext = lambda s: s
+
+from django.utils.translation import ugettext
+
+TIME_ZONE = 'Pacific/Galapagos'
+
+LANGUAGE_CODE = 'en'
+
+from django.utils.translation import ugettext_lazy as _
+LANGUAGES = (
+    ('en', _('English')),
+    ('es', _('Spanish')),
+)
+
+USE_I18N = True
+
+
 # General Django development settings
 #
 
@@ -55,12 +73,23 @@ TEMPLATE_DIRS = (
 ROOT_URLCONF = 'cdfgeonode.urls'
 
 
-from django.utils.translation import ugettext_lazy as _
-LANGUAGES = (
-    ('en', _('English')),
-    ('es', _('Spanish')),
-)
 
+
+CMS_LANGUAGES = {
+    1: [
+        {
+            'code': 'en',
+            'name': gettext('English'),
+        },
+        {
+            'code': 'es',
+            'name': gettext('Espa&nacute;ol'),
+        },
+    ],
+    'default': {
+        'fallbacks': ['en',],
+    },
+}
 
 # Location of locale files
 LOCALE_PATHS = (
@@ -164,11 +193,25 @@ MARKDOWN_KWARGS = {
 }
 MARKDOWN_KWARGS.update(getattr(django_settings, 'WIKI_MARKDOWN_KWARGS', {}))
 
-
+CMS_REDIRECTS = True
 
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
     ('template_2.html', 'Template Two'),
+    ('index.html', 'Homepage'),
+    ('template_layers.html', 'Layers_list'),
+
 )
+
+# CMS_TEMPLATES = (
+#     ('1-col.html', 'One Column Template'),
+#     ('1-col-donate.html', 'One Column Template customized for the Donate page'),
+#     ('1-col-become-member.html', 'One Column Template customized for the Become a Member page'),
+#     ('homepage.html', 'Homepage'),
+#     ('static-content.html', 'Static content'),
+#     ('2-col-blog.html', 'Two Column Blog Template'),
+#     ('amazon.html', 'Amazon Template'),
+# )
+
 
 DEBUG_TOOLBAR_PATCH_SETTINGS = False
