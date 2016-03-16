@@ -1,5 +1,5 @@
 {% load i18n avatar_tags %}
-{% load cms_tags sekizai_tags  wiki_tags %}
+{% load cms_tags sekizai_tags  wiki_tags menu_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -162,8 +162,16 @@
       <div class="container-fluid menu">
       <div class="container">
       <div class="row">
-        <div class="col-md-8">
+      <div class="col-md-8">
     <div id="navbarCollapse" class="navbar-collapse collapse ">
+        <!-- django-cms menu bar require menu_tags-->
+      <ul id="main-menu" class="sm sm-horizontal sm-simple">
+
+           {% show_menu %}
+
+      </ul>
+        <!-- end django-cms menu bar -->
+
       <ul class="nav navbar-nav">
         {% block tabs %}
         <li id="nav_layers">
@@ -222,9 +230,9 @@
   <div id="wrap">
      <!-- erased by index.html-->
 
-     {% placeholder base_content %}
-     {% block base_content %}{% endblock %}
-     {% render_block "js" %}
+   {% placeholder base_content %}
+   {% block base_content %}{% endblock %}
+
 
    {% block extra_body %}
    {% endblock %}
@@ -235,8 +243,6 @@
      {% block custom_search_form %}{% endblock %}
 
      {% block wiki_search_form %}{% endblock %}
-
-
 
   </div>
     {% block middle %}
@@ -254,33 +260,29 @@
         <div class="col-md-8">
 
 
-          {% block wiki_body %}
+        {% block wiki_body %}
 
-        {% block wiki_navbar %}
+          {% block wiki_navbar %}
 
-                {% block wiki_header_branding %}
+            {% block wiki_header_branding %}
 
-                {% endblock %}
+            {% endblock %}
 
-                {% block wiki_header_navlinks %}
+            {% block wiki_header_navlinks %}
 
-                {% endblock %}
-
-          {% endblock %}
+            {% endblock %}
 
           {% endblock %}
-        {% block body %}
-
-
-
 
         {% endblock %}
 
+        {% block body %}
 
+        {% endblock %}
 
         </div>
         <div class="col-md-4">
-        {% block sidebar %}{% endblock %}
+          {% block sidebar %}{% endblock %}
         </div>
       </div>
       {% endblock %}
@@ -288,11 +290,7 @@
 
     {% endblock middle %}
 
-
-
   </div>
-
-
 
     {% block footer %}
     <footer class="footer ">
@@ -372,7 +370,7 @@
               <li><a href="{% url "recent-activity" %}"><i class="fa fa-fire"></i> {% trans "Recent Activity" %}</a></li>
               <li><a href="{% url "messages_inbox" %}"><i class="fa fa-inbox"></i> {% trans "Inbox" %}</a></li>
 
-                 <li>{% include "wiki/plugins/notifications/menubaritem.html" %}</li>
+                 <!-- <li>{% include "wiki/plugins/notifications/menubaritem.html" %}</li> -->
 
               {% if USE_NOTIFICATIONS %}
                 <li><a href="{% url "notification_notice_settings" %}"><i class="fa fa-bell"></i> {% trans "Notifications" %}</a></li>
@@ -423,17 +421,12 @@
     <script src="{{ STATIC_URL }}lib/js/waypoints.js?v={{ VERSION }}"></script>
     {% else %}
     <script src="{{ STATIC_URL }}lib/js/assets.min.js?v={{ VERSION }}"></script>
+
     {% endif %}
     <script src="{{ STATIC_URL }}geonode/js/utils/utils.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}geonode/js/base/base.js?v={{ VERSION }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 
-
-    <script src="{{ STATIC_URL }}wiki/js/core.js"></script>
-
-    <!-- Optionally enable responsive features in IE8 -->
-    <script src="{{ STATIC_URL }}wiki/js/respond.min.js"></script>
-    {% render_block "js" %}
 
     {% include 'autocomplete_light/static.html' %}
     <script type="text/javascript" src="{% url 'django.views.i18n.javascript_catalog' %}"></script>
@@ -472,6 +465,12 @@
         };
     </script>
     <script type="text/javascript" src="{% url "lang" %}"></script>
+
+      <script src="{{ STATIC_URL }}wiki/js/core.js"></script>
+
+      <!-- Optionally enable responsive features in IE8 -->
+      <script src="{{ STATIC_URL }}wiki/js/respond.min.js"></script>
+      {% render_block "js" %}
 
   </body>
 </html>
