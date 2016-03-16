@@ -165,14 +165,20 @@
       <div class="col-md-8">
     <div id="navbarCollapse" class="navbar-collapse collapse ">
         <!-- django-cms menu bar require menu_tags-->
-      <ul id="main-menu" class="sm sm-horizontal sm-simple">
 
-           {% show_menu %}
+       <ul class="nav navbar-nav" id="main-menu" >   <!-- class="sm sm-horizontal sm-simple"> -->
+
+        {% show_menu  %}
 
       </ul>
+
+
         <!-- end django-cms menu bar -->
 
-      <ul class="nav navbar-nav">
+        <!--comment out default geonode menu bar because of show_menu -->
+
+
+      <!-- <ul class="nav navbar-nav">
         {% block tabs %}
         <li id="nav_layers">
           <a href="{% url "layer_browse" %}">{% trans "Layers" %}</a>
@@ -192,7 +198,9 @@
           <a href="{% url "group_list" %}">{% trans "Groups" %}</a>
         </li>
         {% endblock %}
-      </ul>
+      </ul> -->
+
+
         </div><!--/.nav-collapse -->
       </div>
       <div class="col-md-4">
@@ -215,6 +223,7 @@
         </li>
         {% endif %}
       </ul>
+
     </div>
     </div>
   </div>
