@@ -239,9 +239,10 @@
   <div id="wrap">
      <!-- erased by index.html-->
 
-   {% placeholder base_content %}
-   {% block base_content %}{% endblock %}
 
+     {% block base_content %}
+      {% block content %}{% endblock content %}
+     {% endblock %}
 
    {% block extra_body %}
    {% endblock %}

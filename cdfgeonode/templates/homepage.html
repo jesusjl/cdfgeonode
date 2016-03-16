@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load cms_tags  menu_tags  i18n  %}
+
 {% load staticfiles %}
 {% load base_tags %}
 
@@ -7,10 +8,9 @@
 
 {% block body_class %}home{% endblock %}
 
-{% load cms_tags %}
-
 {% block base_content %}
-  {% placeholder caramillo %}
+  {% placeholder template_1_content %}
+{% endblock base_content %}
 
 
 {% block middle %}
@@ -18,20 +18,9 @@
    <div class="container">
      <div class="row">
        <div class="col-md-8">
-
          {% block hero %}
 
-
-                  <div class="page-header main-page">
-                    <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
-                  <span>
-                    The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents. </p>
-                  </span>
-
-                  </div>
-                 <h3>
          {% endblock %}
-
        </div>
         {% block search_form %}
        <div class = "col-md-4">
@@ -121,5 +110,3 @@
   </script>
 
 {% endblock extra_script %}
-
-{% endblock %}
