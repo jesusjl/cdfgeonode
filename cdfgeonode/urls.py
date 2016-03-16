@@ -5,6 +5,13 @@ from geonode.urls import *
 from wiki.urls import get_pattern as get_wiki_pattern
 from django_nyt.urls import get_pattern as get_nyt_pattern
 
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += patterns('',
+        url(r'^__debug___/', include(debug_toolbar.urls)),
+    )
+
+
 # urlpatterns +=  i18n_patterns('',
 urlpatterns +=  patterns('',
     # Static pages
@@ -17,10 +24,3 @@ urlpatterns +=  patterns('',
     url(r'^',  include('cms.urls')),
 
  )
-
-
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns += patterns('',
-        url(r'^__debug__/', include(debug_toolbar.urls)),
-    )
