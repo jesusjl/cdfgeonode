@@ -52,10 +52,15 @@ sitemaps = {
     "map": MapSitemap
 }
 
+
+
+
+
 urlpatterns = i18n_patterns('',
 
                        # Static pages
-                       url(r'^/?$', TemplateView.as_view(template_name='index.html'), name='home'),
+                       # comment out to allow django-cms to rule the main page
+                       #    url(r'^/?$', TemplateView.as_view(template_name='index.html'), name='home'),
                        url(r'^help/$', TemplateView.as_view(template_name='help.html'), name='help'),
                        url(r'^developer/$', TemplateView.as_view(template_name='developer.html'), name='developer'),
                        url(r'^about/$', TemplateView.as_view(template_name='about.html'), name='about'),
@@ -141,12 +146,6 @@ urlpatterns += patterns('',
                         )
 
 
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns += patterns('',
-        url(r'^__debug___/', include(debug_toolbar.urls)),
-    )
-
 urlpatterns += i18n_patterns('',
     # Static pages
     # url(r'^$', 'polls.views.index', name='index'),
@@ -157,3 +156,9 @@ urlpatterns += i18n_patterns('',
     (r'^wiki/', get_wiki_pattern()),
     url(r'^',  include('cms.urls')),
  )
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += patterns('',
+        url(r'^__debug___/', include(debug_toolbar.urls)),
+    )
