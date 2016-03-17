@@ -52,10 +52,6 @@ sitemaps = {
     "map": MapSitemap
 }
 
-
-
-
-
 urlpatterns = i18n_patterns('',
 
                        # Static pages
