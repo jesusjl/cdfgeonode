@@ -26,17 +26,19 @@ from django.conf import settings as django_settings
 # from gettext import gettext
 gettext = lambda s: s
 
-from django.utils.translation import ugettext
 
 TIME_ZONE = 'Pacific/Galapagos'
 
-LANGUAGE_CODE = 'en'
 
 from django.utils.translation import ugettext_lazy as _
 LANGUAGES = (
-    ('en', _('English')),
+
     ('es', _('Spanish')),
+    ('en', _('English')),
 )
+
+LANGUAGE_CODE = 'es'
+
 
 USE_I18N = True
 
@@ -72,22 +74,20 @@ TEMPLATE_DIRS = (
 # Location of url mappings
 ROOT_URLCONF = 'cdfgeonode.urls'
 
-
-
-
 CMS_LANGUAGES = {
     1: [
-        {
-            'code': 'en',
-            'name': gettext('English'),
-        },
+
         {
             'code': 'es',
             'name': gettext('Espa&nacute;ol'),
         },
+        {
+            'code': 'en',
+            'name': gettext('English'),
+        },
     ],
     'default': {
-        'fallbacks': ['en',],
+        'fallbacks': ['es', ],
     },
 }
 
@@ -97,7 +97,7 @@ LOCALE_PATHS = (
     ) + LOCALE_PATHS
 
 MIDDLEWARE_CLASSES = (
-    #'cms.middleware.utils.ApphookReloadMiddleware', # django-cms 3.2
+    # 'cms.middleware.utils.ApphookReloadMiddleware',  django-cms 3.2
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -108,13 +108,11 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.language.LanguageCookieMiddleware',
-
-
     # The setting below makes it possible to serve different languages per
     # user depending on things like headers in HTTP requests.
     'pagination.middleware.PaginationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
+    # django debug toolbar
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 
 
@@ -122,42 +120,39 @@ MIDDLEWARE_CLASSES = (
 
 
 INSTALLED_APPS = INSTALLED_APPS + (
-# ...
-'django.contrib.sites', # django 1.6.2
-'django.contrib.humanize',
-'django_nyt',
-'mptt',
-'sekizai',
-'sorl.thumbnail',
-'wiki',
-'wiki.plugins.attachments',
-'wiki.plugins.notifications',
-'wiki.plugins.images',
-'wiki.plugins.macros',
+    # ...
+    'django.contrib.sites',  # django 1.6.2
+    'django.contrib.humanize',
+    'django_nyt',
+    'mptt',
+    'sekizai',
+    'sorl.thumbnail',
+    'wiki',
+    'wiki.plugins.attachments',
+    'wiki.plugins.notifications',
+    'wiki.plugins.images',
+    'wiki.plugins.macros',
 
+    'cms',  # django CMS itself
+    'treebeard',  # utilities for implementing a tree
+    'menus',  # helper for model independent hierarchical website navigation
+    'djangocms_admin_style',  # for the admin skin. You **must** add
+    # 'djangocms_admin_style' in the list **before** 'django.contrib.admin'.
+    'reversion',
+    'djangocms_file',
+    'djangocms_flash',
+    'djangocms_googlemap',
+    'djangocms_inherit',
+    'djangocms_picture',
+    'djangocms_teaser',
+    'djangocms_video',
+    'djangocms_link',
+    'djangocms_text_ckeditor',
 
+    # 'djangocms_snippet',
 
-
-
-'cms',  # django CMS itself
-'treebeard',  # utilities for implementing a tree
-'menus',  # helper for model independent hierarchical website navigation
-'djangocms_admin_style',  # for the admin skin. You **must** add 'djangocms_admin_style' in the list **before** 'django.contrib.admin'.
-'reversion',
-'djangocms_file',
-'djangocms_flash',
-'djangocms_googlemap',
-'djangocms_inherit',
-'djangocms_picture',
-'djangocms_teaser',
-'djangocms_video',
-'djangocms_link',
-'djangocms_text_ckeditor',
-#'djangocms_snippet',
-
-
-'debug_toolbar',
-'south',
+    'debug_toolbar',
+    'south',
 )
 
 
@@ -191,6 +186,7 @@ MARKDOWN_KWARGS = {
         'toc': {
             'title': _('Table of Contents')}},
 }
+
 MARKDOWN_KWARGS.update(getattr(django_settings, 'WIKI_MARKDOWN_KWARGS', {}))
 
 CMS_REDIRECTS = True
@@ -202,16 +198,5 @@ CMS_TEMPLATES = (
     ('template_layers.html', 'Layers_list'),
 
 )
-
-# CMS_TEMPLATES = (
-#     ('1-col.html', 'One Column Template'),
-#     ('1-col-donate.html', 'One Column Template customized for the Donate page'),
-#     ('1-col-become-member.html', 'One Column Template customized for the Become a Member page'),
-#     ('homepage.html', 'Homepage'),
-#     ('static-content.html', 'Static content'),
-#     ('2-col-blog.html', 'Two Column Blog Template'),
-#     ('amazon.html', 'Amazon Template'),
-# )
-
 
 DEBUG_TOOLBAR_PATCH_SETTINGS = False
