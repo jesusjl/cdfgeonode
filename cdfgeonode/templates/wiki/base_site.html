@@ -1,13 +1,10 @@
 {% extends "cdfgeonode/site_base.html" %}
 {% load sekizai_tags i18n wiki_tags %}
+
 "{% block body_class %}wiki{% endblock %}"
 
 {% block wiki_search_form %}
-<div class="row wiki_search_form">
-  <div class="col-sm-12">
-    <div class="container ">
-      <div class="row">
-      <div class="col-sm-12">
+
         <form  method="GET" action="{% url 'wiki:search' %}">
           <div class="input-group">
           <input type="search" class="form-control search-query" name="q" placeholder="{% trans "Search..." %}" />
@@ -18,11 +15,6 @@
           </span>
           </div><!-- /input-group -->
         </form>
-    </div>
-    </div>
-    </div>
-  </div>
-</div>
 {% endblock %}
   {% block wiki_body %}
 

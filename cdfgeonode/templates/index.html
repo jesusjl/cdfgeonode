@@ -11,47 +11,7 @@
 
 {% block base_content %}
   {% placeholder caramillo %}
-  {% block hero %}
-  <section class="banner">
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row">
-      <div class="col-md-12">
-      <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-
-      <h1 class="page-title">{% trans "Welcome to our Geoportal" %}</h1>
-      <span>
-      The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents. </p>
-      </span>
-
-      </div>
-      <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-      </br>
-    
-        <form class="" id="search" action="{% url "search" %}" >
-
-            <div class="input-group">
-              {% if HAYSTACK_SEARCH %}
-
-              <input id="search_input" type="text" placeholder="Search" class="form-group" name="q">
-              {% else %}
-              <input id="search_input" type="text" placeholder="Search" class="form-control" name="title__icontains">
-              {% endif %}
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-              </span>
-
-          </div>
-        </form>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-  {% endblock %}
-
+  
 {% block middle %}
    {{ block.super }}
 
