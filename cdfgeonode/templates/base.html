@@ -224,61 +224,187 @@
      {% block custom_search_form %}{% endblock %}
 
      {% block wiki_search_form %}{% endblock %}
-          
+
 
 
   </div>
-    {% block middle %}
-
-
-    <div class="container">
-
-
-
-      {% include "_status_message.html" %}
-      {% include "_announcements.html" %}
-      {% include "_messages.html" %}
-      {% block body_outer %}
-      <div class="row">
-        <div class="col-md-8">
-
-
-          {% block wiki_body %}
-
-        {% block wiki_navbar %}
-
-                {% block wiki_header_branding %}
-
-                {% endblock %}
-
-                {% block wiki_header_navlinks %}
-
-                {% endblock %}
-
-          {% endblock %}
-
-          {% endblock %}
-        {% block body %}
-
-
-
-
-        {% endblock %}
-
-
-
-        </div>
-        <div class="col-md-4">
-        {% block sidebar %}{% endblock %}
-        </div>
-      </div>
-      {% endblock %}
-    </div>
-
-    {% endblock middle %}
-
+  <!-- middle -->
   </div>
 
+  <div id="main-wrapper" class=container-fluid >
+  <div class="container main">
+
+              {% block body_outer %}
+                  {% block content %}{% endblock content %}
+              {% endblock %}
+              {% block wiki_body %}
+              {% endblock %}
+  </div>
+
+  <div class="modal fade" id="newsletter_signup" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+          <h4 class="modal-title" id="gridSystemModalLabel">Subscribe to our mailing list</h4>
+        </div>
+
+        <div class="modal-body" sid="mc_embed_signup">
+          <div class="row">
+            <div class="col-sm-12">
+              <p>
+                  Every month we will send you our <strong>Science for Conservation</strong> newsletter which provides the inside story about the Charles Darwin Foundation's work to protect the Galapagos Islands. Occasionally we may also contact you with other updates relevant to our work in the archipelago.
+              </p>
+              <p>
+                  We will never send you more than 2-3 emails per month and we promise to never share your email address with other parties. You can unsubscribe to our emails at any time.
+              </p>
+
+            </div>
+          </div>
+              <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+              <div class="col-sm-6">
+                <!-- subscriber 2 -->
+                <form action="//darwinfoundation.us1.list-manage.com/subscribe/post?u=b081d523df974d6485da1fd9f&amp;id=57dbbe4a4f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <!-- subscriber 1 -->
+                <!-- <form action="http://darwinfoundation.us1.list-manage.com/subscribe/post?u=b081d523df974d6485da1fd9f&amp;id=40bbee18ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> -->
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">{% trans "Email" %} <span class="asterisk">*</span></label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">{% trans "First Name" %}</label>
+                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                </div>
+              </div>
+                <div class="col-sm-6">
+                <div class="mc-field-group">
+                    <label for="mce-LNAME">{% trans "Last Name" %} </label>
+                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-MMERGE3">{% trans "Nationality" %} </label>
+                    <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+                </div>
+
+                </div>
+              </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;">
+                    <!-- subscriber 2 -->
+                    <input type="text" name="b_b081d523df974d6485da1fd9f_40bbee18ee" tabindex="-1" value="">
+                      <!-- subscriber 1 -->
+                    <!-- <input type="text" name="b_b081d523df974d6485da1fd9f_57dbbe4a4f" tabindex="-1" value=""></div> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary ">subscribe</button>
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                  </div>
+                    </div>
+
+            </form>
+          </div>
+
+
+            </div>
+            </div>
+
+
+        </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+  </div>
+
+
+        <div class="container-fluid footer">
+        <div class="container clearfix footer">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="footer-columns">
+                <h4>{% trans "ADDRESS" %}</h4>
+                <!-- static_placeholder "footer"  -->
+              </div>
+          </div>
+
+            <div class="col-md-3 col-xs-12">
+                <div class=" footer-columns">
+                  <h4>MENU</h4>
+                  <ul class="footer-menu">
+                  <!-- show_menu 0 0 100 100  -->
+                </ul>
+
+          </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="columns">
+                  <h4>SOCIAL</h4>
+                  <ul class="list-inline social">
+
+                  <li>
+                  <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/darwinfoundation">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                  </li>
+
+                  <li>
+                  <a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com/darwinfound">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  </li>
+
+                  <li>
+                  <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/user/CDFdarwinfoundation">
+                    <i class="fa fa-youtube"></i>
+                  </a>
+                  </li>
+                  <li>
+                  <a class="btn btn-social-icon feed" href="http://darwinfoundation.org/{% trans "news" %}/feed/">
+                  <i class="fa fa-feed"></i>
+                </a>
+                  </li>
+                  <li>
+                  <a class="btn btn-social-icon btn-twitter" href="https://www.linkedin.com/company/3568695?trk=tyah&trkInfo=tarId%3A1413565609620%2Ctas%3Acharles%20darwin%2Cidx%3A2-3-8">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  </li>
+                  </ul>
+
+          </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="four columns">
+                  <h4>{% trans "LATEST NEWS"  %}</h4>
+                    <!-- djangocms_blog_latest_posts  -->
+
+                <!--   static_placeholder "footer" -->
+
+          </div>
+            </div>
+          </div>
+
+            <div class="row">
+            <div class="col-md-12 partnerships">
+            <h4><!--{% trans "CONTRIBUTORS" %}--></h4>
+            <a href="http://www.iwc.com" title="IWC"><img src="{{ STATIC_URL }}img/logos/iwc-131x50.png"></a>
+            </div>
+            &nbsp
+            </div>
+        </div>
+        </div>
+
+          </div>
+              </div>
+
+            </div> <!-- end main-wrapper -->
 
 
     {% block footer %}
@@ -292,19 +418,10 @@
           </div>
           <div class="col-md-4">
             <label class="hidden">{% trans "Language" %}</label>
-            {% if csrf_token != "NOTPROVIDED" %}
-            {% get_current_language as LANGUAGE %}
-            <form class="form-inline" action="/i18n/setlang/" method="post">
-            {% csrf_token %}
-              <select class="col-md-6 pull-right" name="language" onchange="javascript:form.submit()">
-                {% for lang in LANGUAGES %}
-                <option value="{{ lang.0 }}" {% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>
-                  {{ lang.1 }}
-                </option>
-                {% endfor %}
-              </select>
-            </form>
-            {% endif %}
+
+            <!-- language form -->
+
+
           </div>
         </div>
       </div>
