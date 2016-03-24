@@ -1,0 +1,93 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* django-cms/bootstrap customizations */
+
+/* DJANGO-CMS Modifications */
+
+/* 
+    .current is used by the language chooser. The element with .current is the language 
+    currently used, and should therefor be hidden. 
+*/
+@caption-background-light: rgba(255, 255, 255, 0.6);
+
+.box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.current {
+    display: none !important;
+}
+
+.push-down {
+    margin-bottom: 20px;
+}
+
+.push-down-big {
+    margin-bottom: 50px;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 10px;
+}
+
+.img-caption {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .box;
+    p {
+        margin: 0 5px 5px;
+        font-weight: bold; 
+        background: @caption-background-light;
+        padding: 5px;
+    }
+}
+
+// Sticky footer thingy
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -106px;
+}
+.push {
+    height: 106px;
+    margin-top: 20px;
+}
+
+footer {
+    color: #666;
+    background: #222;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #000;
+}
+
+.brand-logo {
+    position: relative;
+    margin-right: 110px; //This is set to the same width as the .logo
+}
+
+.logo {
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    top: -35px;
+    background: url(../img/logo-110x110.png) no-repeat;
+}
+.navbar .brand {
+    line-height: 16px;
+}
