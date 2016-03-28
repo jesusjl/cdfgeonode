@@ -91,12 +91,117 @@ INSTALLED_APPS = INSTALLED_APPS + (
 'south',
 )
 
+DJANGO_CMS_INSTALLED_APPS = (
+
+'djangocms_text_ckeditor',
+'cms',  # django CMS itself
+#'mptt',  # utilities for implementing a tree
+'menus',  # helper for model independent hierarchical website navigation
+
+#'south',  # Only needed for Django < 1.7
+#'sekizai',  # for javascript and css management
+#'djangocms_admin_style',  # for the admin skin. You **must** add 'djangocms_admin_style' in the list **before** 'django.contrib.admin'.
+'reversion',
+'django.contrib.messages',  # to enable messages framework (see :ref:`Enable messages <enable-messages>`)
+
+#django-filer
+'easy_thumbnails',
+'filer',
+# 'mptt',
+
+# cmsplugin-filer
+
+'cmsplugin_filer_file',
+'cmsplugin_filer_folder',
+'cmsplugin_filer_link',
+'cmsplugin_filer_image',
+'cmsplugin_filer_teaser',
+'cmsplugin_filer_video',
+
+)
+
+INSTALLED_APPS += DJANGO_CMS_INSTALLED_APPS
 
 TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS + (
 
     "sekizai.context_processors.sekizai",
 )
 
+
+# django-filer thumbnail
+
+THUMBNAIL_HIGH_RESOLUTION = True
+
+THUMBNAIL_PROCESSORS = (
+    'easy_thumbnails.processors.colorspace',
+    'easy_thumbnails.processors.autocrop',
+    #'easy_thumbnails.processors.scale_and_crop',
+    'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    'easy_thumbnails.processors.filters',
+)
+
+# djangocms
+
+CMS_TEMPLATES = (
+    ('site_base.html', 'Homepage'),
+)
+
+MIGRATION_MODULES = {
+    'cms': 'cms.migrations_django',
+    'menus': 'menus.migrations_django',
+
+    # Add also the following modules if you're using these plugins:
+
+    'djangocms_text_ckeditor': 'djangocms_text_ckeditor.migrations_django',
+}
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    "django.core.context_processors.tz",
+    'django.core.context_processors.media',
+    "django.core.context_processors.static",
+    'django.core.context_processors.request',
+    'django.contrib.messages.context_processors.messages',
+    'account.context_processors.account',
+    # The context processor below adds things like SITEURL
+    # and GEOSERVER_BASE_URL to all pages that use a RequestContext
+    'geonode.context_processors.resource_urls',
+    'geonode.geoserver.context_processors.geoserver_urls',
+    'sekizai.context_processors.sekizai',
+    'cms.context_processors.cms_settings',
+)
+
+
+
+MIDDLEWARE_CLASSES = (
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    # The setting below makes it possible to serve different languages per
+    # user depending on things like headers in HTTP requests.
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.doc.XViewMiddleware',
+    'pagination.middleware.PaginationMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # This middleware allows to print private layers for the users that have
+    # the permissions to view them.
+    # It sets temporary the involved layers as public before restoring the permissions.
+    # Beware that for few seconds the involved layers are public there could be risks.
+    # 'geonode.middleware.PrintProxyMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.language.LanguageCookieMiddleware',
+)
+
+#cmsplugin_filer_image provides integration with djangocms-text-ckeditor.
+#Add this setting to enable it:
+
+TEXT_SAVE_IMAGE_FUNCTION='cmsplugin_filer_image.integrations.ckeditor.create_image_plugin'
 
 # Non-configurable (at the moment)
 APP_LABEL = 'wiki'

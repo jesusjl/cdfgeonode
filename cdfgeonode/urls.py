@@ -1,22 +1,169 @@
-from django.conf.urls import patterns, url
+#########################################################################
+#
+# Copyright (C) 2012 OpenPlans
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+#########################################################################
 
-from geonode.urls import *
+from django.conf.urls import include, patterns, url
+from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls.static import static
+from geonode.sitemap import LayerSitemap, MapSitemap
+from django.views.generic import TemplateView
+from django.contrib import admin
 
+import geonode.proxy.urls
+
+from geonode.api.urls import api
+
+import autocomplete_light
+
+# geonode template settings
+from django.conf.urls import patterns, url, include
+# from geonode.urls import *
 from wiki.urls import get_pattern as get_wiki_pattern
 from django_nyt.urls import get_pattern as get_nyt_pattern
 
-urlpatterns = patterns('',
+# cms
+
+from django.conf.urls.i18n import i18n_patterns
+
+# Setup Django Admin
+autocomplete_light.autodiscover()
+
+admin.autodiscover()
+
+js_info_dict = {
+    'domain': 'djangojs',
+    'packages': ('geonode',)
+}
+
+sitemaps = {
+    "layer": LayerSitemap,
+    "map": MapSitemap
+}
+
+urlpatterns = i18n_patterns('',
+
+
+
+                       # Static pages
+                       url(r'^geoportal/?$', TemplateView.as_view(template_name='index.html'), name='home'),
+                       url(r'^geoportal/help/$', TemplateView.as_view(template_name='help.html'), name='help'),
+                       url(r'^geoportal/developer/$', TemplateView.as_view(template_name='developer.html'), name='developer'),
+                       url(r'^geoportal/about/$', TemplateView.as_view(template_name='about.html'), name='about'),
+
+                       # Layer views
+                       (r'^geoportal/layers/', include('geonode.layers.urls')),
+
+                       # Map views
+                       (r'^geoportal/maps/', include('geonode.maps.urls')),
+
+                       # Catalogue views
+                       (r'^geoportal/catalogue/', include('geonode.catalogue.urls')),
+
+                       # data.json
+                       url(r'^geoportal/data.json$', 'geonode.catalogue.views.data_json', name='data_json'),
+
+                       # Search views
+                       url(r'^geoportal/search/$', TemplateView.as_view(template_name='search/search.html'), name='search'),
+
+                       # Social views
+                       (r"^geoportal/account/", include("account.urls")),
+                       (r'^geoportal/people/', include('geonode.people.urls')),
+                       (r'^geoportal/avatar/', include('avatar.urls')),
+                       (r'^geoportal/comments/', include('dialogos.urls')),
+                       (r'^geoportal/ratings/', include('agon_ratings.urls')),
+                       (r'^geoportal/activity/', include('actstream.urls')),
+                       (r'^geoportal/announcements/', include('announcements.urls')),
+                       (r'^geoportal/messages/', include('user_messages.urls')),
+                       (r'^geoportal/social/', include('geonode.social.urls')),
+                       (r'^geoportal/security/', include('geonode.security.urls')),
+
+                       # Accounts
+                       url(r'^geoportal/account/ajax_login$', 'geonode.views.ajax_login', name='account_ajax_login'),
+                       url(r'^geoportal/account/ajax_lookup$', 'geonode.views.ajax_lookup', name='account_ajax_lookup'),
+
+                       # Meta
+                       url(r'^geoportal/lang\.js$', TemplateView.as_view(template_name='lang.js', content_type='text/javascript'),
+                           name='lang'),
+
+                       url(r'^geoportal/jsi18n/$', 'django.views.i18n.javascript_catalog', js_info_dict, name='jscat'),
+                       url(r'^geoportal/geoportal/sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps},
+                           name='sitemap'),
+
+                       (r'^geoportal/i18n/', include('django.conf.urls.i18n')),
+                       (r'^geoportal/autocomplete/', include('autocomplete_light.urls')),
+                       (r'^admin/', include(admin.site.urls)),
+                       (r'^geoportal/groups/', include('geonode.groups.urls')),
+                       (r'^geoportal/documents/', include('geonode.documents.urls')),
+                       (r'^geoportal/services/', include('geonode.services.urls')),
+                       url(r'', include(api.urls)),
+                       )
+
+if "geonode.contrib.dynamic" in settings.INSTALLED_APPS:
+    urlpatterns += patterns('',
+                            (r'^geoportal/dynamic/', include('geonode.contrib.dynamic.urls')),
+                            )
+
+if 'geonode.geoserver' in settings.INSTALLED_APPS:
+    # GeoServer Helper Views
+    urlpatterns += patterns('',
+                            # Upload views
+                            (r'^geoportal/upload/', include('geonode.upload.urls')),
+                            (r'^geoportal/gs/', include('geonode.geoserver.urls')),
+                            )
+
+if 'notification' in settings.INSTALLED_APPS:
+    urlpatterns += patterns('',
+                            (r'^notifications/', include('notification.urls')),
+                            )
+
+# Set up proxy
+urlpatterns += geonode.proxy.urls.urlpatterns
+
+# Serve static files
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+handler403 = 'geonode.views.err403'
+
+# Featured Maps Pattens
+urlpatterns += patterns('',
+                        (r'^geoportal/featured/(?P<site>[A-Za-z0-9_\-]+)/$', 'geonode.maps.views.featured_map'),
+                        (r'^geoportal/featured/(?P<site>[A-Za-z0-9_\-]+)/info$', 'geonode.maps.views.featured_map_info'),
+                        )
+
+
+
+
+
+urlpatterns += i18n_patterns('',
 
     # Static pages
 #    url(r'^$', 'polls.views.index', name='index'),
+
      url(r'^demo/$', 'demo.views.index'),
-	(r'^notifications/', get_nyt_pattern()),
-     url(r'^/?$', TemplateView.as_view(template_name='site_index.html'), name='home'),
-	(r'^wiki/_accounts/sign-up/$','demo.views.index'),
-    	(r'^wiki/', get_wiki_pattern())
+	 (r'^wiki/notifications/', get_nyt_pattern()),
+     #url(r'^/?$', TemplateView.as_view(template_name='site_index.html'), name='home'),
+	#(r'^geoportal/wiki/_accounts/sign-up/$','demo.views.index'),
+    (r'^wiki/', get_wiki_pattern()),
+     url(r'^', include('cms.urls')),
 
  ) + urlpatterns
- 
+
 
 if settings.DEBUG:
     import debug_toolbar

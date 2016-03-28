@@ -1,4 +1,4 @@
-{% load i18n avatar_tags %}
+{% load cms_tags i18n avatar_tags %}
 {% load sekizai_tags  wiki_tags %}
 
 <!DOCTYPE html>
@@ -52,7 +52,8 @@
   </head>
 
   <body class="{% block body_class %}{% endblock %}">
-
+     {% cms_toolbar %}
+     {% placeholder base_content %}
     {% block header %}
 
     <div class="container-fluid social-bar ">
