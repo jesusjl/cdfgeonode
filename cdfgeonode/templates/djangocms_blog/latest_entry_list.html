@@ -1,0 +1,15 @@
+{% load i18n  thumbnail %}
+
+{% if posts %}
+
+<!--<p><strong>{% trans "LATEST NEWS" %}</strong></p>-->
+
+{% for post in posts %}
+<div class="design clearfix">
+<h4>
+<a href="{{ post.get_absolute_url }}"> {{ post.title }}</a>
+</h4>
+<img class="img-responsive " src="{% thumbnail post.main_image 735x368 crop %}">
+</div>
+{% endfor %}
+{% endif %}

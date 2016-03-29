@@ -118,6 +118,19 @@ DJANGO_CMS_INSTALLED_APPS = (
 'cmsplugin_filer_teaser',
 'cmsplugin_filer_video',
 
+#djangocms-blog
+# 'filer',
+#'easy_thumbnails',
+#'cmsplugin_filer_image',
+'parler',
+'taggit',
+'taggit_autosuggest',
+'meta',
+'meta_mixin',
+'djangocms_blog',
+
+'smart_load_tag',
+
 )
 
 INSTALLED_APPS += DJANGO_CMS_INSTALLED_APPS
@@ -132,6 +145,25 @@ TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS + (
 
 THUMBNAIL_HIGH_RESOLUTION = True
 
+# djangocms-blog
+#
+SOUTH_MIGRATION_MODULES = {
+    'easy_thumbnails': 'easy_thumbnails.south_migrations',
+    'taggit': 'taggit.south_migrations',
+}
+
+META_SITE_PROTOCOL = 'http'
+META_USE_SITES = True
+
+PARLER_LANGUAGES = {
+    1: (
+        {'code': 'en',},
+        {'code': 'es',},
+    ),
+}
+
+# thumbnail
+
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
     'easy_thumbnails.processors.autocrop',
@@ -140,10 +172,14 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.filters',
 )
 
+
+
+
 # djangocms
 
 CMS_TEMPLATES = (
     ('site_base.html', 'Homepage'),
+    ('2-col-blog.html', 'BlogPage'),
 )
 
 MIGRATION_MODULES = {

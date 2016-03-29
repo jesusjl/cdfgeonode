@@ -1,0 +1,12 @@
+{% load menu_tags %}
+{% for language in languages %}
+{% if language.1 == 'English'%}
+<li>
+<a href="{% page_language_url language.0 %}"{% ifequal current_language language.0 %} class="current"{% endifequal %}>{{ language.1 }}</a> &nbsp; |</span>
+</li>
+{% else %}
+<li>
+<a href="{% page_language_url language.0 %}"{% ifequal current_language language.0 %} class="current"{% endifequal %}>Espa&ntilde;ol </a>
+</li>
+{% endif %}
+{% endfor %}

@@ -154,13 +154,13 @@ urlpatterns += i18n_patterns('',
 
     # Static pages
 #    url(r'^$', 'polls.views.index', name='index'),
-
-     url(r'^demo/$', 'demo.views.index'),
-	 (r'^wiki/notifications/', get_nyt_pattern()),
-     #url(r'^/?$', TemplateView.as_view(template_name='site_index.html'), name='home'),
+    url(r'^demo/$', 'demo.views.index'),
+    (r'^wiki/notifications/', get_nyt_pattern()),
+    #url(r'^/?$', TemplateView.as_view(template_name='site_index.html'), name='home'),
 	#(r'^geoportal/wiki/_accounts/sign-up/$','demo.views.index'),
     (r'^wiki/', get_wiki_pattern()),
-     url(r'^', include('cms.urls')),
+    url(r'^', include('cms.urls')),
+    url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
 
  ) + urlpatterns
 

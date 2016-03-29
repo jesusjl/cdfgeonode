@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load cms_tags sekizai_tags menu_tags i18n %}
+
+{% block base_content %}
+
+
+    {% block breadcrumb %}{% show_breadcrumb "menu/breadcrumb_custom.html" %}{% endblock breadcrumb %}
+
+  <div class="row">
+
+    <div class="col-md-8 col-xs-12 ">
+
+        {% block content %}
+            {% block content_blog %}{% endblock %}
+        {% endblock content %}
+    </div>
+    <div class="col-md-4">
+        {% block sidebar %}
+        {% endblock sidebar %}
+    </div>
+</div>
+
+{% endblock base_content %}
