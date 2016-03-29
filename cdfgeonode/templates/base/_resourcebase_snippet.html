@@ -24,7 +24,7 @@
                 <li><a ng-if="item.detail_url.indexOf('/layers/') > -1" href="{% endverbatim %}{% url "new_map" %}?layer={% verbatim %}{{ item.detail_url.substring(8) }}">
                   <i class="fa fa-map-marker"></i>Create a Map</a>
                 </li>
-                <li><a ng-if="item.detail_url.indexOf('/maps/') > -1" href="/maps/{{item.id}}/view"><i class="fa fa-map-marker"></i>View Map</a></li>
+                <li><a ng-if="item.detail_url.indexOf('/maps/') > -1" href="/geoportal/maps/{{item.id}}/view"><i class="fa fa-map-marker"></i>View Map</a></li>
               </ul>
             </div>
           </div>

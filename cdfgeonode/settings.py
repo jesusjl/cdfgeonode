@@ -26,6 +26,10 @@ from django.conf import settings as django_settings
 # General Django development settings
 #
 
+
+
+
+
 SITENAME = 'cdfgeonode'
 
 MEDIA_ROOT = '/var/www/geonode/uploaded/'
@@ -68,11 +72,7 @@ LOCALE_PATHS = (
     ) + LOCALE_PATHS
 
 
-MIDDLEWARE_CLASSES = MIDDLEWARE_CLASSES + (
-# ...
-'debug_toolbar.middleware.DebugToolbarMiddleware',
-# ...
-)
+
 
 INSTALLED_APPS = INSTALLED_APPS + (
 # ...
@@ -135,10 +135,6 @@ DJANGO_CMS_INSTALLED_APPS = (
 
 INSTALLED_APPS += DJANGO_CMS_INSTALLED_APPS
 
-TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS + (
-
-    "sekizai.context_processors.sekizai",
-)
 
 
 # django-filer thumbnail
@@ -215,12 +211,13 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     # The setting below makes it possible to serve different languages per
     # user depending on things like headers in HTTP requests.
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.doc.XViewMiddleware',
     'pagination.middleware.PaginationMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     # This middleware allows to print private layers for the users that have
@@ -232,7 +229,10 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.language.LanguageCookieMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+
 )
+
 
 #cmsplugin_filer_image provides integration with djangocms-text-ckeditor.
 #Add this setting to enable it:
