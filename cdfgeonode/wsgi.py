@@ -14,6 +14,9 @@ framework.
 
 """
 import os
+import sys
+
+sys.path.append('/home/vagrant/cdfgeonode')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cdfgeonode.settings")
 
