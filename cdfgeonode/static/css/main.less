@@ -147,10 +147,10 @@ text-align: justify;
 
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff;
+      background-color: #f6f6f6 !important;
     padding: 0px
 }
 
@@ -313,6 +313,12 @@ footer {
     border-top: 1px solid #efefef;
 }
 
+.center-column{
+
+  margin: 0 20px;
+
+}
+
 .feature-article{
   background: #fff none repeat scroll 0 0;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
@@ -325,6 +331,12 @@ footer {
 }
 
 .latest-articles{
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0 20px;
+}
+
+.subscribe {
   background: #fff none repeat scroll 0 0;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   margin: 0 0 20px;
@@ -512,7 +524,9 @@ button::before {
     padding: 0 !important;
 }
 
- a {color:#001032;}
+
+
+ .navbar-nav > li > a {color:#001032;}
 
 .nav {
 
@@ -599,7 +613,7 @@ button::before {
 .fa {
 
 color: #337ab7;
-font-size: 20px;
+font-size: 20px !important;
 
 }
 
@@ -1151,7 +1165,7 @@ article .blog-content {
      -moz-border-left-colors: none;
      -moz-border-right-colors: none;
      -moz-border-top-colors: none;
-     background: #fff none repeat scroll 0 0;
+     background: #f6f6f6 none repeat scroll 0 0 !important;
      border-color: #efefef #efefef -moz-use-text-color;
      border-image: none;
      border-style: solid solid none;
@@ -1200,8 +1214,8 @@ article .blog-content {
 }
 
 .homepage-latest-post-aux {
-  padding-left:0px;
-  padding-right: 0px;
+  padding-left:0px  !important;
+  padding-right: 0px !important;
 }
 
 
@@ -1311,9 +1325,12 @@ body {
   padding-top: 0px !important;
 }
 
+// a {
+//     color: #001032 !important;
+// }
 
-body li#nav_layers a {
-    color: #001032;
+a.toggle.toggle-nav {
+    color: white !important;
 }
 
 .form-control {

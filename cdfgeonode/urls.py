@@ -82,7 +82,7 @@ urlpatterns = i18n_patterns('',
                        url(r'^geoportal/search/$', TemplateView.as_view(template_name='search/search.html'), name='search'),
 
                        # Social views
-                       (r"^geoportal/account/", include("account.urls")),
+                       (r"^account/", include("account.urls")),
                        (r'^geoportal/people/', include('geonode.people.urls')),
                        (r'^geoportal/avatar/', include('avatar.urls')),
                        (r'^geoportal/comments/', include('dialogos.urls')),
@@ -94,8 +94,8 @@ urlpatterns = i18n_patterns('',
                        (r'^geoportal/security/', include('geonode.security.urls')),
 
                        # Accounts
-                       url(r'^geoportal/account/ajax_login$', 'geonode.views.ajax_login', name='account_ajax_login'),
-                       url(r'^geoportal/account/ajax_lookup$', 'geonode.views.ajax_lookup', name='account_ajax_lookup'),
+                       url(r'^account/ajax_login$', 'geonode.views.ajax_login', name='account_ajax_login'),
+                       url(r'^account/ajax_lookup$', 'geonode.views.ajax_lookup', name='account_ajax_lookup'),
 
                        # Meta
                        url(r'^geoportal/lang\.js$', TemplateView.as_view(template_name='lang.js', content_type='text/javascript'),
@@ -157,7 +157,7 @@ urlpatterns += i18n_patterns('',
     url(r'^demo/$', 'demo.views.index'),
     (r'^wiki/notifications/', get_nyt_pattern()),
     #url(r'^/?$', TemplateView.as_view(template_name='site_index.html'), name='home'),
-	#(r'^geoportal/wiki/_accounts/sign-up/$','demo.views.index'),
+	(r'^geoportal/wiki/_accounts/sign-up/$','demo.views.index'),
     (r'^wiki/', get_wiki_pattern()),
     url(r'^', include('cms.urls')),
     url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),

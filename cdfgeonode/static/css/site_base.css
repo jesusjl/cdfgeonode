@@ -4,7 +4,10 @@
     font-size: 18px;
     background-color: white;
 }*/
-
+/*
+.row {
+  margin: 0px auto
+}*/
 
 .navbar-brand {
     width: 373px;
@@ -13,7 +16,8 @@
 }
 
 #wrap {
-    background: #fff none repeat scroll 0 0;
+  background: #f6f6f6 none repeat scroll 0 0;
+
     padding-bottom: 0px;
     padding-top: 5px;
     width: 100%;

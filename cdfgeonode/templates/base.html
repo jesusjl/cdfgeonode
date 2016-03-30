@@ -29,7 +29,6 @@
     {% endblock %}
 
     <!-- Le styles -->
-    <link href="{{ STATIC_URL }}css/wiki-bootstrap.min.css" rel="stylesheet">
 
     {% render_block "css" %}
 
@@ -157,7 +156,7 @@
       <div class="container-fluid menu">
       <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-10">
     <div id="navbarCollapse" class="navbar-collapse collapse ">
       <ul class="nav navbar-nav">
         {% block tabs %}
@@ -182,8 +181,8 @@
       </ul>
         </div><!--/.nav-collapse -->
       </div>
-      <div class="col-md-4">
-      <ul class="nav navbar-nav navbar-right">
+      <div class="col-md-4 col-sm-2">
+      <ul class="nav navbar-nav">
         {% if not user.is_authenticated and REGISTRATION_OPEN %}
         <li><a href="{% url "account_signup" %}">{% trans "Register" %}</a></li>
         {% endif %}
@@ -234,9 +233,15 @@
 
   <div id="main-wrapper" class=container-fluid >
   <div class="container main">
+      {% include "_status_message.html" %}
+      {% include "_announcements.html" %}
+      {% include "_messages.html" %}
+
 
               {% block body_outer %}
+               {% block body %}
                   {% block content %}{% endblock content %}
+              {% endblock %}
               {% endblock %}
               {% block wiki_body %}
               {% endblock %}
@@ -332,7 +337,7 @@
             <div class="col-md-3 col-xs-12">
               <div class="footer-columns">
                 <h4>{% trans "ADDRESS" %}</h4>
-                <!-- static_placeholder "footer"  -->
+                {% static_placeholder "footer"  %}
               </div>
           </div>
 

@@ -2,27 +2,27 @@
 {% load i18n  cms_tags %}
 
 {% block extra_head %}
+<link href="{{ STATIC_URL }}css/wiki-bootstrap.min.css" rel="stylesheet">
+<link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/>
 
-        <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/>
-        
-      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-      <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-      <!-- <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet"/> -->
+<!-- <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet"/> -->
 
 {% endblock %}
 {% block extra_tab %}
 
 <li>
- <a href="/wiki">Wiki</a>
+ <a href="/wiki/">Wiki</a>
 </li>
 {% endblock %}
 
 {% block custom_search_form %}
 {% endblock %}
-{% block body_outer %}
+{% block body %}
 <div class="container flex">
 <div class="row">
 
@@ -47,15 +47,16 @@
    <div class="row">
      <div class="col-md-12 col-xs-12 col-md-12">
 
-       <!-- placeholder promotion-1  -->
+       {%  placeholder promotion-1  %}
+
   </div>
 
 </div>
 <div class="row">
   <div class="col-md-12 col-xs-12 col-md-12">
 
-     <!-- placeholder promotion-4 -->
-      {% placeholder template_1_content %}
+     {%  placeholder promotion-4  %}
+
 </div>
 
 </div>
@@ -67,12 +68,19 @@
 
 
   <div class="col-md-6 col-xs-12 ">
+      <div class="center-column">
   <div class="tab">{% trans "FEATURE ARTICLE"  %}</div>
+
   <div class="row">
       <div class="col-md-12">
 
  <div class="row feature-article">
    <div class=" col-md-12 col-xs-12 col-md-12">
+  <p>   Lorem ipsum      Lorem ipsum      Lorem ipsum      Lorem ipsum</p>
+  <p>   Lorem ipsum      Lorem ipsum      Lorem ipsum      Lorem ipsum</p>
+  <p>   Lorem ipsum      Lorem ipsum      Lorem ipsum      Lorem ipsum</p>
+
+
        <!-- djangocms_blog_latest_post -->
 </div>
 
@@ -84,6 +92,26 @@
   <div class="col-md-12 col-xs-12 homepage-latest-post-aux clearfix ">
     <!-- djangocms_blog_latest_posts_detailed  -->
 
+
+    <!-- prueba -->
+
+    <div class="design clearfix">
+    <h4>
+    <a href="/es/noticias/2016/1/11/test-2/"> test 2</a>
+    </h4>
+    <img src="" class="img-responsive ">
+    </div>
+
+    <div class="design clearfix">
+    <h4>
+    <a href="/es/noticias/2016/1/11/prueba/"> prueba</a>
+    </h4>
+    <img src="" class="img-responsive ">
+    </div>
+
+    <!-- end prueba -->
+
+
    </div>
 
 
@@ -91,7 +119,7 @@
 </div>
 
 </div>
-
+</div>
 
 
   </div>
@@ -147,31 +175,33 @@
 
        <div class="col-md-12 col-xs-12 ">
          <h3 class="research">{% trans "Invasive Species" %}</h3>
-          <!-- placeholder invasive-1  -->
+          {% placeholder invasive-1  %}
 
 
         </div>
         <div class="col-md-12 col-xs-12 ">
         <h3 class="research">{% trans "Conservation and Management" %}</h3>
-           <!-- placeholder conservation-1  -->
+           {% placeholder conservation-1   %}
+
 
 
          </div>
          <div class="col-md-12 col-xs-12 ">
          <h3 class="research">{% trans "Sustainability" %} </h3>
-            <!-- placeholder sustainability-1  -->
+            {% placeholder sustainability-1   %}
+
 
 
           </div>
           <div class="col-md-12 col-xs-12 ">
           <h3 class="research">{% trans "Marine Research" %}</h3>
-              <!-- placeholder marine-1    -->
+              {% placeholder marine-1  %}
 
 
            </div>
            <div class="col-md-12 col-xs-12 ">
            <h3 class="research">{% trans "Collections" %}</h3>
-               <!-- placeholder colections-1 -->
+              {% placeholder colections-1  %}
 
 
             </div>
