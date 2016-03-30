@@ -122,6 +122,7 @@ DJANGO_CMS_INSTALLED_APPS = (
 # 'filer',
 #'easy_thumbnails',
 #'cmsplugin_filer_image',
+'aldryn_apphooks_config',
 'parler',
 'taggit',
 'taggit_autosuggest',
@@ -144,7 +145,7 @@ THUMBNAIL_HIGH_RESOLUTION = True
 # djangocms-blog
 #
 SOUTH_MIGRATION_MODULES = {
-    'easy_thumbnails': 'easy_thumbnails.south_migrations',
+    #'easy_thumbnails': 'easy_thumbnails.south_migrations',
     'taggit': 'taggit.south_migrations',
 }
 
@@ -158,6 +159,7 @@ PARLER_LANGUAGES = {
     ),
 }
 
+AUTH_USER_MODEL = 'people.Profile'
 # thumbnail
 
 THUMBNAIL_PROCESSORS = (
@@ -175,7 +177,8 @@ THUMBNAIL_PROCESSORS = (
 
 CMS_TEMPLATES = (
     ('site_base.html', 'Homepage'),
-    ('2-col-blog.html', 'BlogPage'),
+    ('2-col-blog.html', 'Two Column Blog Template'),
+    ('site_base.html', 'Homepage'),
 )
 
 MIGRATION_MODULES = {
@@ -233,6 +236,7 @@ MIDDLEWARE_CLASSES = (
 
 )
 
+BLOG_USE_PLACEHOLDER = True
 
 #cmsplugin_filer_image provides integration with djangocms-text-ckeditor.
 #Add this setting to enable it:
