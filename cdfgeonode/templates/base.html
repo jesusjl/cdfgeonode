@@ -214,6 +214,7 @@
 
 
 
+
   </div>
   <!-- middle -->
   </div>
@@ -223,7 +224,7 @@
       {% include "_status_message.html" %}
       {% include "_announcements.html" %}
       {% include "_messages.html" %}
-
+      {% block breadcrumb %}{% endblock breadcrumb %}
       {% block middle %}
       {% block body_outer %}
        {% block body %}
