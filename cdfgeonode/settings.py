@@ -218,8 +218,8 @@ CMS_TEMPLATES = (
     ('2-col-blog.html', 'Two Column Blog Template'),
     ('1-col.html', 'One column template'),
     ('djangocms_blog/post_list.html', 'Post List'),
-    ('cdfgeonode/index.html', 'Geonode Homepage'),
-    
+    ('index.html', 'Geonode Homepage'),
+
 )
 
 MIGRATION_MODULES = {
@@ -312,3 +312,8 @@ MARKDOWN_KWARGS = {
 MARKDOWN_KWARGS.update(getattr(django_settings, 'WIKI_MARKDOWN_KWARGS', {}))
 
 DEBUG_TOOLBAR_PATCH_SETTINGS = False
+
+# ckeditor allow iframes
+
+TEXT_ADDITIONAL_TAGS = ('iframe',)
+TEXT_ADDITIONAL_ATTRIBUTES = ('scrolling', 'allowfullscreen', 'frameborder')
