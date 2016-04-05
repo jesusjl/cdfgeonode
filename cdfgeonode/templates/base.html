@@ -158,33 +158,14 @@
       <div class="row">
         <div class="col-md-8 col-sm-10">
     <div id="navbarCollapse" class="navbar-collapse collapse ">
-      <ul id="main-menu" class="sm sm-horizontal sm-simple">
+      {% block custom_menu%}
+      <ul id="main-menu" class=" nav navbar-nav sm sm-horizontal sm-simple">
 
            {% show_menu  %}
 
       </ul>
+      {% endblock %}
 
-      <ul class="nav navbar-nav">
-        {% block tabs %}
-        <li id="nav_layers">
-          <a href="{% url "layer_browse" %}">{% trans "Layers" %}</a>
-        </li>
-        <li id="nav_maps">
-          <a href="{% url "maps_browse" %}">{% trans "Maps" %}</a>
-        </li>
-        <li id="nav_documents">
-          <a href="{% url "document_browse" %}">{% trans "Documents" %}</a>
-        </li>
-       {% block extra_tab %}
-       {% endblock %}
-        <li id="nav_people">
-          <a href="{% url "profile_browse" %}">{% trans "People" %}</a>
-        </li>
-        <li id="nav_groups">
-          <a href="{% url "group_list" %}">{% trans "Groups" %}</a>
-        </li>
-        {% endblock %}
-      </ul>
         </div><!--/.nav-collapse -->
       </div>
       <div class="col-md-4 col-sm-2">

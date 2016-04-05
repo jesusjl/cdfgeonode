@@ -67,7 +67,7 @@ urlpatterns += i18n_patterns('',
 
 
                        # Static pages
-                       url(r'^geoportal/?$', TemplateView.as_view(template_name='index.html'), name='home'),
+                       url(r'^geoportal/$', TemplateView.as_view(template_name='index.html'), name='home'),
                        url(r'^geoportal/help/$', TemplateView.as_view(template_name='help.html'), name='help'),
                        url(r'^geoportal/developer/$', TemplateView.as_view(template_name='developer.html'), name='developer'),
                        url(r'^geoportal/about/$', TemplateView.as_view(template_name='about.html'), name='about'),

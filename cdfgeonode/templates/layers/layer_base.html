@@ -23,7 +23,10 @@
 </div>
 {% endblock%}
 {% block title %} {{ block.super }} {% endblock %}
+{% block custom_menu %}
+{% include "menu/custom_menu.html"%}
 
+{% endblock %}
 {% block body_class %}data{% endblock %}
 
 

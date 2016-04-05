@@ -218,7 +218,8 @@ CMS_TEMPLATES = (
     ('2-col-blog.html', 'Two Column Blog Template'),
     ('1-col.html', 'One column template'),
     ('djangocms_blog/post_list.html', 'Post List'),
-    ('cdfgeonode/index.html', 'Geonode Homepage')
+    ('cdfgeonode/index.html', 'Geonode Homepage'),
+    
 )
 
 MIGRATION_MODULES = {
