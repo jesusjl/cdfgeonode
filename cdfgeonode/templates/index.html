@@ -8,12 +8,20 @@
 {% block body_class %}home{% endblock %}
 
 {% block middle %}
-   {{ block.super }}
+  {# {{ block.super }} #} <!-- render parent -->
    <div class="container">
      <div class="row">
        <div class="col-md-8">
          {% block hero %}
 
+                   <div class="page-header main-page">
+                     <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
+                   <span>
+                     The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents. </p>
+                   </span>
+
+                   </div>
+                  <h3>
          {% endblock %}
        </div>
         {% block search_form %}

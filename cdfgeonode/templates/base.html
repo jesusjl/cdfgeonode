@@ -1,4 +1,4 @@
-{% load cms_tags i18n avatar_tags %}
+{% load cms_tags i18n menu_tags avatar_tags %}
 {% load sekizai_tags  wiki_tags %}
 
 <!DOCTYPE html>
@@ -158,6 +158,12 @@
       <div class="row">
         <div class="col-md-8 col-sm-10">
     <div id="navbarCollapse" class="navbar-collapse collapse ">
+      <ul id="main-menu" class="sm sm-horizontal sm-simple">
+
+           {% show_menu  %}
+
+      </ul>
+
       <ul class="nav navbar-nav">
         {% block tabs %}
         <li id="nav_layers">
@@ -237,14 +243,21 @@
       {% include "_announcements.html" %}
       {% include "_messages.html" %}
 
+      {% block middle %}
+      {% block body_outer %}
+       {% block body %}
 
-              {% block body_outer %}
-               {% block body %}
-                  {% block content %}{% endblock content %}
-              {% endblock %}
-              {% endblock %}
-              {% block wiki_body %}
-              {% endblock %}
+          {% block content %}
+
+
+          {% endblock content %}
+
+      {% endblock %}
+      {% endblock %}
+      {% block wiki_body %}
+      {% endblock %}
+      {% endblock  %}
+
   </div>
 
   <div class="modal fade" id="newsletter_signup" role="dialog" aria-labelledby="gridSystemModalLabel">
