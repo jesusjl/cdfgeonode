@@ -1,4 +1,7 @@
-{% load i18n thumbnail cms_tags %}
+{% load i18n  cms_tags %}
+{% load url from future %}
+{% load smart_load %} 
+{% load thumbnail from easy_thumbnail as _thumbnail %}
 
 <ul class="post-detail">
     {% if post.author %}
@@ -23,3 +26,4 @@
             <li class="tag_{{ forloop.counter }}"><a href="{% url 'djangocms_blog:posts-tagged' tag=tag.slug %}" class="blog-tag blog-tag-{{ tag.count }}">{{ tag.name }}</a>{% if not forloop.last %}, {% endif %}</li>
         {% endfor %}
     {% endif %}
+</ul>

@@ -25,8 +25,9 @@ from django.conf import settings as django_settings
 #
 # General Django development settings
 #
+gettext = lambda s: s
 
-
+from django.utils.translation import ugettext
 
 
 
@@ -60,16 +61,13 @@ ROOT_URLCONF = 'cdfgeonode.urls'
 
 
 from django.utils.translation import ugettext_lazy as _
-LANGUAGES = (
-    ('en', _('English')),
-    ('es', _('Spanish')),
-)
+
 
 
 # Location of locale files
 LOCALE_PATHS = (
     os.path.join(LOCAL_ROOT, 'locale'),
-    ) + LOCALE_PATHS
+    )
 
 
 
@@ -80,6 +78,7 @@ INSTALLED_APPS = INSTALLED_APPS + (
 'django.contrib.humanize',
 'django_nyt',
 'mptt',
+'treebeard',
 'sekizai',
 'sorl.thumbnail',
 'wiki',
@@ -106,8 +105,8 @@ DJANGO_CMS_INSTALLED_APPS = (
 
 #django-filer
 'easy_thumbnails',
-'filer',
-# 'mptt',
+#'filer',
+'mptt',
 
 # cmsplugin-filer
 
@@ -119,19 +118,21 @@ DJANGO_CMS_INSTALLED_APPS = (
 'cmsplugin_filer_video',
 
 #djangocms-blog
-# 'filer',
-#'easy_thumbnails',
+
+'filer',
+'easy_thumbnails',
 #'cmsplugin_filer_image',
 'aldryn_apphooks_config',
 'parler',
 'taggit',
+'django_select2',
 'taggit_autosuggest',
 'meta',
 'meta_mixin',
 'djangocms_blog',
+'admin_enhancer',
 
 'smart_load_tag',
-
 )
 
 INSTALLED_APPS += DJANGO_CMS_INSTALLED_APPS
@@ -145,12 +146,48 @@ THUMBNAIL_HIGH_RESOLUTION = True
 # djangocms-blog
 #
 SOUTH_MIGRATION_MODULES = {
-    #'easy_thumbnails': 'easy_thumbnails.south_migrations',
+    'easy_thumbnails': 'easy_thumbnails.south_migrations',
     'taggit': 'taggit.south_migrations',
 }
 
 META_SITE_PROTOCOL = 'http'
 META_USE_SITES = True
+
+TIME_ZONE = 'Pacific/Galapagos'
+
+LANGUAGE_CODE = 'en'
+
+
+LANGUAGES = (
+    ## Customize this
+    ('en', gettext('en')),
+    ('es', gettext('es')),
+)
+
+CMS_LANGUAGES = {
+    ## Customize this
+    1: [
+        {
+            'public': True,
+            'name': gettext('en'),
+            'redirect_on_fallback': True,
+            'code': 'en',
+            'hide_untranslated': False,
+        },
+        {
+            'public': True,
+            'name': gettext('es'),
+            'redirect_on_fallback': True,
+            'code': 'es',
+            'hide_untranslated': False,
+        },
+    ],
+    'default': {
+        'public': True,
+        'redirect_on_fallback': True,
+        'hide_untranslated': False,
+    },
+}
 
 PARLER_LANGUAGES = {
     1: (
@@ -158,6 +195,7 @@ PARLER_LANGUAGES = {
         {'code': 'es',},
     ),
 }
+
 
 AUTH_USER_MODEL = 'people.Profile'
 # thumbnail
@@ -178,7 +216,8 @@ THUMBNAIL_PROCESSORS = (
 CMS_TEMPLATES = (
     ('site_base.html', 'Homepage'),
     ('2-col-blog.html', 'Two Column Blog Template'),
-    ('site_base.html', 'Homepage'),
+    ('1-col.html', 'One column template'),
+    ('djangocms_blog/post_list.html', 'Post List')
 )
 
 MIGRATION_MODULES = {
@@ -223,6 +262,8 @@ MIDDLEWARE_CLASSES = (
 
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+
     # This middleware allows to print private layers for the users that have
     # the permissions to view them.
     # It sets temporary the involved layers as public before restoring the permissions.
@@ -232,7 +273,6 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.language.LanguageCookieMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
 
 )
 
@@ -268,3 +308,5 @@ MARKDOWN_KWARGS = {
             'title': _('Table of Contents')}},
 }
 MARKDOWN_KWARGS.update(getattr(django_settings, 'WIKI_MARKDOWN_KWARGS', {}))
+
+DEBUG_TOOLBAR_PATCH_SETTINGS = False

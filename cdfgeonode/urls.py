@@ -56,7 +56,13 @@ sitemaps = {
     "map": MapSitemap
 }
 
-urlpatterns = i18n_patterns('',
+urlpatterns = [
+    url(r'^jsi18n/$', 'django.views.i18n.javascript_catalog', js_info_dict, name='jscat'),
+]
+
+urlpatterns += staticfiles_urlpatterns()
+
+urlpatterns += i18n_patterns('',
 
 
 
@@ -101,13 +107,12 @@ urlpatterns = i18n_patterns('',
                        url(r'^geoportal/lang\.js$', TemplateView.as_view(template_name='lang.js', content_type='text/javascript'),
                            name='lang'),
 
-                       url(r'^geoportal/jsi18n/$', 'django.views.i18n.javascript_catalog', js_info_dict, name='jscat'),
-                       url(r'^geoportal/geoportal/sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps},
+                       url(r'^geoportal/sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps},
                            name='sitemap'),
 
-                       (r'^geoportal/i18n/', include('django.conf.urls.i18n')),
+                    #    (r'^i18n/', include('django.conf.urls.i18n')),
                        (r'^geoportal/autocomplete/', include('autocomplete_light.urls')),
-                       (r'^admin/', include(admin.site.urls)),
+
                        (r'^geoportal/groups/', include('geonode.groups.urls')),
                        (r'^geoportal/documents/', include('geonode.documents.urls')),
                        (r'^geoportal/services/', include('geonode.services.urls')),
@@ -154,15 +159,22 @@ urlpatterns += i18n_patterns('',
 
     # Static pages
 #    url(r'^$', 'polls.views.index', name='index'),
+    (r'^i18n/', include('django.conf.urls.i18n')),
+    (r'^admin/', include(admin.site.urls)),
     url(r'^demo/$', 'demo.views.index'),
     (r'^wiki/notifications/', get_nyt_pattern()),
     #url(r'^/?$', TemplateView.as_view(template_name='site_index.html'), name='home'),
-	(r'^geoportal/wiki/_accounts/sign-up/$','demo.views.index'),
+	(r'^wiki/_accounts/sign-up/$','demo.views.index'),
     (r'^wiki/', get_wiki_pattern()),
     url(r'^', include('cms.urls')),
+    #url(r'^', include('djangocms_blog.urls')),
+    url(r'^djangocms_blog/', include('djangocms_blog.urls', namespace='djangocms_blog')),
     url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
+    url(r'^select2/', include('django_select2.urls')),
 
- ) + urlpatterns
+
+
+ )
 
 
 if settings.DEBUG:

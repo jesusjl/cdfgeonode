@@ -1,8 +1,8 @@
 {% load i18n  cms_tags %}
 {% load url from future %}
-{% load smart_load %}
-<!-- loaded to avoid collision with solr.thumbnails-->
+{% load smart_load %} # loaded to avoid
 {% load thumbnail from easy_thumbnail as _thumbnail %}
+
 
 <article id="post-{{ post.slug }}" class="post-item">
     <header>

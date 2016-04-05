@@ -1,0 +1,1192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-04 22:28-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: build/django-polymorphic/build/lib.linux-x86_64-2.7/polymorphic/admin.py:55
+#: build/django-polymorphic/build/lib.linux-x86_64-2.7/polymorphic/admin.py:70
+#: build/django-polymorphic/polymorphic/admin.py:55
+#: build/django-polymorphic/polymorphic/admin.py:70
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:45
+#: cdfgeonode/templates/layers/layer_detail.html:345
+msgid "Type"
+msgstr ""
+
+#: build/django-polymorphic/build/lib.linux-x86_64-2.7/polymorphic/admin.py:381
+#: build/django-polymorphic/polymorphic/admin.py:381
+#, python-format
+msgid "Add %s"
+msgstr ""
+
+#: build/django-polymorphic/build/lib.linux-x86_64-2.7/polymorphic/admin.py:451
+#: build/django-polymorphic/polymorphic/admin.py:451
+msgid "Contents"
+msgstr ""
+
+#: cdfgeonode/settings.py:296
+msgid "Table of Contents"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:76
+#: cdfgeonode/templates/cdfgeonode/base.html:62
+msgid "CHARLES DARWIN FOUNDATION"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:103 cdfgeonode/templates/base.html.py:376
+#: cdfgeonode/templates/site_base.html:158
+#: cdfgeonode/templates/cdfgeonode/base.html:89
+msgid "news"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:125
+#: cdfgeonode/templates/cdfgeonode/base.html:111
+msgid "Donate now"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:164
+#: cdfgeonode/templates/cdfgeonode/base.html:150
+msgid "Layers"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:167
+#: cdfgeonode/templates/cdfgeonode/base.html:153
+msgid "Maps"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:170
+#: cdfgeonode/templates/cdfgeonode/base.html:156
+msgid "Documents"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:175
+#: cdfgeonode/templates/cdfgeonode/base.html:161
+msgid "People"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:178
+#: cdfgeonode/templates/cdfgeonode/base.html:164
+msgid "Groups"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:187
+#: cdfgeonode/templates/cdfgeonode/base.html:173
+msgid "Register"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:199 cdfgeonode/templates/base.html.py:445
+#: cdfgeonode/templates/base.html:463
+#: cdfgeonode/templates/cdfgeonode/base.html:184
+#: cdfgeonode/templates/cdfgeonode/base.html:268
+#: cdfgeonode/templates/cdfgeonode/base.html:286
+msgid "Sign in"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:279
+msgid "Email"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:283
+msgid "First Name"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:289
+msgid "Last Name"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:293
+msgid "Nationality"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:339
+msgid "ADDRESS"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:391 cdfgeonode/templates/site_base.html:89
+#: cdfgeonode/templates/djangocms_blog_/latest_entry.html:5
+#: cdfgeonode/templates/djangocms_blog_/latest_entry_list.html:5
+msgid "LATEST NEWS"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:402
+msgid "CONTRIBUTORS"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:421
+#: cdfgeonode/templates/cdfgeonode/base.html:235
+msgid "Powered by"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:421
+#: cdfgeonode/templates/cdfgeonode/base.html:235
+msgid "GeoNode"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:421
+#: cdfgeonode/templates/cdfgeonode/base.html:235
+msgid "version"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:422
+#: cdfgeonode/templates/cdfgeonode/base.html:236
+msgid "Developers"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:423
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:3
+#: cdfgeonode/templates/cdfgeonode/base.html:237
+#: wikifcd/templates/wikifcd/base_site.html:86
+msgid "About"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:426
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:145
+#: cdfgeonode/templates/cdfgeonode/base.html:240
+msgid "Language"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:451 cdfgeonode/templates/base.html.py:452
+#: cdfgeonode/templates/cdfgeonode/base.html:274
+#: cdfgeonode/templates/cdfgeonode/base.html:275
+msgid "Username"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:455
+#: cdfgeonode/templates/cdfgeonode/base.html:278
+msgid "Password"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:459
+#: cdfgeonode/templates/cdfgeonode/base.html:282
+msgid "Remember Me"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:475
+#: cdfgeonode/templates/cdfgeonode/base.html:298
+msgid "Menu"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:479
+#: cdfgeonode/templates/cdfgeonode/base.html:302
+#: cdfgeonode/templates/layers/layer_list.html:14
+msgid "Upload Layers"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:481
+#: cdfgeonode/templates/cdfgeonode/base.html:304
+msgid "Profile"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:482
+#: cdfgeonode/templates/cdfgeonode/base.html:305
+msgid "Recent Activity"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:483
+#: cdfgeonode/templates/cdfgeonode/base.html:306
+msgid "Inbox"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:488
+#: cdfgeonode/templates/cdfgeonode/base.html:308
+msgid "Notifications"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:491
+#: cdfgeonode/templates/cdfgeonode/base.html:311
+msgid "Announcements"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:494
+#: cdfgeonode/templates/cdfgeonode/base.html:314
+msgid "Remote Services"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:495
+#: cdfgeonode/templates/cdfgeonode/base.html:315
+msgid "Invite User"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:497
+#: cdfgeonode/templates/cdfgeonode/base.html:317
+msgid "GeoServer"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:500
+#: cdfgeonode/templates/cdfgeonode/base.html:320
+msgid "Admin"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:505
+#: cdfgeonode/templates/cdfgeonode/base.html:325
+msgid "Help"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:511
+#: cdfgeonode/templates/cdfgeonode/base.html:331
+#: wikifcd/templates/wikifcd/base_site.html:65
+msgid "Log out"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:557
+#: cdfgeonode/templates/cdfgeonode/base.html:369
+msgid "Type your search here ..."
+msgstr ""
+
+#: cdfgeonode/templates/index.html:6
+#: cdfgeonode/templates/cdfgeonode/index.html:6
+msgid "Welcome!"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:49 cdfgeonode/templates/index.html.py:59
+#: cdfgeonode/templates/index.html:69
+#: cdfgeonode/templates/cdfgeonode/index.html:49
+#: cdfgeonode/templates/cdfgeonode/index.html:59
+#: cdfgeonode/templates/cdfgeonode/index.html:69
+msgid "No"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:49
+#: cdfgeonode/templates/cdfgeonode/index.html:49
+#: cdfgeonode/templates/layers/layer_detail.html:220
+#, fuzzy
+msgid "Layer"
+msgid_plural "Layers"
+msgstr[0] ""
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+msgstr[1] ""
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+
+#: cdfgeonode/templates/index.html:50
+#: cdfgeonode/templates/cdfgeonode/index.html:50
+msgid ""
+"Click to search for geospatial data published by other users, organizations "
+"and public sources. Download data in standard formats."
+msgstr ""
+
+#: cdfgeonode/templates/index.html:52
+#: cdfgeonode/templates/cdfgeonode/index.html:52
+msgid "Add layers"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:54
+#: cdfgeonode/templates/cdfgeonode/index.html:54
+msgid "Explore layers"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:59
+#: cdfgeonode/templates/cdfgeonode/index.html:59
+#: cdfgeonode/templates/maps/map_detail.html:124
+#, fuzzy
+msgid "Map"
+msgid_plural "Maps"
+msgstr[0] ""
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+msgstr[1] ""
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+
+#: cdfgeonode/templates/index.html:60
+#: cdfgeonode/templates/cdfgeonode/index.html:60
+msgid ""
+"Data is available for browsing, aggregating and styling to generate maps "
+"which can be shared publicly or restricted to specific users only."
+msgstr ""
+
+#: cdfgeonode/templates/index.html:62
+#: cdfgeonode/templates/cdfgeonode/index.html:62
+msgid "Create maps"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:64
+#: cdfgeonode/templates/cdfgeonode/index.html:64
+msgid "Explore maps"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:69
+#: cdfgeonode/templates/cdfgeonode/index.html:69
+msgid "User"
+msgid_plural "Users"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/templates/index.html:70
+#: cdfgeonode/templates/cdfgeonode/index.html:70
+msgid ""
+"GeoNode allows registered users to easily upload geospatial data in several "
+"formats including shapefile and GeoTiff."
+msgstr ""
+
+#: cdfgeonode/templates/index.html:71
+#: cdfgeonode/templates/cdfgeonode/index.html:71
+msgid "See users"
+msgstr ""
+
+#: cdfgeonode/templates/site_base.html:72
+msgid "FEATURE ARTICLE"
+msgstr ""
+
+#: cdfgeonode/templates/site_base.html:131
+msgid "SUBSCRIBE"
+msgstr ""
+
+#: cdfgeonode/templates/site_base.html:173
+msgid "RESEARCH  "
+msgstr ""
+
+#: cdfgeonode/templates/site_base.html:177
+msgid "Invasive Species"
+msgstr ""
+
+#: cdfgeonode/templates/site_base.html:183
+msgid "Conservation and Management"
+msgstr ""
+
+#: cdfgeonode/templates/site_base.html:190
+msgid "Sustainability"
+msgstr ""
+
+#: cdfgeonode/templates/site_base.html:197
+msgid "Marine Research"
+msgstr ""
+
+#: cdfgeonode/templates/site_base.html:203
+msgid "Collections"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:13
+#: cdfgeonode/templates/cdfgeonode/site_index.html:14
+msgid "Welcome to our Geoportal"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:24
+#: cdfgeonode/templates/cdfgeonode/site_index.html:25
+msgid ""
+"\n"
+"            GeoNode is an open source platform for sharing geospatial data "
+"and maps.  If you have any questions about the software or service, join our "
+"<a href=\"https://groups.google.com/d/forum/geonode-users\">mailing list</"
+"a>.\n"
+"          "
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:28
+#: cdfgeonode/templates/cdfgeonode/site_index.html:29
+msgid "Need help"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:28
+#: cdfgeonode/templates/cdfgeonode/site_index.html:29
+msgid "Getting Started?"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:32
+#: cdfgeonode/templates/cdfgeonode/site_index.html:33
+#: cdfgeonode/templates/layers/layer_list.html:6
+#: cdfgeonode/templates/layers/layer_list.html:15
+#: cdfgeonode/templates/layers/layer_metadata.html:11
+msgid "Explore Layers"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:35
+#: cdfgeonode/templates/cdfgeonode/site_index.html:36
+#: cdfgeonode/templates/maps/map_base.html:5
+#: cdfgeonode/templates/maps/map_base.html:12
+#: cdfgeonode/templates/maps/map_list.html:11
+#: cdfgeonode/templates/maps/map_metadata.html:11
+msgid "Explore Maps"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:5
+msgid "Owner, Point of Contact, Metadata Author"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:10
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:84
+msgid "Owner"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:14
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:89
+#: cdfgeonode/templates/layers/layer_metadata.html:36
+#: cdfgeonode/templates/layers/layer_metadata.html:107
+#: cdfgeonode/templates/maps/map_metadata.html:51
+msgid "Point of Contact"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:18
+#: cdfgeonode/templates/layers/layer_metadata.html:32
+msgid "Metadata Author"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:6
+msgid "Title"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:11
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:103
+msgid "SRID"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:16
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:108
+msgid "License"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:29
+msgid "Abstract"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:34
+#: cdfgeonode/templates/search/_general_filters.html:47
+#: templates/search/_general_filters.html:47
+msgid "Date"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:50
+#: cdfgeonode/templates/search/_general_filters.html:19
+#: templates/search/_general_filters.html:19
+msgid "Keywords"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:62
+#: cdfgeonode/templates/djangocms_blog/post_list.html:18
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:56
+#: cdfgeonode/templates/layers/layer_metadata.html:70
+#: cdfgeonode/templates/maps/map_metadata.html:61
+msgid "Category"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:72
+#: cdfgeonode/templates/search/_region_filter.html:5
+#: templates/search/_region_filter.html:5
+msgid "Regions"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:95
+msgid "More info"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:121
+msgid "Maintenance Frequency"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:126
+msgid "Restrictions"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:135
+msgid "Edition"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:140
+msgid "Purpose"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:150
+msgid "Temporal Extent"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:155
+msgid "Data Quality"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:160
+msgid "Supplemental Information"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:165
+msgid "Spatial Representation Type"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:15
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:53
+msgid "Articles by"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:16
+#: cdfgeonode/templates/djangocms_blog/plugins/archive.html:3
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:54
+msgid "Archive"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:17
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:55
+msgid "Tag"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:25
+#: cdfgeonode/templates/djangocms_blog/plugins/archive.html:26
+#: cdfgeonode/templates/djangocms_blog/plugins/authors.html:15
+#: cdfgeonode/templates/djangocms_blog/plugins/latest_entries.html:7
+#: cdfgeonode/templates/djangocms_blog/plugins/tags.html:15
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:11
+msgid "No article found."
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:28
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:14
+msgid "Back"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:33
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:21
+msgid "previous"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:36
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:25
+msgid "Page"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:36
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:25
+msgid "of"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:39
+#: cdfgeonode/templates/djangocms_blog_/post_list.html:43
+msgid "next"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/includes/blog_item.html:28
+#: cdfgeonode/templates/djangocms_blog_/includes/blog_item.html:28
+msgid "read more"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/includes/blog_meta.html:9
+#: cdfgeonode/templates/djangocms_blog_/includes/blog_meta.html:6
+msgid "by"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/archive.html:17
+#: cdfgeonode/templates/djangocms_blog/plugins/authors.html:10
+#: cdfgeonode/templates/djangocms_blog/plugins/categories.html:10
+#: cdfgeonode/templates/djangocms_blog/plugins/tags.html:10
+#, python-format
+msgid "1 article"
+msgid_plural "%(articles)s articles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/archive.html:18
+#: cdfgeonode/templates/djangocms_blog/plugins/authors.html:11
+#: cdfgeonode/templates/djangocms_blog/plugins/categories.html:11
+#: cdfgeonode/templates/djangocms_blog/plugins/tags.html:11
+msgid "0 articles"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/authors.html:3
+msgid "Authors"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/categories.html:3
+#: cdfgeonode/templates/search/_general_filters.html:4
+#: templates/search/_general_filters.html:4
+msgid "Categories"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/categories.html:15
+msgid "No categories found."
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/tags.html:3
+msgid "Tags"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:58
+msgid "Attribute Name"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:59
+#: cdfgeonode/templates/layers/layer_metadata.html:90
+msgid "Label"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:60
+#: cdfgeonode/templates/layers/layer_metadata.html:91
+msgid "Description"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:62
+msgid "Range"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:63
+msgid "Average"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:64
+msgid "Median"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:65
+msgid "Standard Deviation"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:123
+msgid "Rate this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:127
+#: cdfgeonode/templates/maps/map_detail.html:54
+msgid "Average Rating"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:143
+#: cdfgeonode/templates/layers/layer_detail.html:157
+msgid "Download Layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:146
+msgid "Request Download"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:169
+#: cdfgeonode/templates/layers/layer_detail.html:235
+#: cdfgeonode/templates/layers/layer_detail.html:261
+#: cdfgeonode/templates/maps/map_detail.html:89
+#: cdfgeonode/templates/maps/map_detail.html:132
+msgid "Close"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:180
+#: cdfgeonode/templates/layers/layer_detail.html:187
+msgid "Edit Layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:194
+#: cdfgeonode/templates/maps/map_detail.html:110
+msgid "Metadata"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:195
+#: cdfgeonode/templates/layers/layer_detail.html:204
+#: cdfgeonode/templates/maps/map_detail.html:111
+#: cdfgeonode/templates/maps/map_detail.html:125
+#: cdfgeonode/templates/wiki/edit.html:5
+msgid "Edit"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:202
+#: cdfgeonode/templates/layers/layer_detail.html:311
+msgid "Styles"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:206
+msgid "Manage"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:213
+#: cdfgeonode/templates/maps/map_detail.html:117
+msgid "Thumbnail"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:214
+#: cdfgeonode/templates/maps/map_detail.html:118
+msgid "Set"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:222
+msgid "Replace"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:225
+msgid "Edit data"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:228
+#: cdfgeonode/templates/maps/map_detail.html:126
+msgid "Remove"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:243
+#: cdfgeonode/templates/layers/layer_detail.html:251
+msgid "Download Metadata"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:269
+msgid "Legend"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:279
+msgid "Maps using this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:281
+msgid "List of maps using this layer:"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:287
+msgid "This layer is not currently used in any maps."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:292
+msgid "Create a map using this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:293
+msgid "Click the button below to generate a new map based on this layer."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:294
+msgid "Create a Map"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:299
+msgid "Documents related to this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:300
+msgid "List of documents related to this layer:"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:312
+msgid ""
+"The following styles are associated with this layer. Choose a style to view "
+"it in the preview map."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:325
+msgid "No styles associated with this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:334
+#: cdfgeonode/templates/maps/map_detail.html:178
+msgid "Permissions"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:335
+msgid "Click the button below to change the permissions of this layer."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:336
+msgid "Change Layer Permissions"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:343
+msgid "External service layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:344
+msgid "Source"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:12
+#: cdfgeonode/templates/maps/map_metadata.html:12
+msgid "Edit Metadata"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:17
+#, python-format
+msgid ""
+"\n"
+"        Editing details for %(layer_title)s\n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:23
+msgid ""
+"Note: this layer's orginal metadata was populated by importing a metadata "
+"XML file.\n"
+"          GeoNode's metadata import supports a subset of ISO, FGDC, and "
+"Dublin Core metadata elements.\n"
+"          Some of your original metadata may have been lost."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:29
+#: cdfgeonode/templates/maps/map_metadata.html:29
+msgid "Error updating metadata.  Please check the following fields: "
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:45
+#: cdfgeonode/templates/layers/layer_metadata.html:85
+msgid "Attributes"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:59
+#: cdfgeonode/templates/layers/layer_metadata.html:118
+#: cdfgeonode/templates/maps/map_metadata.html:44
+#: cdfgeonode/templates/maps/map_metadata.html:78
+msgid "Update"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:89
+msgid "Attribute"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:92
+msgid "Display Order"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:112
+#: cdfgeonode/templates/maps/map_metadata.html:56
+msgid "Metadata Provider"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:50
+msgid "Rate this Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:72
+#: cdfgeonode/templates/maps/map_detail.html:80
+msgid "Download Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:84
+msgid "Download Data Layers"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:85
+msgid "Download Web Map Context"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:96
+#: cdfgeonode/templates/maps/map_detail.html:103
+msgid "Edit Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:139
+msgid "View Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:149
+msgid "Map Layers"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:150
+msgid "This map uses the following layers:"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:166
+msgid "Documents related to this map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:167
+msgid "List of documents related to this map:"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:179
+msgid "Specify which users can view or modify this map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:180
+msgid "Change Permissions of this Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:186
+msgid "Copy this map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:187
+msgid "Duplicate this map and modify it for your own purposes"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:188
+#: cdfgeonode/templates/maps/map_list.html:10
+msgid "Create a New Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:193
+msgid "Map WMS"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:195
+msgid "WMS layer group for local map layers"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:196
+msgid "on"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:196
+msgid "local OWS"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:199
+msgid "Publish local map layers as WMS layer group"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:200
+msgid "Publish Map WMS"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:6
+msgid "Download"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:8
+msgid ""
+"\n"
+"      Here you can download all the layers of this map that\n"
+"      are hosted on this GeoNode.\n"
+"    "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:22
+msgid ""
+"\n"
+"      <div class=\"alert alert-warning\">Could not find downloadable layers "
+"for this map. You can go back to  \n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:29
+msgid ""
+"\n"
+"        Additionally, the map contains these layers which will not be "
+"downloaded\n"
+"        due to security restrictions:\n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:41
+msgid ""
+"\n"
+"        Finally, the map contains these layers which will not be downloaded\n"
+"        because they are not available directly from this GeoNode:\n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:54
+msgid "Downloading"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:58
+msgid "Cancel"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:59
+msgid "Retry"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:65
+msgid "Start downloading this map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:95
+msgid "Download Complete"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:105
+msgid "Download Failed"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_metadata.html:17
+#, python-format
+msgid ""
+"\n"
+"        Editing details for %(map_title)s\n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_metadata.html:23
+msgid ""
+"Note: this map's orginal metadata was populated by importing a metadata XML "
+"file.\n"
+"        GeoNode's metadata import supports a subset of ISO, FGDC, and Dublin "
+"Core metadata elements.\n"
+"        Some of your original metadata may have been lost."
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_remove.html:6
+msgid "Deleting"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_remove.html:10
+msgid "Remove Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_remove.html:15
+#, python-format
+msgid ""
+"\n"
+"          Are you sure you want to remove <a href=\"%(map.get_absolute_url)s"
+"\">%(map_title)s</a>?\n"
+"        "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_remove.html:22
+msgid "Yes, I am sure"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_remove.html:23
+msgid "No, don't remove it"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_view.html:5
+msgid "GeoExplorer"
+msgstr ""
+
+#: cdfgeonode/templates/search/_extent_filter.html:3
+#: templates/search/_extent_filter.html:3
+msgid "Extent"
+msgstr ""
+
+#: cdfgeonode/templates/search/_general_filters.html:33
+#: templates/search/_general_filters.html:33
+msgid "Owners"
+msgstr ""
+
+#: cdfgeonode/templates/search/_general_filters.html:49
+#: templates/search/_general_filters.html:49
+msgid "Date begins after:"
+msgstr ""
+
+#: cdfgeonode/templates/search/_general_filters.html:50
+#: cdfgeonode/templates/search/_general_filters.html:54
+#: templates/search/_general_filters.html:50
+#: templates/search/_general_filters.html:54
+msgid "yyyy-mm-dd"
+msgstr ""
+
+#: cdfgeonode/templates/search/_general_filters.html:53
+#: templates/search/_general_filters.html:53
+msgid "Date ends before:"
+msgstr ""
+
+#: cdfgeonode/templates/search/_search_content.html:16
+msgid "Create a map"
+msgstr ""
+
+#: cdfgeonode/templates/search/_search_content.html:23
+msgid "Filters"
+msgstr ""
+
+#: cdfgeonode/templates/search/_search_content.html:24
+msgid "Clear"
+msgstr ""
+
+#: cdfgeonode/templates/search/_sort_filters.html:10
+#: templates/search/_sort_filters.html:10
+msgid "Most recent"
+msgstr ""
+
+#: cdfgeonode/templates/search/_sort_filters.html:11
+#: templates/search/_sort_filters.html:11
+msgid "Less recent"
+msgstr ""
+
+#: cdfgeonode/templates/search/_sort_filters.html:12
+#: templates/search/_sort_filters.html:12
+msgid "A - Z"
+msgstr ""
+
+#: cdfgeonode/templates/search/_sort_filters.html:13
+#: templates/search/_sort_filters.html:13
+msgid "Z - A"
+msgstr ""
+
+#: cdfgeonode/templates/search/_sort_filters.html:14
+#: templates/search/_sort_filters.html:14
+msgid "Most popular"
+msgstr ""
+
+#: cdfgeonode/templates/search/_text_filter.html:5
+msgid "Text"
+msgstr ""
+
+#: cdfgeonode/templates/search/search.html:6
+#: cdfgeonode/templates/search/search.html:12 templates/search/search.html:6
+#: templates/search/search.html.py:12
+msgid "Search"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/base_site.html:13
+#: wikifcd/templates/wikifcd/base_site.html:44
+msgid "Search..."
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:11
+msgid ""
+"<strong>Warning:</strong> You are not logged in. Your IP address will be "
+"logged."
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:12
+msgid "Click here to log in"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:41
+msgid "Preview"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:45
+#: cdfgeonode/templates/wiki/edit.html:72
+msgid "Save changes"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:50
+msgid "Delete article"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:68
+msgid "Back to editor"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:13
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:39
+msgid "Sub-articles for"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:25
+msgid "No sub-articles"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:28
+msgid "...and more"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:32
+msgid "Browse articles in this level"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:48
+msgid "New article next to"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:53
+msgid "New article below"
+msgstr ""
+
+#: core/cms_app.py:6
+msgid "My Apphook"
+msgstr ""
+
+#: wikifcd/templates/wikifcd/base_site.html:75
+msgid "Log in"
+msgstr ""
+
+#: wikifcd/templates/wikifcd/base_site.html:78
+msgid "Sign up"
+msgstr ""
+
+#: wikifcd/templates/wikifcd/base_site.html:85
+msgid "Home"
+msgstr ""
+
+#: wikifcd/templates/wikifcd/base_site.html:119
+msgid ""
+"Powered by a<a href=\"http://www.django-wiki.org\">django-wiki</a>, an open "
+"source application under the <a href=\"http://www.gnu.org/licenses/quick-"
+"guide-gplv3.html\">GPLv3</a> license. Let knowledge be the cure."
+msgstr ""
