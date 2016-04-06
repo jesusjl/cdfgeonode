@@ -167,3 +167,21 @@ nav.filter h4 {
 .wiki_search_form {
   margin: 20px 0;
 }
+
+
+.geonode-icons {
+  padding: 0px 10px 0px 0px;
+}
+
+h3.geonode-resources {
+    background-color: #eee;
+    border: 0.2px dotted #ddd;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+.geonode-forms{
+  width: 100%;
+}

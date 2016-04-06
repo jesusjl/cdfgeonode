@@ -63,9 +63,10 @@
 
 </div>
 
-   <!-- center-column -->
+   <!-- end center-column -->
      </div>
      <!-- colmd8 -->
+
        <div class="col-md-4">
          <div class="tab">SEARCH</div>
         <div class="row latest-articles">
@@ -92,30 +93,29 @@
 
      </div>
    </div>
- </div>
-
-{% endblock  %}
 
 
+        {% endblock  %}
 
 
-    <div class="col-md-4">
-      <div class="center-column">
+
+
+
         <div class="tab">FEATURE MAP</div>
       <div class='row'>
        <div class='col-md-12'>
          <div class="row feature-article">
            <div class=" col-md-12 col-xs-12 col-md-12">
-      <div class="row home-facets">
+      <div class="row home-facets-foo">
 
       {% with facet_type='home' %}
        {% facets as facets %}
         <div class="col-md-12">
-          <p><a href="{% url "layer_browse" %}"><i class="fa fa-square-o fa-5x rotate-45"></i></a></p>
-          <h2><a href="{% url "layer_browse" %}">{{ facets.layer|default:_("No") }} {% blocktrans count counter=facets.layer %}Layer{% plural %}Layers{% endblocktrans %}</a></h2>
+
+          <h3 class='geonode-resources'><span class='geonode-icons'><a href="{% url "layer_browse" %}"><i class="fa fa-square-o fa-5x rotate-45"></i></a></span><a href="{% url "layer_browse" %}">{{ facets.layer|default:_("No") }} {% blocktrans count counter=facets.layer %}Layer{% plural %}Layers{% endblocktrans %}</a></h4>
           <p>{% trans "Click to search for geospatial data published by other users, organizations and public sources. Download data in standard formats." %}</p>
           {% if user.is_authenticated %}
-          <p class="text-center"><a class="btn btn-default" href="{% url "layer_upload" %}" role="button">{% trans "Add layers" %} &raquo;</a></p>
+          <p class="text-center"><a class="btn btn-default geonode-forms" href="{% url "layer_upload" %}" role="button">{% trans "Add layers" %} &raquo;</a></p>
           {% else %}
           <p class="text-center"><a class="btn btn-default" href="{% url "layer_browse" %}" role="button">{% trans "Explore layers" %} &raquo;</a></p>
           {% endif %}
@@ -150,6 +150,7 @@
     <div ng-repeat="item in featured">
       <!--{{ item.title }}-->
     </div>
+  </div>
   </div>
   {% endverbatim %}
   {% endblock %}
