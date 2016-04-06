@@ -20,6 +20,12 @@
    <div class="container">
      <div class="row">
        <div class="col-md-8">
+         <div class="center-column">
+           <div class="tab">WELCOME</div>
+         <div class='row'>
+          <div class='col-md-12'>
+            <div class="row feature-article">
+              <div class=" col-md-12 col-xs-12 col-md-12">
          {% block hero %}
 
                    <div class="page-header main-page">
@@ -32,8 +38,42 @@
                   <h3>
          {% endblock %}
        </div>
+       </div>
+       </div>
+       </div>
+
+
+       {% block body %}
+
+
+             <div class="tab">FEATURE MAP</div>
+           <div class='row'>
+            <div class='col-md-12'>
+              <div class="row feature-article">
+                <div class=" col-md-12 col-xs-12 col-md-12">
+         {% block feature_map %}
+
+         {% static_placeholder "feature-map"  %}
+       </div>
+     </div>
+       </div>
+         </div>
+
+         {% endblock %}
+
+</div>
+
+   <!-- center-column -->
+     </div>
+     <!-- colmd8 -->
+       <div class="col-md-4">
+         <div class="tab">SEARCH</div>
+        <div class="row latest-articles">
+        <div class="col-md-12 geo-search">
         {% block search_form %}
-       <div class = "col-md-4">
+
+
+
          <form class="" id="search" action="{% url "search" %}" >
 
              <div class="input-group">
@@ -49,20 +89,23 @@
 
            </div>
          </form>
-       </div>
+
      </div>
-        {% endblock  %}
+   </div>
+ </div>
 
-    {% block body %}
-    <div class="row">
-    <div class="col-md-8">
-      {% block feature_map %}
-        <h3>Feature Map</h3>
-      {% static_placeholder "feature-map"  %}
+{% endblock  %}
 
-      {% endblock %}
-    </div>
+
+
+
     <div class="col-md-4">
+      <div class="center-column">
+        <div class="tab">FEATURE MAP</div>
+      <div class='row'>
+       <div class='col-md-12'>
+         <div class="row feature-article">
+           <div class=" col-md-12 col-xs-12 col-md-12">
       <div class="row home-facets">
 
       {% with facet_type='home' %}
@@ -98,6 +141,10 @@
     </div>
   </div>
 </div>
+</div>
+  </div>
+    </div>
+       </div> <!-- end row -->
   {% verbatim %}
   <div ng-app="featured">
     <div ng-repeat="item in featured">

@@ -9,6 +9,17 @@
   margin: 0px auto
 }*/
 
+
+.col-md-12.geo-search {
+    padding: 10px !important;
+}
+
+
+.fa {
+  height: 23px !important;
+}
+
+
 .navbar-brand {
     width: 373px;
     height: 79px;
