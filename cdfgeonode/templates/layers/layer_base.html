@@ -4,7 +4,10 @@
 
 
 {% block custom_search_form %}
-<div class="container">
+
+  <div class="tab">SEARCH</div>
+ <div class="row latest-articles">
+  <div class="col-md-12  geo-search">
 <form class="" id="search" action="{% url "search" %}" >
 
     <div class="input-group">
@@ -20,6 +23,7 @@
 
   </div>
 </form>
+</div>
 </div>
 {% endblock%}
 {% block title %} {{ block.super }} {% endblock %}

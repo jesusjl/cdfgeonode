@@ -185,3 +185,8 @@ h3.geonode-resources {
 .geonode-forms{
   width: 100%;
 }
+
+/*layers list page*/
+.container.main {
+    background-color: white;
+}
