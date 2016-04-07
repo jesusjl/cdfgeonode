@@ -133,6 +133,8 @@ DJANGO_CMS_INSTALLED_APPS = (
 'admin_enhancer',
 
 'smart_load_tag',
+#custom
+'slider',
 )
 
 INSTALLED_APPS += DJANGO_CMS_INSTALLED_APPS

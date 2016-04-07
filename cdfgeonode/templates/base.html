@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
+    {% block extra_head %}
+    {% endblock %}
     {% block head %}
       {% if DEBUG_STATIC %}
       <link href="{{ STATIC_URL }}lib/css/jquery.dataTables.css?v={{ VERSION }}" rel="stylesheet" />
@@ -23,8 +25,9 @@
       <link href="{{ STATIC_URL }}css/main.less" rel="stylesheet" type="text/less"  media="all">
 
       <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}</style>
-      {% block extra_head %}
-      {% endblock %}
+
+      {% block css_extra %}{% endblock %}
+
 
     {% endblock %}
 
@@ -219,27 +222,26 @@
   <!-- middle -->
   </div>
 
-  <div class="container-fluid">
+    <div id="main-wrapper" class="container-fluid">
+
       {% include "_status_message.html" %}
       {% include "_announcements.html" %}
       {% include "_messages.html" %}
       {% block breadcrumb %}{% endblock breadcrumb %}
       {% block middle %}
-      {% block body_outer %}
-       {% block body %}
+        {% block body_outer %}
+             {% block body %}
 
-          {% block content %}
+                {% block content %} {% endblock content %}
 
-
-          {% endblock content %}
-
-      {% endblock %}
-      {% endblock %}
-      {% block wiki_body %}
-      {% endblock %}
+            {% endblock %}
+        {% endblock %}
+        {% block wiki_body %}{% endblock %}
       {% endblock  %}
 
-  </div>
+
+</div>
+
 
   <div class="modal fade" id="newsletter_signup" role="dialog" aria-labelledby="gridSystemModalLabel">
     <div class="modal-dialog" role="document">
@@ -537,7 +539,11 @@
 
     <!-- Optionally enable responsive features in IE8 -->
     <script src="{{ STATIC_URL }}wiki/js/respond.min.js"></script>
+
     {% render_block "js" %}
+    {% block js_extra %}{% endblock %}
+
+
 
     {% include 'autocomplete_light/static.html' %}
     <script type="text/javascript" src="{% url 'django.views.i18n.javascript_catalog' %}"></script>

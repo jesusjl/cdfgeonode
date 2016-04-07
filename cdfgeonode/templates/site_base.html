@@ -1,5 +1,8 @@
 {% extends "base.html" %}
-{% load i18n  cms_tags %}
+{% load i18n  cms_tags  slider_tags %}
+{% block css_extra %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/vendor/flexslider-23b22ac/flexslider.css" type="text/css">
+{% endblock %}
 
 {% block extra_head %}
 <link href="{{ STATIC_URL }}css/wiki-bootstrap.min.css" rel="stylesheet">
@@ -24,17 +27,16 @@
 {% endblock %}
 
 {% block body %}
-<div class="container flex">
+<div class="container">
 <div class="row">
 
         <div class="col-md-12 col-xs-12">
-            <!-- flexslider -->
-</div>
+            {% flexslider %}
 </div>
 </div>
 
 
-<div class ="container">
+
   <div class="row ">
 
 <!-- column left -->
@@ -217,5 +219,14 @@
 
   </div>
   {% endblock %}
+  {% block js_extra %}
+<script src="{{ STATIC_URL }}js/vendor/flexslider-23b22ac/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.flexslider').flexslider();
+    });
+</script>
+{% endblock %}
+
   {% block wiki_body %}
   {% endblock %}

@@ -1,0 +1,14 @@
+{% load smart_load %}
+{% load thumbnail from easy_thumbnail as _thumbnail %}<div class="flexslider">
+    <ul class="slides">
+        {% for slide in slides %}
+        <li>{% if slide.link %}<a href="{{ slide.link }}">{% endif %}
+            <img src="{% _thumbnail slide.image 952x317 crop upscale %}">
+            {% if slide.caption_translated %}
+            <p class="flex-caption">{{ slide.caption_translated|safe }}</p>
+            {% endif %}
+            {% if slide.link %}</a>{% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
