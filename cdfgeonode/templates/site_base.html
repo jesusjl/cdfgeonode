@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n  cms_tags  slider_tags %}
+{% load i18n  cms_tags  slider_tags cmsplugin_blog_helpers%}
 {% block css_extra %}
     <link rel="stylesheet" href="{{ STATIC_URL }}js/vendor/flexslider-23b22ac/flexslider.css" type="text/css">
 {% endblock %}
@@ -93,7 +93,7 @@
 <div class="row latest-articles homepage-latest-post">
 
   <div class="col-md-12 col-xs-12 homepage-latest-post-aux clearfix ">
-    <!-- djangocms_blog_latest_posts_detailed  -->
+    {% djangocms_blog_latest_posts_detailed %}
 
 
     <!-- prueba -->

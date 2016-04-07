@@ -135,6 +135,8 @@ DJANGO_CMS_INSTALLED_APPS = (
 'smart_load_tag',
 #custom
 'slider',
+'core',
+
 )
 
 INSTALLED_APPS += DJANGO_CMS_INSTALLED_APPS
