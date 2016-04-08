@@ -1,5 +1,6 @@
 {% extends "site_base.html" %}
-{% load i18n  %}
+{% load i18n  cmsplugin_blog_helpers %}
+
 {% load staticfiles %}
 <!-- {#  {% load cms_tags sekizai_tags menu_tags  %} #}  -->
 
@@ -24,7 +25,7 @@
            <div class="tab">WELCOME</div>
          <div class='row'>
           <div class='col-md-12'>
-            <div class="row feature-article">
+            <div class="row feature-article ">
               <div class=" col-md-12 col-xs-12 col-md-12">
          {% block hero %}
 
@@ -49,11 +50,13 @@
              <div class="tab">FEATURE MAP</div>
            <div class='row'>
             <div class='col-md-12'>
-              <div class="row feature-article">
+              <div class="row feature-article feature-map">
                 <div class=" col-md-12 col-xs-12 col-md-12">
-         {% block feature_map %}
 
-         {% static_placeholder "feature-map"  %}
+
+         {% block feature_map %}
+            {% djangocms_blog_latest_map %}
+        <!-- {# {% static_placeholder "feature-map"  %} #} -->
        </div>
      </div>
        </div>

@@ -1,6 +1,6 @@
 from django import template
 
-from djangocms_blog.models import Post
+from djangocms_blog.models import Post, BlogCategoryTranslation
 from simple_translation.utils import get_translation_filter_language
 from cms.utils import get_language_from_request
 
@@ -42,5 +42,39 @@ def djangocms_blog_latest_posts_detailed(context):
         posts = None
     return {
         'posts': posts,
+        'request': request,
+    }
+
+# Latest maps published
+
+@register.inclusion_tag('djangocms_blog/latest_maps.html', takes_context=True)
+def djangocms_blog_latest_maps(context):
+    request = context['request']
+    language = get_language_from_request(request)
+    try:
+
+        cat = BlogCategoryTranslation.objects.get(slug='mapstory')
+        posts = Post.objects.filter(categories=cat.master_id)
+    except:
+        posts = None
+    return {
+        'posts': posts,
+        'request': request,
+    }
+
+
+# Last map published
+@register.inclusion_tag('djangocms_blog/latest_map.html', takes_context=True)
+def djangocms_blog_latest_map(context):
+    request = context['request']
+    language = get_language_from_request(request)
+    try:
+
+        cat = BlogCategoryTranslation.objects.get(slug='mapstory')
+        post = Post.objects.filter(categories=cat.master_id).latest()
+    except:
+        post = None
+    return {
+        'post': post,
         'request': request,
     }
