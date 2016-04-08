@@ -47,14 +47,17 @@ def djangocms_blog_latest_posts_detailed(context):
 
 # Latest maps published
 
-@register.inclusion_tag('djangocms_blog/latest_maps.html', takes_context=True)
-def djangocms_blog_latest_maps(context):
+@register.inclusion_tag('djangocms_blog/latest_map_list.html', takes_context=True)
+def djangocms_blog_latest_map_list(context):
     request = context['request']
     language = get_language_from_request(request)
     try:
 
         cat = BlogCategoryTranslation.objects.get(slug='mapstory')
-        posts = Post.objects.filter(categories=cat.master_id)
+        posts = Post.objects.filter(
+            categories=cat.master_id
+        ).order_by('-date_published')[1:4]
+
     except:
         posts = None
     return {
