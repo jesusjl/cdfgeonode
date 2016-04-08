@@ -8,9 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
+
+    {% block head %}
     {% block extra_head %}
     {% endblock %}
-    {% block head %}
       {% if DEBUG_STATIC %}
       <link href="{{ STATIC_URL }}lib/css/jquery.dataTables.css?v={{ VERSION }}" rel="stylesheet" />
       <link href="{{ STATIC_URL }}lib/css/select2.css?v={{ VERSION }}" rel="stylesheet"/>
@@ -223,7 +224,7 @@
   </div>
 
     <div id="main-wrapper" class="container-fluid">
-
+        <div class="container main">
       {% include "_status_message.html" %}
       {% include "_announcements.html" %}
       {% include "_messages.html" %}
@@ -240,6 +241,7 @@
       {% endblock  %}
 
 
+</div>
 </div>
 
 
@@ -341,7 +343,7 @@
                 <div class=" footer-columns">
                   <h4>MENU</h4>
                   <ul class="footer-menu">
-                  <!-- show_menu 0 0 100 100  -->
+                  {% show_menu 0 0 100 100  %}
                 </ul>
 
           </div>

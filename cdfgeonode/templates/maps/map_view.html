@@ -6,8 +6,12 @@
 
 {% block head %}
 {{ block.super }}
+
 {% include 'maps/map_geoexplorer.js' %}
 
 {% endblock %}
+{% block custom_menu %}
+{% include "menu/custom_menu.html"%}
 
+{% endblock %}
 {% block footer %}{% endblock %}

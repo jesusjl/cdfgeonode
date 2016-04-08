@@ -26,6 +26,48 @@
     background: transparent url("../img/UWI-logo.JPG") no-repeat scroll 15px 0px;
 }
 
+
+
+/*// overriding base.css*/
+
+
+
+body.maps li#nav_maps a {
+    color: #001032 !important;
+}
+body.maps li#nav_layers a {
+    color: #001032 !important;
+}
+body.maps li#nav_home a {
+    color: #001032 !important;
+}
+
+body.layers li#nav_layers a:active {
+  color: #001032 !important;
+  background-color: #eee !important;
+}
+
+
+body.maps li#nav_maps a:active {
+    color: #001032 !important;
+    background-color: #eee !important;
+
+}
+
+body.maps li#nav_home a:active {
+    color: #001032 !important;
+    background-color: #eee important;
+
+}
+
+
+
+#navbarCollapse {
+
+  padding: 10px;
+
+}
+
 #wrap {
   background: #f6f6f6 none repeat scroll 0 0;
 
@@ -43,9 +85,6 @@ body {
 }
 
 
-body li#nav_layers a {
-    color: #001032;
-}
 
 .form-control {
   height: 37px;
@@ -187,6 +226,6 @@ h3.geonode-resources {
 }
 
 /*layers list page*/
-.container.main {
+/*.container.main {
     background-color: white;
-}
+}*/

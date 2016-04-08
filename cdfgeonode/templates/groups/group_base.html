@@ -3,10 +3,16 @@
 {% load url from future %}
 
 {% block title %} {{ block.super }} {% endblock %}
+{% block custom_menu %}
+{% include "menu/custom_menu.html"%}
 
+{% endblock %}
 {% block body_class %}groups explore{% endblock %}
 
 {% block body_outer %}
+<div class='container'>
+  <div class="row">
+    <div class="feature-article col-md-12">
   <!-- {% block subnav %}
   <div class="col-md-12">
     <ul class="nav nav-tabs" id="subnav-tabs">
@@ -21,4 +27,7 @@
   {% endblock subnav %} -->
   {% block body %}{% endblock body %}
   {% block sidebar %}{% endblock sidebar %}
+</div>
+</div>
+</div>
 {% endblock body_outer %}

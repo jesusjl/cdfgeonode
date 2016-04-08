@@ -18,6 +18,8 @@
 {% endblock %}
 {% block extra_tab %}
 
+{#{% block custom_menu %}{% endblock %}#}
+
 <li>
  <a href="/wiki/">Wiki</a>
 </li>
@@ -79,12 +81,8 @@
 
  <div class="row feature-article">
    <div class=" col-md-12 col-xs-12 col-md-12">
-  <p>   Lorem ipsum      Lorem ipsum      Lorem ipsum      Lorem ipsum</p>
-  <p>   Lorem ipsum      Lorem ipsum      Lorem ipsum      Lorem ipsum</p>
-  <p>   Lorem ipsum      Lorem ipsum      Lorem ipsum      Lorem ipsum</p>
 
-
-       <!-- djangocms_blog_latest_post -->
+       {% djangocms_blog_latest_post %}
 </div>
 
 
