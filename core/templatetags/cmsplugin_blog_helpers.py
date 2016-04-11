@@ -11,7 +11,10 @@ def djangocms_blog_latest_post(context):
     request = context['request']
     language = get_language_from_request(request)
     try:
-        post = Post.objects.latest()
+        cat = BlogCategoryTranslation.objects.get(slug='news')
+        post = Post.objects.filter(
+                categories=cat.master_id
+        ).latest()
     except:
         post = None
     return {
@@ -37,7 +40,10 @@ def djangocms_blog_latest_posts_detailed(context):
     request = context['request']
     language = get_language_from_request(request)
     try:
-        posts = Post.objects.order_by('-date_published')[1:5]
+        cat = BlogCategoryTranslation.objects.get(slug='news')
+        posts = Post.objects.filter(
+            categories=cat.master_id
+        ).order_by('-date_published')[1:5]
     except:
         posts = None
     return {
@@ -57,7 +63,6 @@ def djangocms_blog_latest_map_list(context):
         posts = Post.objects.filter(
             categories=cat.master_id
         ).order_by('-date_published')[1:4]
-
     except:
         posts = None
     return {
