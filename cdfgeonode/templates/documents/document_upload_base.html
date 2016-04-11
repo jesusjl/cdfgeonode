@@ -7,6 +7,8 @@
 {% block body_class %}documents{% endblock %}
 
 {% block body_outer %}
+<div class="row">
+  <div class="col-sm-12 feature-article">
 <div class="page-header">
   <a href="{% url "document_browse" %}" class="btn btn-primary pull-right">{% trans "Explore Documents" %}</a>
   <h2 class="page-title">{% trans "Upload Documents" %}</h2>
@@ -17,8 +19,9 @@
 	{% endfor %}
 	</p>
 </div>
-<div class="row">    
+<div class="row">
   {% block body %}{% endblock body %}
   {% block sidebar %}{% endblock sidebar %}
+</div>
 </div>
 {% endblock body_outer %}

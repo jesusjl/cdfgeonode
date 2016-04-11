@@ -1,4 +1,4 @@
-{% extends "site_base.html" %}
+{% extends "cdfgeonode/site_base.html" %}
 
 {% load i18n %}
 
@@ -6,12 +6,10 @@
 
 {% block head %}
 {{ block.super }}
+{% include "menu/custom_menu_for_map_view.html"%}
 
 {% include 'maps/map_geoexplorer.js' %}
 
 {% endblock %}
-{% block custom_menu %}
-{% include "menu/custom_menu.html"%}
 
-{% endblock %}
 {% block footer %}{% endblock %}
