@@ -1,0 +1,15 @@
+{% extends '2-col-blog.html' %}
+
+{% block meta %}
+    {%  if meta %}
+        {% include "meta_mixin/meta.html" %}
+    {% endif %}
+{% endblock meta %}
+
+{% block content %}
+<div class="row">
+ <div class="app app-blog col-sm-8">
+    {% block content_blog %}{% endblock %}
+ </div>
+</div>
+{% endblock content %}

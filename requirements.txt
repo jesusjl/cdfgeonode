@@ -1,6 +1,6 @@
 Django==1.6.11
 Django-Select2==4.3.2
--e git+https://github.com/Geonode/geonode.git@8dc5e2f341c5804c26b811515c6bb2fb0364a1ee#egg=GeoNode-2.4
+#-e git+https://github.com/Geonode/geonode.git@8dc5e2f341c5804c26b811515c6bb2fb0364a1ee#egg=GeoNode-2.4
 Markdown==2.6.6
 MultipartPostHandler==0.1.0
 OWSLib==0.10.0

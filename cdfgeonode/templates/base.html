@@ -1,5 +1,6 @@
 {% load cms_tags i18n menu_tags avatar_tags %}
-{% load sekizai_tags  wiki_tags cmsplugin_blog_helpers cmsplugin_blog_helpers %}
+{% load sekizai_tags  wiki_tags   %}
+<!-- cmsplugin_blog_helpers -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -343,7 +344,7 @@
                 <div class=" footer-columns">
                   <h4>MENU</h4>
                   <ul class="footer-menu">
-                  {% show_menu 0 0 100 100  %}
+                    {% show_menu 0 0 100 100  %}
                 </ul>
 
           </div>
@@ -387,7 +388,7 @@
             <div class="col-md-3 col-xs-12">
                 <div class="four columns">
                   <h4>{% trans "LATEST NEWS"  %}</h4>
-                    {% djangocms_blog_latest_posts  %}
+                  {#  {% djangocms_blog_latest_posts  %} #}
 
                 <!--   static_placeholder "footer" -->
 
@@ -539,14 +540,6 @@
 
     <script src="{{ STATIC_URL }}wiki/js/core.js"></script>
 
-    <!-- Optionally enable responsive features in IE8 -->
-    <script src="{{ STATIC_URL }}wiki/js/respond.min.js"></script>
-
-    {% render_block "js" %}
-    {% block js_extra %}{% endblock %}
-
-
-
     {% include 'autocomplete_light/static.html' %}
     <script type="text/javascript" src="{% url 'django.views.i18n.javascript_catalog' %}"></script>
     {% block extra_script %}{% endblock extra_script %}
@@ -584,6 +577,13 @@
         };
     </script>
     <script type="text/javascript" src="{% url "lang" %}"></script>
+    <!-- Optionally enable responsive features in IE8 -->
+    <script src="{{ STATIC_URL }}wiki/js/respond.min.js"></script>
+
+    {% render_block "js" %}
+    {% block js_extra %}{% endblock %}
+
+
 
   </body>
 </html>
