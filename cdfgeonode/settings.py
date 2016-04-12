@@ -128,7 +128,7 @@ DJANGO_CMS_INSTALLED_APPS = (
 'django_select2',
 'taggit_autosuggest',
 'meta',
-'meta_mixin',
+# 'meta_mixin',
 'djangocms_blog',
 'admin_enhancer',
 
