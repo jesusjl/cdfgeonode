@@ -2,19 +2,30 @@
 {% load url from future %}
 {% load smart_load %}
 {% load thumbnail from easy_thumbnail as _thumbnail %}
+<div class="row">
+
+  <div class="col-md-12">
 
 <article id="post-{{ post.slug }}" class="post-item">
-    <header>
+    <!-- <header> -->
+     <div class="article-list-header">
         <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
         {% block blog_meta %}
-            {% include "djangocms_blog/includes/blog_meta.html" %}
+          <!-- {#  {% include "djangocms_blog/includes/blog_meta.html" %} #} -->
+          <p>{% trans "Posted by" %} <span class="author"><a href="{% url 'djangocms_blog:posts-author' post.author.username %}">{{ post.author.get_full_name }}</a></span> on <span class="published-date">{{ post.date_published|date:"M d, Y" }}</span></p>
+
         {% endblock %}
-    </header>
+    <!-- </header> -->
+      </div>
     {% if image and post.main_image %}
-    <div class="blog-visual">
+    <!-- <div class="blog-visual"> -->
+    <span class="img-polaroid">
         {% _thumbnail post.main_image post.thumbnail_options.size crop=post.thumbnail_options.crop upscale=post.thumbnail_options.upscale subject_location=post.main_image.subject_location as thumb %}
-        <img src="{{ thumb.url }}" alt="{{ post.main_image.default_alt_text }}" width="{{ thumb.width }}" height="{{ thumb.height }}" />
-    </div>
+        <img class="img-responsive" src="{{ thumb.url }}" alt="{{ post.main_image.default_alt_text }}" width="{{ thumb.width }}" height="{{ thumb.height }}" />
+    <!-- </div> -->
+        {% if post.main_image.default_caption %}<span class="img-caption">{{ post.main_image.default_caption|safe }}</span>{% endif %}
+
+  </span>
     {% endif %}
     <div class="blog-lead">
         {% if not TRUNCWORDS_COUNT %}
@@ -23,7 +34,13 @@
             {% render_model post "abstract" "" "" 'truncatewords_html:TRUNCWORDS_COUNT'  %}
         {% endif %}
     </div>
+    <p><a href="{{ post.get_absolute_url }}">{% trans "read more" %} &raquo;</a></p>
+<!--
     <footer class="read-more">
-        <a href="{{ post.get_absolute_url }}">{% trans "read more" %} &raquo;</a>
-    </footer>
+      {#}  <a href="{{ post.get_absolute_url }}">{% trans "read more" %} &raquo;</a> #}
+    </footer> -->
 </article>
+
+</div>
+
+</div>

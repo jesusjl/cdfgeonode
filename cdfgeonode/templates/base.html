@@ -1,4 +1,4 @@
-{% load cms_tags i18n menu_tags avatar_tags %}
+{% load cms_tags i18n menu_tags avatar_tags cmsplugin_blog_helpers %}
 {% load sekizai_tags  wiki_tags   %}
 <!-- cmsplugin_blog_helpers -->
 
@@ -233,15 +233,12 @@
       {% block middle %}
         {% block body_outer %}
              {% block body %}
-                <div class="row">
-                <div class="col-md-8">
+
                 {% block content %}
                   {% block content_blog %}{% endblock %}
                {% endblock content %}
-             </div>
-               <div class="col-md-4">
-               </div>
-           </div>
+
+
             {% endblock %}
         {% endblock %}
         {% block wiki_body %}{% endblock %}
@@ -394,7 +391,7 @@
             <div class="col-md-3 col-xs-12">
                 <div class="four columns">
                   <h4>{% trans "LATEST NEWS"  %}</h4>
-                  {#  {% djangocms_blog_latest_posts  %} #}
+                    {% djangocms_blog_latest_posts  %}
 
                 <!--   static_placeholder "footer" -->
 
