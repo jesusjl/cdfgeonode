@@ -1,4 +1,4 @@
-{% extends '2-col-blog.html' %}
+{% extends CMS_TEMPLATE %}
 
 {% block meta %}
     {%  if meta %}
@@ -7,9 +7,7 @@
 {% endblock meta %}
 
 {% block content %}
-<div class="row">
- <div class="app app-blog col-sm-8">
+<div class="app app-blog">
     {% block content_blog %}{% endblock %}
- </div>
 </div>
 {% endblock content %}

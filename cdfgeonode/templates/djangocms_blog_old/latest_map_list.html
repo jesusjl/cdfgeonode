@@ -1,0 +1,19 @@
+{% load i18n   %}
+{% load smart_load %}
+{% load thumbnail from easy_thumbnail as _thumbnail %}
+
+
+<!-- <img class="img-responsive " src="{% _thumbnail post.main_image 735x368 crop %}"> -->
+
+{% if posts %}
+{% for post in posts %}
+    <div class="design clearfix">
+
+    <h4>
+    <a href="{{ post.get_absolute_url }}"> {{ post.title }}</a>
+    </h4>
+    {{ post.abstract|safe }} <!--  won't html-encode your string -->
+    </div>
+
+{% endfor %}
+{% endif %}

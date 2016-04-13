@@ -59,7 +59,7 @@ def djangocms_blog_latest_map_list(context):
     language = get_language_from_request(request)
     try:
 
-        cat = BlogCategoryTranslation.objects.get(slug='mapstory')
+        cat = BlogCategoryTranslation.objects.get(slug='mapstories')
         posts = Post.objects.filter(
             categories=cat.master_id
         ).order_by('-date_published')[1:4]
@@ -78,7 +78,7 @@ def djangocms_blog_latest_map(context):
     language = get_language_from_request(request)
     try:
 
-        cat = BlogCategoryTranslation.objects.get(slug='mapstory')
+        cat = BlogCategoryTranslation.objects.get(slug='mapstories')
         post = Post.objects.filter(categories=cat.master_id).latest()
     except:
         post = None

@@ -2,14 +2,19 @@
 {% load url from future %}
 {% load smart_load %}
 {% load thumbnail from easy_thumbnail as _thumbnail %}
+<div class="row">
+
+  <div class="col-md-12">
 
 <article id="post-{{ post.slug }}" class="post-item">
     <header>
         <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
         {% block blog_meta %}
-            {% include "djangocms_blog/includes/blog_meta.html" %}
-        {% endblock %}
+             {% include "djangocms_blog/includes/blog_meta.html" %}
+         {% endblock %}
     </header>
+    <div class="article-list-header">
+</div>
     {% if image and post.main_image %}
     <div class="blog-visual">
         {% _thumbnail post.main_image post.thumbnail_options.size crop=post.thumbnail_options.crop upscale=post.thumbnail_options.upscale subject_location=post.main_image.subject_location as thumb %}
@@ -27,3 +32,6 @@
         <a href="{{ post.get_absolute_url }}">{% trans "read more" %} &raquo;</a>
     </footer>
 </article>
+</div>
+
+</div>
