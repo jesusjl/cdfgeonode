@@ -104,6 +104,7 @@ DJANGO_CMS_INSTALLED_APPS = (
 'django.contrib.messages',  # to enable messages framework (see :ref:`Enable messages <enable-messages>`)
 
 #django-filer
+'cms_shiny',
 'easy_thumbnails',
 #'filer',
 'mptt',
