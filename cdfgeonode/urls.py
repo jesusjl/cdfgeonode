@@ -169,16 +169,15 @@ urlpatterns += i18n_patterns('',
     url(r'^', include('cms.urls')),
     #url(r'^', include('djangocms_blog.urls')),
     url(r'^djangocms_blog/', include('djangocms_blog.urls', namespace='djangocms_blog')),
-    url(r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
     url(r'^select2/', include('django_select2.urls')),
-
-
+    (r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
+    url(r'^shiny_apps/', include('cms_shiny.urls', namespace='cms_shiny')),
 
  )
 
-
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns += patterns('',
-        url(r'^__debug__/', include(debug_toolbar.urls)),
-    )
+#
+# if settings.DEBUG:
+#     import debug_toolbar
+#     urlpatterns += patterns('',
+#         url(r'^__debug__/', include(debug_toolbar.urls)),
+#     )

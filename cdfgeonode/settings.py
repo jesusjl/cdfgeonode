@@ -86,7 +86,7 @@ INSTALLED_APPS = INSTALLED_APPS + (
 'wiki.plugins.notifications',
 'wiki.plugins.images',
 'wiki.plugins.macros',
-'debug_toolbar',
+# 'debug_toolbar',
 'south',
 )
 
@@ -203,7 +203,12 @@ PARLER_LANGUAGES = {
 
 
 AUTH_USER_MODEL = 'people.Profile'
+
 # thumbnail
+
+# For easy_thumbnails to support retina displays (recent MacBooks, iOS)
+THUMBNAIL_HIGH_RESOLUTION = True
+THUMBNAIL_QUALITY = 95
 
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
@@ -213,7 +218,8 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.filters',
 )
 
-
+THUMBNAIL_PRESERVE_EXTENSIONS = ('png', 'gif')
+THUMBNAIL_SUBDIR = 'versions'
 
 
 # djangocms
@@ -270,7 +276,7 @@ MIDDLEWARE_CLASSES = (
 
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 
     # This middleware allows to print private layers for the users that have
     # the permissions to view them.
@@ -317,7 +323,7 @@ MARKDOWN_KWARGS = {
 }
 MARKDOWN_KWARGS.update(getattr(django_settings, 'WIKI_MARKDOWN_KWARGS', {}))
 
-DEBUG_TOOLBAR_PATCH_SETTINGS = False
+# DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
 # ckeditor allow iframes
 
