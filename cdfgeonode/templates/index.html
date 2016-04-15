@@ -116,7 +116,7 @@
 
 
 
-        <div class="tab">FEATURE MAP</div>
+        <div class="tab">INFO PANEL</div>
       <div class='row'>
        <div class='col-md-12'>
          <div class="row feature-map">
@@ -127,8 +127,14 @@
        {% facets as facets %}
         <div class="col-md-12">
 
-          <h3 class='geonode-resources'><span class='geonode-icons'><a href="{% url "layer_browse" %}"><i class="fa fa-square-o fa-5x rotate-45"></i></a></span><a href="{% url "layer_browse" %}">{{ facets.layer|default:_("No") }} {% blocktrans count counter=facets.layer %}Layer{% plural %}Layers{% endblocktrans %}</a></h4>
-          <p>{% trans "Click to search for geospatial data published by other users, organizations and public sources. Download data in standard formats." %}</p>
+          <h3 class='geonode-resources'>Catalog</h3>
+
+            <h2>
+              <span ><a href="{% url "layer_browse" %}"><i class="fa fa-square-o fa-5x rotate-45 catalog "></i></a></span>
+              <a href="{% url "layer_browse" %}">{{ facets.layer|default:_("No") }} {% blocktrans count counter=facets.layer %}Layer{% plural %}Layers{% endblocktrans %}</a>
+            </h2>
+
+          <p>{% trans "Click to search and download geospatial data" %}</p>
           {% if user.is_authenticated %}
           <p class="text-center"><a class="btn btn-default geonode-forms" href="{% url "layer_upload" %}" role="button">{% trans "Add layers" %} &raquo;</a></p>
           {% else %}

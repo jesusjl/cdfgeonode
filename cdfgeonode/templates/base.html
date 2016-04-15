@@ -58,6 +58,7 @@
   <body class="{% block body_class %}{% endblock %}">
      {% cms_toolbar %}
      <!-- {% placeholder base_content %} -->
+
     {% block header %}
 
     <div class="container-fluid social-bar ">
@@ -140,7 +141,8 @@
   </div>
 
   <!--end social -->
-
+  {% block shiny %}
+ {% endblock %}
   <div class="container-fluid logo">
   <div class="container main-logo">
     <a class=" hidden-xs blue navbar-brand logo pull-left" href="/"> <img src="{{ STATIC_URL }}img/logo-110x110.png"></a>
@@ -224,7 +226,7 @@
   <!-- middle -->
   </div>
 
-    <div id="main-wrapper" class="container-fluid">
+    <div id="main-wrapper" class="">
         <div class="container main">
       {% include "_status_message.html" %}
       {% include "_announcements.html" %}
@@ -242,7 +244,7 @@
             {% endblock %}
         {% endblock %}
         {% block wiki_body %}{% endblock %}
-      {% endblock  %}
+      {% endblock middle %}
 
 
 </div>

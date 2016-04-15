@@ -166,12 +166,13 @@ urlpatterns += i18n_patterns('',
     #url(r'^/?$', TemplateView.as_view(template_name='site_index.html'), name='home'),
 	(r'^wiki/_accounts/sign-up/$','demo.views.index'),
     (r'^wiki/', get_wiki_pattern()),
+    url(r'^geoportal/shiny_apps/', include('cms_shiny.urls', namespace='cms_shiny')),
+
     url(r'^', include('cms.urls')),
     #url(r'^', include('djangocms_blog.urls')),
     url(r'^djangocms_blog/', include('djangocms_blog.urls', namespace='djangocms_blog')),
     url(r'^select2/', include('django_select2.urls')),
     (r'^taggit_autosuggest/', include('taggit_autosuggest.urls')),
-    url(r'^shiny_apps/', include('cms_shiny.urls', namespace='cms_shiny')),
 
  )
 

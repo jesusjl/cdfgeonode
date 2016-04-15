@@ -93,6 +93,8 @@ INSTALLED_APPS = INSTALLED_APPS + (
 DJANGO_CMS_INSTALLED_APPS = (
 
 'djangocms_text_ckeditor',
+'djangocms_style',
+'djangocms_column',
 'cms',  # django CMS itself
 #'mptt',  # utilities for implementing a tree
 'menus',  # helper for model independent hierarchical website navigation

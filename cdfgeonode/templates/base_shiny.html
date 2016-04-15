@@ -1,0 +1,292 @@
+{% load cms_tags staticfiles sekizai_tags avatar_tags menu_tags i18n %}
+<!doctype html>
+<html>
+{% block head %}
+{% block extra_head %}
+{% endblock %}
+  {% if DEBUG_STATIC %}
+  <link href="{{ STATIC_URL }}lib/css/jquery.dataTables.css?v={{ VERSION }}" rel="stylesheet" />
+  <link href="{{ STATIC_URL }}lib/css/select2.css?v={{ VERSION }}" rel="stylesheet"/>
+  <link href="{{ STATIC_URL }}lib/css/bootstrap.min.css?v={{ VERSION }}" rel="stylesheet"/>
+  <link href="{{ STATIC_URL }}lib/css/jquery-ui.css?v={{ VERSION }}" rel="stylesheet"/>
+  <link href="{{ STATIC_URL }}lib/css/bootstrap-datetimepicker.css?v={{ VERSION }}" rel="stylesheet"/>
+  {% else %}
+  <link href="{{ STATIC_URL }}lib/css/assets.min.css?v={{ VERSION }}" rel="stylesheet"/>
+  {% endif %}
+  <link href="{{ STATIC_URL }}geonode/css/ext-compatibility.css?v={{ VERSION }}" rel="stylesheet" />
+  <link href="{{ STATIC_URL }}geonode/css/base.css?v={{ VERSION }}" rel="stylesheet" />
+  <link href="{{ STATIC_URL }}css/main.less" rel="stylesheet" type="text/less"  media="all">
+
+  <style type="text/css">[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}</style>
+
+  {% block css_extra %}{% endblock %}
+
+
+{% endblock %}
+
+<!-- Le styles -->
+
+{% render_block "css" %}
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <style>
+    #ieflag{
+        display: block !important;
+        height: 150px;
+        text-align: center;
+    }
+  </style>
+<![endif]-->
+<link rel="search" type="application/opensearchdescription+xml" href="/catalogue/opensearch" title="GeoNode Search"/>
+</head>
+
+    <body>
+        {% cms_toolbar %}
+        <!-- <div class="container-fluid"> -->
+          {% block header %}
+
+          <div class="container-fluid social-bar ">
+
+          <div class="container">
+
+            <div class="navbar-header pull-right">
+
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+
+
+
+                      <span class="icon-bar"></span>
+
+                      <span class="icon-bar"></span>
+
+                      <span class="icon-bar"></span>
+
+                  </button>
+
+                  <!-- <a class="navbar-brand logo" href="#">        {% trans "CHARLES DARWIN FOUNDATION" %}</a> -->
+
+              </div>
+
+              <ul class="list-inlin e nav navbar-nav social pull-right">
+
+              <li>
+              <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/darwinfoundation">
+                <i class="fa fa-facebook"></i>
+              </a>
+              </li>
+              <li>
+              <a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com/darwinfound">
+                <i class="fa fa-twitter"></i>
+              </a>
+              </li>
+              <li>
+              <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/user/CDFdarwinfoundation">
+                <i class="fa fa-youtube"></i>
+              </a>
+              </li>
+              <li>
+              <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/company/3568695?trk=tyah&trkInfo=tarId%3A1413565609620%2Ctas%3Acharles%20darwin%2Cidx%3A2-3-8">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              </li>
+              <li>
+              <a class="btn btn-social-icon feed" href="http://darwinfoundation.org/{% trans "news" %}/feed/">
+              <i class="fa fa-feed"></i>
+            </a>
+              </li>
+              <li>
+              <a class="btn btn-social-icon newsletter" href="#">
+              <i class="fa fa-envelope"></i>
+            </a>
+              </li>
+            <li>
+              <a data-toggle="tooltip" data-container='body' title="Visit the exclusive CDF Shop" class="btn btn-social-icon" href="http://olgafisch.com/product-category/charles-darwin-foundation/">
+              <i data-placement="bottom"  data-toggle="tooltip" title="Visit the exclusive CDF Shop" class="fa fa-shopping-cart"></i>
+              </a>
+            </li>
+
+            <!-- <li>
+              <a class="btn btn-default" href="#">
+              <i class="fa fa-cog"></i> SHOP
+            </a>
+            </li> -->
+
+            <li>
+              <a href="{{ STATIC_URL }}"donate" class="donate btn btn-success">{% trans "Donate now" %}"</a>
+            </li>
+            <!-- <li>
+            <a class="btn btn-danger" href="#">
+              <i class="fa fa-trash-o fa-lg"></i> Delete</a>
+              </li> -->
+              </ul>
+
+
+          </div>
+        </div>
+
+        <!--end social -->
+        {% block shiny %}
+       {% endblock %}
+        <div class="container-fluid logo">
+        <div class="container main-logo">
+          <a class=" hidden-xs blue navbar-brand logo pull-left" href="/"> <img src="{{ STATIC_URL }}img/logo-110x110.png"></a>
+          <h2 class="header-logo">
+            <span class="logo-letter-before">fundación</span>
+            <br>
+            <span class="logo-letter">Charles Darwin</span>
+
+              <br>
+              <span class="logo-letter-after">foundation</span>
+
+          </h2>
+
+        </div>
+
+
+        </div>
+            <div class="container-fluid menu">
+            <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-10">
+          <div id="navbarCollapse" class="navbar-collapse collapse ">
+            {% block custom_menu%}
+            <ul id="main-menu" class=" nav navbar-nav sm sm-horizontal sm-simple">
+
+                 {% show_menu  %}
+
+            </ul>
+            {% endblock %}
+
+              </div><!--/.nav-collapse -->
+            </div>
+            <div class="col-md-4 col-sm-2">
+            <ul class="nav navbar-nav">
+              {% if not user.is_authenticated and REGISTRATION_OPEN %}
+              <li><a href="{% url "account_signup" %}">{% trans "Register" %}</a></li>
+              {% endif %}
+              {% if user.is_authenticated %}
+              <li>
+                <a href="#" data-toggle="modal" data-target="#UserModal" role="button" aria-expanded="false">
+                  {% avatar user 30 %} {{ user.username }}
+                </a>
+              </li>
+
+              {% else %}
+              <li>
+                <a href="#" data-toggle="modal" data-target="#SigninModal" role="button" >
+                  {% trans "Sign in" %}
+                </a>
+              </li>
+              {% endif %}
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+          {% endblock header %}
+    <div class="frame">
+            {% block content %}{% endblock content %}
+
+ </div>
+                    <footer class="footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-3 col-xs-12">
+                          <div class="footer-columns">
+                            <h4>{% trans "ADDRESS" %}</h4>
+                            {% static_placeholder "footer"  %}
+                          </div>
+                      </div>
+
+                        <div class="col-md-3 col-xs-12">
+                            <div class=" footer-columns">
+                              <h4>MENU</h4>
+                              <ul class="footer-menu">
+                                {% show_menu 0 0 100 100  %}
+                            </ul>
+
+                      </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="columns">
+                              <h4>SOCIAL</h4>
+                              <ul class="list-inline social">
+
+                              <li>
+                              <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/darwinfoundation">
+                              <i class="fa fa-facebook"></i>
+                            </a>
+                              </li>
+
+                              <li>
+                              <a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com/darwinfound">
+                                <i class="fa fa-twitter"></i>
+                              </a>
+                              </li>
+
+                              <li>
+                              <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/user/CDFdarwinfoundation">
+                                <i class="fa fa-youtube"></i>
+                              </a>
+                              </li>
+                              <li>
+                              <a class="btn btn-social-icon feed" href="http://darwinfoundation.org/{% trans "news" %}/feed/">
+                              <i class="fa fa-feed"></i>
+                            </a>
+                              </li>
+                              <li>
+                              <a class="btn btn-social-icon btn-twitter" href="https://www.linkedin.com/company/3568695?trk=tyah&trkInfo=tarId%3A1413565609620%2Ctas%3Acharles%20darwin%2Cidx%3A2-3-8">
+                                <i class="fa fa-linkedin"></i>
+                              </a>
+                              </li>
+                              </ul>
+
+                      </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="four columns">
+                              <h4>{% trans "LATEST NEWS"  %}</h4>
+
+
+                            <!--   static_placeholder "footer" -->
+
+                      </div>
+                        </div>
+                      </div>
+
+                        <div class="row">
+                        <div class="col-md-12 partnerships">
+                        <h4><!--{% trans "CONTRIBUTORS" %}--></h4>
+                        <a href="http://www.iwc.com" title="IWC"><img src="{{ STATIC_URL }}img/logos/iwc-131x50.png"></a>
+                        </div>
+                        &nbsp
+                      </footer>
+                    </div>
+                    </div>
+
+                      <!-- </div> -->
+                          </div>
+
+                        </div> <!-- end main-wrapper -->
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+        <script>
+
+        $(document).ready(function(){
+
+              var height= $("iframe").css('height');
+              $("footer").css("margin-top", height);
+        });
+
+        </script>
+        {% render_block "js" %}
+    </body>
+</html>
