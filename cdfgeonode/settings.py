@@ -33,7 +33,7 @@ from django.utils.translation import ugettext
 
 SITENAME = 'cdfgeonode'
 
-MEDIA_ROOT = '/var/www/geonode/uploaded/'
+# MEDIA_ROOT = '/var/www/geonode/uploaded/'
 STATIC_ROOT = '/var/www/geonode/static/'
 
 SITE_ID = 1
@@ -59,6 +59,10 @@ TEMPLATE_DIRS = (
 # Location of url mappings
 ROOT_URLCONF = 'cdfgeonode.urls'
 
+
+MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media/')
+
+MEDIA_URL = '/media/'
 
 from django.utils.translation import ugettext_lazy as _
 
@@ -86,7 +90,7 @@ INSTALLED_APPS = INSTALLED_APPS + (
 'wiki.plugins.notifications',
 'wiki.plugins.images',
 'wiki.plugins.macros',
-# 'debug_toolbar',
+'debug_toolbar',
 'south',
 )
 
@@ -278,7 +282,7 @@ MIDDLEWARE_CLASSES = (
 
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 
     # This middleware allows to print private layers for the users that have
     # the permissions to view them.
@@ -325,7 +329,7 @@ MARKDOWN_KWARGS = {
 }
 MARKDOWN_KWARGS.update(getattr(django_settings, 'WIKI_MARKDOWN_KWARGS', {}))
 
-# DEBUG_TOOLBAR_PATCH_SETTINGS = False
+DEBUG_TOOLBAR_PATCH_SETTINGS = False
 
 # ckeditor allow iframes
 
