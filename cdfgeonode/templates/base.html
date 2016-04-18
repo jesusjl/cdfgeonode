@@ -231,15 +231,15 @@
       {% include "_status_message.html" %}
       {% include "_announcements.html" %}
       {% include "_messages.html" %}
-      {% block breadcrumb %}{% endblock breadcrumb %}
+      
       {% block middle %}
         {% block body_outer %}
              {% block body %}
-
+                {% block base_content %}
                 {% block content %}
                   {% block content_blog %}{% endblock %}
                {% endblock content %}
-
+               {% endblock base_content %}
 
             {% endblock %}
         {% endblock %}

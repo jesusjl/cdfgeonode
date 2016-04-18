@@ -3,24 +3,19 @@
 
 {% block base_content %}
 
-
-
-{% block breadcrumb %}
 <div class="row">
-  <div class="col-md-12">
-{% show_breadcrumb "menu/breadcrumb_custom.html" %}
 
+<div class="col-md-12">
+{% block breadcrumb %}{% show_breadcrumb "menu/breadcrumb_custom.html" %}{% endblock breadcrumb %}
 </div>
 </div>
-{% endblock breadcrumb %}
 
-
+<div class="row">
+    <div class="col-md-8 one_column">
+      &nbsp
 
 
         {% block content %}
-        <div class="row">
-            <div class="col-md-8 one_column">
-              &nbsp
 
         <div class="header">
             <h1>{% page_attribute "page_title" %}</h1>
@@ -36,6 +31,6 @@
         {% endblock sidebar %}
     </div> -->
       </div>
-        <!-- <div class="col-md-4"></div> -->
+        <div class="col-md-4"></div>
 </div>
 {% endblock base_content %}

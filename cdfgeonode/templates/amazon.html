@@ -1,0 +1,52 @@
+{% extends "1-col.html" %}
+{% load cms_tags sekizai_tags menu_tags i18n %}
+
+{% block amazon %}
+
+<p>
+  {% placeholder amazon-1 %}
+
+</p>
+
+<div class="row">
+    <div class="col-md-6 col-xs-12 ">
+      <h3>Amazon.com {% trans "United States" %} </h3>
+      <iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=charlesdarw0a-20&o=1&p=12&l=ur1&category=amazonhomepage&f=ifr&linkID=GGDKSMBXQPPAKFGP" width="100%" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+    </div>
+
+  <div class="col-md-6 col-xs-12 ">
+    <h3>Amazon.es {% trans "Spain" %} </h3>
+    <iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=charldarwif08-21&o=30&p=22&l=ur1&category=amazon_es&banner=0XM20FMQZ07BDFCEDB02&f=ifr" width="100%" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+  </div>
+
+
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-6 col-xs-12 ">
+    <h3>Amazon.co.uk {% trans " United Kingdom" %}</h3>
+      <iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=charldarwifou-21&o=2&p=22&l=ur1&category=amazon_logo&banner=1C4TDKE26S4FX9GJ4QG2&f=ifr" width="100%" height="250%" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+  </div>
+
+  <div class="col-md-6 col-xs-12 ">
+    <h3>Amazon.ca {% trans "Canada" %}  </h3>
+    <iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=charldarwifou-20&o=15&p=12&l=ur1&category=amazonhomepage&f=ifr" width="100%" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col-md-6 col-xs-12 ">
+    <h3>Amazon.de {% trans "Germany" %} </h3>
+    <iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=charldarwif03-21&o=3&p=22&l=ur1&category=amazon_logo&banner=1N3E0TKF6HA8XPGT35G2&f=ifr" width="100%" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+  </div>
+
+  <div class="col-md-6 col-xs-12 ">
+    <h3>Amazon.fr {% trans "France" %} </h3>
+    <iframe src="http://rcm-eu.amazon-adsystem.com/e/cm?t=charldarwif0b-21&o=8&p=22&l=ur1&category=amazonfr&banner=0S09J3QDV5KMM6131402&f=ifr" width="100%" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+  </div>
+
+</div>
+  &nbsp
+{% endblock amazon %}

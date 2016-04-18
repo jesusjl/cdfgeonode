@@ -1,0 +1,12 @@
+{% extends "1-col.html" %}
+{% load cms_tags sekizai_tags menu_tags i18n %}
+
+{% block breadcrumb %}{% endblock breadcrumb %}
+
+{% block content %}
+    {% placeholder content_above_donate %}
+    {% block kimbia %}
+    <script src="https://widgets.kimbia.com/widgets/form.js?channel=icfdngiving/embed&messagingProfile=friends-of-the-charles-darwin-foundation-galapagos-fund"></script>
+    {% endblock kimbia %}
+    {% placeholder content_below_donate %}
+{% endblock content %}
