@@ -4,9 +4,17 @@
 {% block breadcrumb %}{% endblock breadcrumb %}
 
 {% block content %}
+    <div class="row">
+      <div class="col-md-8">
+          <div class=" one-column">
     {% placeholder content_above_donate %}
     {% block kimbia %}
     <script src="https://widgets.kimbia.com/widgets/form.js?channel=icfdngiving/embed&messagingProfile=friends-of-the-charles-darwin-foundation-galapagos-fund"></script>
     {% endblock kimbia %}
     {% placeholder content_below_donate %}
+        </div>
+
+    </div>
+    <div class="col-md-4"></div>
+</div>
 {% endblock content %}

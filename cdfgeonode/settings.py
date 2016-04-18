@@ -171,8 +171,8 @@ LANGUAGE_CODE = 'en'
 
 LANGUAGES = (
     ## Customize this
-    ('en', gettext('en')),
-    ('es', gettext('es')),
+    ('en', gettext('English')),
+    ('es', gettext('Spanish')),
 )
 
 CMS_LANGUAGES = {
