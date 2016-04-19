@@ -44,7 +44,7 @@ def collect_static():
         run("workon %s && python manage.py collectstatic --noinput" % (env.project_name))
 
 def restart_webfaction():
-    run("sudo service apache2 restart")
+    run("service apache2 restart", with_sudo=True)
 
 @task(default=True)
 def deploy(mode=None):
