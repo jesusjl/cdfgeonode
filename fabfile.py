@@ -14,9 +14,9 @@ env.project_name = 'cdfgeonode'
 env.hosts = ['vagrant@192.168.1.29']
 
 def production():
-    env.branch = 'master'
+    env.branch = '2.4.x-geonode-1.0.0'
     env.directory = '/home/vagrant/cdfgeonode/'
-    env.environment = 'production'
+    env.environment = 'geonode'
 
 #Make production default
 production()
