@@ -47,7 +47,7 @@ WSGI_APPLICATION = "cdfgeonode.wsgi.application"
 
 # Additional directories which hold static files
 STATICFILES_DIRS.append(
-    os.path.join(LOCAL_ROOT, "static"),
+    os.path.join(LOCAL_ROOT, "sitestatic"),
 )
 
 # Note that Django automatically includes the "templates" dir in all the
