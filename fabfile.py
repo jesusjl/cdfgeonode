@@ -55,7 +55,7 @@ def collect_static():
             run("python manage.py collectstatic --noinput")
 
 def restart_web():
-    run("service apache2 restart", with_sudo=True)
+    run("sudo service apache2 restart")
 
 @task(default=True)
 def deploy(mode=None):
