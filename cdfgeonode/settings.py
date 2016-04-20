@@ -33,8 +33,7 @@ from django.utils.translation import ugettext
 
 SITENAME = 'cdfgeonode'
 
-# MEDIA_ROOT = '/var/www/geonode/uploaded/'
-STATIC_ROOT = '/var/www/geonode/static/'
+
 
 SITE_ID = 1
 
@@ -47,7 +46,7 @@ WSGI_APPLICATION = "cdfgeonode.wsgi.application"
 
 # Additional directories which hold static files
 STATICFILES_DIRS.append(
-    os.path.join(LOCAL_ROOT, "sitestatic"),
+    os.path.join(LOCAL_ROOT, "static"),
 )
 
 # Note that Django automatically includes the "templates" dir in all the
@@ -60,9 +59,13 @@ TEMPLATE_DIRS = (
 ROOT_URLCONF = 'cdfgeonode.urls'
 
 
+# MEDIA_ROOT = '/var/www/geonode/uploaded/'
+STATIC_ROOT = '/var/www/geonode/static/'
+
 MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media/')
 
 MEDIA_URL = '/media/'
+STATIC_URL = '/static/'
 
 from django.utils.translation import ugettext_lazy as _
 

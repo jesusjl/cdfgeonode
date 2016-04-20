@@ -38,6 +38,10 @@ def update_from_repository():
 def update_database():
     with cd(env.directory):
         with prefix(env.activate):
+            # before syncdb need fixing uninstalling /installing packages
+            run("pip uninstall -y python-slugify")
+            run("pip uninstall -y awesome-slugify")
+            run("python manage.py install --upgrade awesome-slugify==1.6.2")
             run("python manage.py syncdb")
             run("python manage.py migrate")
 
