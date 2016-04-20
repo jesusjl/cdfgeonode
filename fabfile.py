@@ -38,8 +38,8 @@ def update_from_repository():
 def update_database():
     with cd(env.directory):
         with prefix(env.activate):
-            run("python manage.py syncdb" % env.project_name)
-            run("python manage.py migrate" % env.project_name)
+            run("python manage.py syncdb")
+            run("python manage.py migrate")
 
 def init_local():
     install_requirements()

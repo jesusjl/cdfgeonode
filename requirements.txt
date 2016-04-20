@@ -63,7 +63,8 @@ djangocms-blog==0.7.0
 djangocms-column==1.6.0
 djangocms-link==1.7.2
 #djangocms-shiny-app==0.1.3
--e git+https://github.com/jesusjl/djangocms-shiny-app.git@#egg=develop
+-e git+https://github.com/jesusjl/djangocms-shiny-app.git@8f645cb7ad61b09e65c0b5d6b2fdee9619878cae#egg=djangocms_shiny_app-origin/develop
+
 djangocms-text-ckeditor==2.3.0
 easy-thumbnails==1.4
 flake8==2.3.0
