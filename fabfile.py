@@ -41,7 +41,7 @@ def update_database():
             # before syncdb need fixing uninstalling /installing packages
             run("pip uninstall -y python-slugify")
             run("pip uninstall -y awesome-slugify")
-            run("python manage.py install --upgrade awesome-slugify==1.6.2")
+            run("pip install --upgrade awesome-slugify==1.6.2")
             run("python manage.py syncdb")
             run("python manage.py migrate")
 
