@@ -119,7 +119,7 @@ body {
 h2.header-logo {
     float: left;
     margin: 0px 0;
-    padding-left: 100px;
+    /*padding-left: 100px;*/
     margin-top: -10px;
 }
 
@@ -137,6 +137,7 @@ h2.header-logo {
     top: -27px;
     width: 100px;
     z-index: 1000;
+      margin-right: 120px;
 }
 
 .logo-letter {

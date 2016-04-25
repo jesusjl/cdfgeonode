@@ -83,7 +83,13 @@
 
         </div>
 
-        <ul class="list-inlin e nav navbar-nav social pull-right">
+        <ul class=" hidden-xs list-inline  pull-right">
+          <li>
+          <a href="{% page_url "donate" %}" class="donate btn btn-lg btn-success">{% trans "Donate now" %}</a>
+        </li>
+        </ul>
+
+        <ul class="list-inline hidden-xs  nav navbar-nav social pull-right">
 
         <li>
         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/darwinfoundation">
@@ -126,15 +132,13 @@
         <i class="fa fa-cog"></i> SHOP
       </a>
       </li> -->
+      </ul>
 
-      <li>
-        <a href="{% page_url "donate" %}" class="donate btn btn-success">{% trans "Donate now" %}</a>
-      </li>
       <!-- <li>
       <a class="btn btn-danger" href="#">
         <i class="fa fa-trash-o fa-lg"></i> Delete</a>
         </li> -->
-        </ul>
+
 
 
     </div>
@@ -161,10 +165,10 @@
 
 
 
-
   </div>
       <div class="container-fluid menu">
       <div class="container">
+
       <div class="row">
         <div class="col-md-8 col-sm-10">
     <div id="navbarCollapse" class="navbar-collapse collapse ">
@@ -177,6 +181,17 @@
       {% endblock %}
 
         </div><!--/.nav-collapse -->
+
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <ul class=" hidden-md hidden-sm hidden-lg list-inline">
+            <li class="donate">
+            <a href="{% page_url "donate" %}" class="donate btn btn-lg btn-success">{% trans "Donate now" %}</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="col-md-4 col-sm-2">
       <ul class="nav navbar-nav">
