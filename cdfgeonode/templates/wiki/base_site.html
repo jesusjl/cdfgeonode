@@ -3,11 +3,12 @@
 
 
 {% block wiki_search_form %}
-<div class="row wiki_search_form">
-  <div class="col-sm-12">
-    <div class="container ">
-      <div class="row">
-      <div class="col-sm-12">
+<br>
+<div class="tab">SEARCH</div>
+<!-- remove wiki_search_form from below-->
+<div class="row  search-section">
+  <div class="col-md-12  geo-search">
+
         <form  method="GET" action="{% url 'wiki:search' %}">
           <div class="input-group">
           <input type="search" class="form-control search-query" name="q" placeholder="{% trans "Search..." %}" />
@@ -19,38 +20,37 @@
           </div><!-- /input-group -->
         </form>
     </div>
-    </div>
-    </div>
-  </div>
+
 </div>
 {% endblock %}
   {% block wiki_body %}
 
 
 
-    <div id="wikifcd" class="container">
+    <div id="wikifcd">
+      <div class="row">
+          <div class="col-md-12 feature-article ">
+        {% if messages %}
+          <!-- Messages for this instance -->
+          {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+              <a class="close" data-dismiss="alert" href="#">&times;</a>
+              {{ message }}
+            </div>
+          {% endfor %}
+        {% endif %}
 
-      {% if messages %}
-        <!-- Messages for this instance -->
-        {% for message in messages %}
-          <div class="alert alert-{{ message.tags }}">
-            <a class="close" data-dismiss="alert" href="#">&times;</a>
-            {{ message }}
-          </div>
-        {% endfor %}
-      {% endif %}
+        <!-- Reserved for breadcrumbs -->
+        {% block wiki_breadcrumbs %}{% endblock %}
 
-      <!-- Reserved for breadcrumbs -->
-      {% block wiki_breadcrumbs %}{% endblock %}
-
-      <!-- Main page contents go here -->
-      {% block wiki_contents %}{% endblock %}
-
-
+        <!-- Main page contents go here -->
+        {% block wiki_contents %}{% endblock %}
+        </div>
       </div>
+    </div>
 
     </div> <!-- /container -->
-
+  </div>
     {% endblock %}
 
     <script src="{{ STATIC_URL }}wiki/js/jquery.min.js"></script>

@@ -738,10 +738,6 @@ background: #001032 none repeat scroll 0 0;
     //  margin-left: -15px;
 }
 
-
-
-
-
 .one_column {
 
   background-color: white;
@@ -776,6 +772,7 @@ background: #001032 none repeat scroll 0 0;
 .inactive {
     color: @inactive-color;
 }
+
 
 .promo {
     .box;
@@ -941,12 +938,17 @@ button {
 // extra donate button only show xs
 
 li.donate{
-  width: 100%;display: block;
+display: block;
+  width: 100%;
 }
 
 li.donate > a {
   width: 100%;
   display: block;
+}
+
+.donate-hidden {
+  margin-top: 20px;
 }
 //
 .donate:hover {
@@ -1145,6 +1147,10 @@ border-color: #EFEFEF;
 -moz-border-bottom-colors: none;
 -moz-border-left-colors: none;
 border-image: none;
+}
+article.ng-scope {
+
+  border:none;
 }
 
 article h2 {
@@ -1470,6 +1476,7 @@ nav.filter h4 {
 }
 
 
+
 /* social menu */
 
 .navbar-nav > li {
@@ -1501,6 +1508,35 @@ section.banner  h1 {color: @corporative-color;}
 @media(min-width:1200px){section.banner  h1 {font-size: 2.5em;}}
 
 
+// override geonode menu from base.css
+
+body.maps li a:active {
+  color:red !important;
+}
+body.maps li#nav_maps a {
+    color: #001032;
+    text-decoration: underline;
+}
+body.layers li#nav_layers a {
+  color: #001032;
+  text-decoration: underline;
+}
+body.documents li#nav_documents a {
+      color: #001032;
+      text-decoration: underline;
+}
+body.people li#nav_people a {
+      color: #001032;
+      text-decoration: underline;
+}
+body.groups li#nav_groups a {
+      color: #001032;
+      text-decoration: underline;
+}
+body.home li#nav_home a {
+      color: #001032;
+      text-decoration: underline;
+}
 // override wiki style
 
 .navbar-collapse.in {
@@ -1527,6 +1563,14 @@ section.banner {
     margin-left: -15px;
     margin-right: -15px;
 }
+
+.col-md-12.geo-search {
+    padding: 10px !important;
+}
+.fa {
+  height: 23px !important;
+}
+
 
 // iframe map latest news..
 // .feature-article > * > iframe {

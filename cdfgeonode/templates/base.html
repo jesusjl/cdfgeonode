@@ -183,16 +183,6 @@
         </div><!--/.nav-collapse -->
 
       </div>
-      <br>
-      <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <ul class=" hidden-md hidden-sm hidden-lg list-inline">
-            <li class="donate">
-            <a href="{% page_url "donate" %}" class="donate btn btn-lg btn-success">{% trans "Donate now" %}</a>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div class="col-md-4 col-sm-2">
       <ul class="nav navbar-nav">
         {% if not user.is_authenticated and REGISTRATION_OPEN %}
@@ -214,9 +204,24 @@
         {% endif %}
       </ul>
     </div>
+  </div>
+
+
+      <div class="row ">
+        <div class="col-md-12 col-sm-12">
+          <ul class=" nav navbar donate-hidden hidden-md hidden-sm hidden-lg list-inline">
+            <li class="donate">
+            <a href="{% page_url "donate" %}" class="donate btn btn-lg btn-success">{% trans "Donate now" %}</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <!-- end row -->
     </div>
   </div>
-</div>
+
     {% endblock header %}
 
     <div class="alert alert-danger alert-dismissible" role="alert" id="ieflag" style="display:none">
