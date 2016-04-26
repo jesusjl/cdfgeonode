@@ -1,6 +1,6 @@
 {% extends "site_base.html" %}
 {% load i18n  static cmsplugin_blog_helpers %}
-
+z
 {% load staticfiles %}
 <!-- {#  {% load cms_tags sekizai_tags menu_tags  %} #}  -->
 
@@ -65,7 +65,7 @@
          {% endblock %}
 
 
-         <div class="tab">{% trans "LATEST MAPS"  %}</div>
+         <div class="tab">{% trans "LATEST STORIES"  %}</div>
 
        <div class="row latest-articles latest-map-list homepage-latest-post ">
 
@@ -74,8 +74,17 @@
            {% djangocms_blog_latest_map_list %}
           </div>
 
-
        </div>
+
+       <div class="tab">{% trans "LATEST MAPS"  %}</div>
+       <div class="row latest-articles latest-map-list homepage-latest-post ">
+         {% djangocms_blog_latest_maps %}
+       </div>
+
+        <div class="tab">{% trans "LATEST LAYERS"  %}</div>
+        <div class="row latest-articles latest-map-list homepage-latest-post ">
+          {% djangocms_blog_latest_layers %}
+        </div>
 
 </div>
 
@@ -110,12 +119,7 @@
      </div>
    </div>
 
-
         {% endblock  %}
-
-
-
-
 
         <div class="tab">INFO PANEL</div>
       <div class='row'>
@@ -136,7 +140,7 @@
             </h2>
 
           <p>{% trans "Click to search and download geospatial data" %}</p>
-          {% if user.is_authenticated %}
+          {% if user.is_authenticated %}alayers
           <p class="text-center"><a class="btn btn-default geonode-forms" href="{% url "layer_upload" %}" role="button">{% trans "Add layers" %} &raquo;</a></p>
           {% else %}
           <p class="text-center"><a class="btn btn-default" href="{% url "layer_browse" %}" role="button">{% trans "Explore layers" %} &raquo;</a></p>

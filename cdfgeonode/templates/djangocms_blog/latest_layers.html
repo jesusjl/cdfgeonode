@@ -1,0 +1,30 @@
+{% load i18n   %}
+{% load smart_load %}
+{% load thumbnail from easy_thumbnail as _thumbnail %}
+
+{% if layers %}
+{% for layer in layers %}
+<div class="col-md-4 col-xs-12 homepage-latest-post-aux clearfix latest-layers ">
+    <div class="design clearfix">
+
+
+    <div class="box">
+      <a href="{{ layer.get_absolute_url }}">
+      <img class="img-responsive img-polaroid " alt="{{ layer.title }}" src="{{ layer.thumbnail_url}}">
+    </a>
+      <div class="maps-caption"><p class="desc_content text-center">{{layer.title}}</p></div>
+    </div>
+    </div>
+</div>
+
+<!-- <div class="col-md-4 col-xs-12 homepage-latest-post-aux latest-layers clearfix">
+    <a href="{{ layer.get_absolute_url }}">
+<div class="fix tilt pic">
+        <img class="img-responsive" src="{{ layer.thumbnail_url}}" />
+        <div class="desc">
+            <p class="desc_content text-center"> {{ layer.title }}</p>
+        </div></div>
+    </a>
+</div> -->
+{% endfor %}
+{% endif %}

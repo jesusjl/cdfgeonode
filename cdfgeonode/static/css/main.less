@@ -644,7 +644,7 @@ h1#article-title {
 }
 
 .page-header {
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     margin: 40px 0 20px;
     border-bottom: 1px solid #eee;
 }
@@ -695,6 +695,12 @@ background: #001032 none repeat scroll 0 0;
 }
 
 .list-inline {
+
+}
+
+#navbarCollapse {
+
+  padding: 10px;
 
 }
 
@@ -1290,12 +1296,25 @@ font-size: 0.9em;
 
 }
 
-#col-datazone * p,a {
+#col-datazone * p {
 
 font-size: 0.85em;
 text-align: center;
 
 }
+
+#col-datazone * p,a {
+
+font-size: 0.85em;
+text-align: left;
+
+}
+
+.badge {
+  position:relative;
+  bottom:18px;
+}
+
 #col-datazone * img:hover {
 
 box-shadow: 20px orange;
@@ -1616,4 +1635,61 @@ iframe {
    position: relative;
   //  bottom:0px;
    width: 100%;
+}
+
+
+// geoportal index page
+
+/*TILT*/
+// .tilt {
+//   -webkit-transition: all 0.5s ease;
+//      -moz-transition: all 0.5s ease;
+//        -o-transition: all 0.5s ease;
+//       -ms-transition: all 0.5s ease;
+//           transition: all 0.5s ease;
+// }
+//
+// .tilt:hover {
+//   -webkit-transform: rotate(-10deg);
+//      -moz-transform: rotate(-10deg);
+//        -o-transform: rotate(-10deg);
+//       -ms-transform: rotate(-10deg);
+//           transform: rotate(-10deg);
+// }
+
+
+// div.desc{
+//     background-color: #000;
+//     bottom: 0;
+//     color: #fff;
+//     left: 0;
+//     opacity: 0.5;
+//     position: absolute;
+//     width: 100%;
+// }
+//
+// .fix{
+//     width: 100%;
+//     padding: 0px;
+// }
+.fix {width:240px;}
+.latest-layers:nth-child(2n) {
+    background: #fbfbfb none repeat scroll 0 0;
+    border-bottom: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+}
+
+.latest-layers  h4{
+  padding: 10px;
+  background-color: #001032;
+}
+
+.latest-layers .box {
+    border: 5px solid #fff;
+    float: left;
+    height: 200px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    width: 210px;
 }

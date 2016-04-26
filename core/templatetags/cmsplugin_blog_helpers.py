@@ -1,6 +1,8 @@
 from django import template
 
 from djangocms_blog.models import Post, BlogCategoryTranslation, BlogConfig
+from geonode.maps.models import Map
+from geonode.layers.models import Layer
 from simple_translation.utils import get_translation_filter_language
 from cms.utils import get_language_from_request
 
@@ -131,5 +133,35 @@ def djangocms_blog_latest_map(context):
         post = None
     return {
         'post': post,
+        'request': request,
+    }
+
+# Last layers published
+@register.inclusion_tag('djangocms_blog/latest_layers.html', takes_context=True)
+def djangocms_blog_latest_layers(context):
+    request = context['request']
+    language = get_language_from_request(request)
+    try:
+        layers = Layer.objects.all()[0:3]
+
+    except:
+        layers = None
+    return {
+        'layers': layers,
+        'request': request,
+    }
+
+# latest maps published
+@register.inclusion_tag('djangocms_blog/latest_maps.html', takes_context=True)
+def djangocms_blog_latest_maps(context):
+    request = context['request']
+    language = get_language_from_request(request)
+    try:
+        maps = Map.objects.all()[0:3]
+
+    except:
+        maps = None
+    return {
+        'maps': maps,
         'request': request,
     }
