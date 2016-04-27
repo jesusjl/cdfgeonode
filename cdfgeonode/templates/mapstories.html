@@ -5,15 +5,10 @@
 
 
     {% block breadcrumb %}{% show_breadcrumb "menu/breadcrumb_custom.html" %}{% endblock breadcrumb %}
-<div class="container">
-  <div class="row">
 
-    <div class="col-md-12 col-xs-12 ">
 
-        {% block content %}
+        {# {% block content %} #}
             {% block content_blog %}{% endblock %}
-        {% endblock content %}
-    </div>
-</div>
-</div>
+        {# {% endblock content %}  #}
+
 {% endblock base_content %}

@@ -4,7 +4,13 @@
 {% block canonical_url %}<link rel="canonical" href="{{ view.get_view_url }}"/>{% endblock canonical_url %}
 
 {% block content_blog %}
+{{ ns.namespace }}
 <section class="blog-list">
+  {% if ns.namespace == 'scientific-stories' %}
+  <script>
+  alert(MOJON);
+  </script>
+  {% endif %}
     <!-- {# {% block blog_title #} %}
     <header>
         <h2>
@@ -15,8 +21,19 @@
         </h2>
     </header>
     {# {% endblock %} #} -->
+
     {% for post in post_list %}
+
+    {{ post.app_config.namespace }}
+    {% if  post.app_config.namespace  == 'scientific-stories' %}
+       Aqui van las historias cientificas apuntar a blog_item_science.html
+      {% include "djangocms_blog/includes/blog_item.html" with post=post image="true" TRUNCWORDS_COUNT=TRUNCWORDS_COUNT %}
+
+    {% else %}
         {% include "djangocms_blog/includes/blog_item.html" with post=post image="true" TRUNCWORDS_COUNT=TRUNCWORDS_COUNT %}
+
+
+    {% endif %}
     {% empty %}
     <p class="blog-empty">{% trans "No article found." %}</p>
     {% endfor %}
@@ -38,4 +55,5 @@
     {% endif %}
 </section>
 {% endblock %}
+
 {% endspaceless %}

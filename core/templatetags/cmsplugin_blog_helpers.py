@@ -24,6 +24,7 @@ def djangocms_blog_latest_post(context):
         post = None
     return {
         'post': post,
+        'ns': ns,
         'request': request,
     }
 
@@ -43,6 +44,7 @@ def djangocms_blog_latest_posts(context):
         posts = None
     return {
         'posts': posts,
+        'ns': ns,
         'request': request,
     }
 
@@ -62,6 +64,7 @@ def djangocms_blog_latest_posts_detailed(context):
         posts = None
     return {
         'posts': posts,
+        'ns': ns,
         'request': request,
     }
 
@@ -74,7 +77,7 @@ def djangocms_blog_latest_map_list(context):
     language = get_language_from_request(request)
     try:
 
-        ns = BlogConfig.objects.get(namespace="science-stories")
+        ns = BlogConfig.objects.get(namespace="scientific-stories")
         posts = Post.objects.filter(
             namespace=ns
         ).order_by('-date_published')[1:4]
@@ -82,6 +85,7 @@ def djangocms_blog_latest_map_list(context):
         posts = None
     return {
         'posts': posts,
+        'ns': ns,
         'request': request,
     }
 
@@ -99,6 +103,7 @@ def djangocms_blog_latest_map(context):
         post = None
     return {
         'post': post,
+        'ns': ns,
         'request': request,
     }
 
