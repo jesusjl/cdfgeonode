@@ -2,14 +2,26 @@
 {% load url from future %}
 {% load smart_load %}
 {% load thumbnail from easy_thumbnail as _thumbnail %}
-{% if post %}
 
-<!--<p><strong>{% trans "LATEST NEWS" %}</strong></p>-->
-<h4>
-<a href="{{ post.get_absolute_url }}"> {{ post.title }}</a>
-</h4>
-<!-- <img class="img-responsive " src="{#{% _thumbnail post.main_image 735x368 crop %}#}" -->
-{{ post.abstract|safe }} <!--  won't html-encode your string -->
+{% if post %}
+<div class="row latest-maps">
+<div class="col-md-5 col-xs-5">
+
+      <a href="{{ post.get_absolute_url }}">
+        <img class="img-responsive " src="{% _thumbnail post.main_image 240x180 crop %}" />
+    </a>
+
+</div>
+<div class="col-md-7 col-xs-7 ">
+  <h4>
+  <a href="{{ post.get_absolute_url }}"> {{ post.title }}</a>
+  </h4>
+  {{ post.abstract|safe | truncatechars:135}}
+  <p>
+    <a class="btn btn-default" href="{{ map.get_absolute_url }}"> See story </a>
+</p>
+</div>
+ </div>
 
 
 {% endif %}

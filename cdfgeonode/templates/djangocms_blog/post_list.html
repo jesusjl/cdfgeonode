@@ -4,13 +4,7 @@
 {% block canonical_url %}<link rel="canonical" href="{{ view.get_view_url }}"/>{% endblock canonical_url %}
 
 {% block content_blog %}
-{{ ns.namespace }}
-<section class="blog-list">
-  {% if ns.namespace == 'scientific-stories' %}
-  <script>
-  alert(MOJON);
-  </script>
-  {% endif %}
+
     <!-- {# {% block blog_title #} %}
     <header>
         <h2>
@@ -26,7 +20,7 @@
     <!-- Check namespace of posts to include a different template -->
     {{ post.app_config.namespace }}
     {% if  post.app_config.namespace  == 'scientific-stories' %}
-       Aqui van las historias cientificas apuntar a blog_item_science.html
+       <!-- Aqui van las historias cientificas apuntar a blog_item_sstory.html -->
       {% include "djangocms_blog/includes/blog_item_story.html" with post=post image="true" TRUNCWORDS_COUNT=TRUNCWORDS_COUNT %}
 
     {% else %}

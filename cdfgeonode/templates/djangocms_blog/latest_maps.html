@@ -18,7 +18,7 @@
   <h4>
   <a href="{{ map.get_absolute_url }}"> {{ map.title }}</a>
   </h4>
-  <p> {{ map.abstract }} </p>
+  <p> {{ map.abstract |truncatechars:135 }} </p>
   <p>
     <a class="btn btn-default" href="{{ map.get_absolute_url }}"> See map </a>
 </p>

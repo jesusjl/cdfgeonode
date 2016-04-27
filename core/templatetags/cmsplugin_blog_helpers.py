@@ -71,41 +71,8 @@ def djangocms_blog_latest_posts_detailed(context):
 # Latest maps published
 
 
-@register.inclusion_tag('djangocms_blog/latest_map_list.html', takes_context=True)
-def djangocms_blog_latest_map_list(context):
-    request = context['request']
-    language = get_language_from_request(request)
-    try:
-
-        ns = BlogConfig.objects.get(namespace="scientific-stories")
-        posts = Post.objects.filter(
-            namespace=ns
-        ).order_by('-date_published')[1:4]
-    except:
-        posts = None
-    return {
-        'posts': posts,
-        'ns': ns,
-        'request': request,
-    }
 
 
-# Last map published
-@register.inclusion_tag('djangocms_blog/latest_map.html', takes_context=True)
-def djangocms_blog_latest_map(context):
-    request = context['request']
-    language = get_language_from_request(request)
-    try:
-
-        ns = BlogConfig.objects.get(namespace="mapstory")
-        post = Post.objects.filter(namespace=ns).latest()
-    except:
-        post = None
-    return {
-        'post': post,
-        'ns': ns,
-        'request': request,
-    }
 
 # @register.inclusion_tag('djangocms_blog/latest_map_list.html', takes_context=True)
 # def djangocms_blog_latest_map_list(context):
@@ -124,6 +91,27 @@ def djangocms_blog_latest_map(context):
 #         'request': request,
 #     }
 
+########GEOPORTAL#############
+# Consider to move to a new templategag / refactoring / allow parameters
+@register.inclusion_tag('djangocms_blog/latest_map_list.html', takes_context=True)
+def djangocms_blog_latest_map_list(context):
+    request = context['request']
+    language = get_language_from_request(request)
+    try:
+
+        ns = BlogConfig.objects.get(namespace="scientific-stories")
+        posts = Post.objects.filter(
+            app_config=ns
+        ).order_by('-date_published')[1:4]
+    except:
+        posts = None
+    return {
+        'posts': posts,
+        'ns': ns,
+        'request': request,
+    }
+
+
 
 # Last map published
 @register.inclusion_tag('djangocms_blog/latest_map.html', takes_context=True)
@@ -132,12 +120,13 @@ def djangocms_blog_latest_map(context):
     language = get_language_from_request(request)
     try:
 
-        cat = BlogCategoryTranslation.objects.get(slug='mapstories')
-        post = Post.objects.filter(categories=cat.master_id).latest()
+        ns = BlogConfig.objects.get(namespace="scientific-stories")
+        post = Post.objects.filter(app_config=ns).latest()
     except:
         post = None
     return {
         'post': post,
+        'ns': ns,
         'request': request,
     }
 
