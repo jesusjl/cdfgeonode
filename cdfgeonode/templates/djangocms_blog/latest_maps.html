@@ -3,21 +3,27 @@
 {% load thumbnail from easy_thumbnail as _thumbnail %}
 
 {% if maps %}
-{% for map in maps %}
-<div class="col-md-4 col-xs-12 homepage-latest-post-aux clearfix ">
-    <div class="design clearfix">
+<div class="tab">{% trans "LATEST MAPS"  %}</div>
 
-    <h4>
-    <a href="{{ map.get_absolute_url }}"> {{ map.title }}</a>
-    </h4>
-    <div class="tilt pic">
+{% for map in maps %}
+<div class="row latest-maps">
+<div class="col-md-5 col-xs-5">
+
       <a href="{{ map.get_absolute_url }}">
       <img class="img-responsive" src="{{ map.thumbnail_url}}">
     </a>
-      <div class="maps-caption"><p></p></div>
-    </div>
-    </div>
-</div>
 
+</div>
+<div class="col-md-7 col-xs-7 ">
+  <h4>
+  <a href="{{ map.get_absolute_url }}"> {{ map.title }}</a>
+  </h4>
+  <p> {{ map.abstract }} </p>
+  <p>
+    <a class="btn btn-default" href="{{ map.get_absolute_url }}"> See map </a>
+</p>
+</div>
+ </div>
 {% endfor %}
+
 {% endif %}

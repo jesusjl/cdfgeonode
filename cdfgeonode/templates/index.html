@@ -30,7 +30,7 @@ z
               <div class=" col-md-12 col-xs-12 col-md-12">
          {% block hero %}
 
-                   <div class="page-header main-page">
+                   <div class=" main-page">
                      <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
                    <span>
                      The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents. </p>
@@ -76,15 +76,14 @@ z
 
        </div>
 
-       <div class="tab">{% trans "LATEST MAPS"  %}</div>
-       <div class="row latest-articles latest-map-list homepage-latest-post ">
+
          {% djangocms_blog_latest_maps %}
-       </div>
+
 
         <div class="tab">{% trans "LATEST LAYERS"  %}</div>
-        <div class="row latest-articles latest-map-list homepage-latest-post ">
+
           {% djangocms_blog_latest_layers %}
-        </div>
+
 
 </div>
 

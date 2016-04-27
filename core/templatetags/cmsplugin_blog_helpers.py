@@ -74,7 +74,7 @@ def djangocms_blog_latest_map_list(context):
     language = get_language_from_request(request)
     try:
 
-        ns = BlogConfig.objects.get(namespace="mapstory")
+        ns = BlogConfig.objects.get(namespace="science-stories")
         posts = Post.objects.filter(
             namespace=ns
         ).order_by('-date_published')[1:4]
