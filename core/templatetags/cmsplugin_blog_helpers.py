@@ -93,8 +93,8 @@ def djangocms_blog_latest_posts_detailed(context):
 
 ########GEOPORTAL#############
 # Consider to move to a new templategag / refactoring / allow parameters
-@register.inclusion_tag('djangocms_blog/latest_map_list.html', takes_context=True)
-def djangocms_blog_latest_map_list(context):
+@register.inclusion_tag('djangocms_blog/latest_story_list.html', takes_context=True)
+def djangocms_blog_latest_story_list(context):
     request = context['request']
     language = get_language_from_request(request)
     try:
@@ -114,8 +114,8 @@ def djangocms_blog_latest_map_list(context):
 
 
 # Last map published
-@register.inclusion_tag('djangocms_blog/latest_map.html', takes_context=True)
-def djangocms_blog_latest_map(context):
+@register.inclusion_tag('djangocms_blog/latest_story.html', takes_context=True)
+def djangocms_blog_latest_story(context):
     request = context['request']
     language = get_language_from_request(request)
     try:

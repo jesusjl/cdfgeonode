@@ -53,7 +53,7 @@ z
 
 
          {% block feature_map %}
-          {% djangocms_blog_latest_map %}
+          {% djangocms_blog_latest_story %}
 
 
          {% endblock %}
@@ -61,11 +61,11 @@ z
 
          <div class="tab">{% trans "LATEST STORIES"  %}</div>
 
-       <div class="row latest-articles latest-map-list homepage-latest-post ">
+       <div class="row latest-articles latest-story-list">
 
          <!-- homepage-latest-post-aux -->
          <div class="col-md-12 col-xs-12  homepage-latest-post-aux clearfix ">
-           {% djangocms_blog_latest_map_list %}
+           {% djangocms_blog_latest_story_list %}
           </div>
 
        </div>
@@ -123,38 +123,32 @@ z
 
       {% with facet_type='home' %}
        {% facets as facets %}
-        <div class="col-md-12">
+        <div class="col-md-12 geonode-resources">
+  <h3 class='research'>Catalog</h3>
+          <div class="row">
 
-          <h3 class='geonode-resources'>Catalog</h3>
 
-            <h2>
-              <span ><a href="{% url "layer_browse" %}"><i class="fa fa-square-o fa-5x rotate-45 catalog "></i></a></span>
-              <a href="{% url "layer_browse" %}">{{ facets.layer|default:_("No") }} {% blocktrans count counter=facets.layer %}Layer{% plural %}Layers{% endblocktrans %}</a>
-            </h2>
 
-          <p>{% trans "Click to search and download geospatial data" %}</p>
-          {% if user.is_authenticated %}alayers
-          <p class="text-center"><a class="btn btn-default geonode-forms" href="{% url "layer_upload" %}" role="button">{% trans "Add layers" %} &raquo;</a></p>
-          {% else %}
-          <p class="text-center"><a class="btn btn-default" href="{% url "layer_browse" %}" role="button">{% trans "Explore layers" %} &raquo;</a></p>
-          {% endif %}
-        </div>
-        <div class="col-md-12">
-          <p><a href="{% url "maps_browse" %}"><i class="fa fa-map-marker fa-5x"></i></a></p>
-          <h2><a href="{% url "maps_browse" %}">{{ facets.map|default:_("No") }} {% blocktrans count counter=facets.map %}Map{% plural %}Maps{% endblocktrans %}</a></h2>
-          <p>{% trans "Data is available for browsing, aggregating and styling to generate maps which can be shared publicly or restricted to specific users only." %}</p>
-          {% if user.is_authenticated %}
-          <p><a class="btn btn-default" href="{% url "new_map" %}" role="button">{% trans "Create maps" %} &raquo;</a></p>
-          {% else %}
-          <p><a class="btn btn-default" href="{% url "maps_browse" %}" role="button">{% trans "Explore maps" %} &raquo;</a></p>
-          {% endif %}
-        </div>
-        <div class="col-md-12">
-          <p><a href="{% url "profile_browse" %}"><i class="fa fa-user fa-5x"></i></a></p>
-          <h2><a href="{% url "profile_browse" %}">{{ facets.user|default:_("No") }} {% blocktrans count counter=facets.user %}User{% plural %}Users{% endblocktrans %}</a></h2>
-          <p>{% trans "GeoNode allows registered users to easily upload geospatial data in several formats including shapefile and GeoTiff." %}</p>
-          <p><a class="btn btn-default" href="{% url "profile_browse" %}" role="button">{% trans "See users" %} &raquo;</a></p>
-        </div>
+            <div class="col-md-4">
+              <h2>LAYERS</h2>
+              <p>
+              <a href="{% url "layer_browse" %}">{{ facets.layer|default:_("No") }}</a>
+              <p>
+            </div>
+            <div class="col-md-4">
+              <h2>MAPS</h2>
+              <p>
+              <a href="{% url "maps_browse" %}">{{ facets.map|default:_("No") }}</a>
+              <p>
+            </div>
+            <div class="col-md-4">
+              <h2>DOCS</h2>
+              <p>
+              <a href="{% url "document_browse" %}">{{ facets.document|default:_("No") }}</a>
+              <p>
+            </div>
+
+          </div>
       {% endwith %}
       </div>
     </div>
@@ -162,7 +156,49 @@ z
 </div>
 </div>
   </div>
-    <!-- </div> -->
+  <div class="row">
+  <div class="col-md-12 col-xs-12 col-md-12 ">
+          <div class="tab">{% trans "SUBSCRIBE"  %}</div>
+          <div class="row latest-articles">
+
+           <div class=" col-md-12 col-xs-12 ">
+             <ul class="list-inline nav navbar-nav social">
+             <li>
+             <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/darwinfoundation">
+               <i class="fa fa-facebook"></i>
+             </a>
+             </li>
+             <li>
+             <a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com/darwinfound">
+               <i class="fa fa-twitter"></i>
+             </a>
+             </li>
+             <li>
+             <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/user/CDFdarwinfoundation">
+               <i class="fa fa-youtube"></i>
+             </a>
+             </li>
+             <li>
+             <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/darwinfoundation">
+               <i class="fa fa-linkedin"></i>
+             </a>
+             </li>
+
+             <li>
+             <a class="btn btn-social-icon feed" href="http://darwinfoundation.org/{% trans "news" %}/feed/">
+             <i class="fa fa-feed"></i>
+           </a>
+             </li>
+             <li>
+             <a class="btn btn-social-icon newsletter" href="#">
+             <i class="fa fa-envelope"></i>
+           </a>
+             </li>
+             </ul>
+
+        </div>
+  </div>
+     </div>
        </div> <!-- end row -->
   {% verbatim %}
   <div ng-app="featured">

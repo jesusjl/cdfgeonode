@@ -3,21 +3,19 @@
 {% load thumbnail from easy_thumbnail as _thumbnail %}
 
 {% if layers %}
-<div class="row latest-articles">
-
+<div class="row design latest-layers">
 {% for layer in layers %}
-
-<div class="col-md-4 col-xs-12  ">
-  <div class="box clearfix">
-  <div class="">
+    <div class="col-md-4">
+    <div class=" clearfix">
       <a href="{{ layer.get_absolute_url }}">
-      <img class="img-responsive img-polaroid " alt="{{ layer.title }}" src="{{ layer.thumbnail_url}}">
+        <img class="img-responsive " src="{{ layer.thumbnail_url}}" />
     </a>
-      <div class="maps-caption"><p class="desc_content text-center">{{layer.title}}</p></div>
+    <h4>
+    <a href="{{ layer.get_absolute_url }}"> {{ layer.title }}</a>
+    </h4>
+
     </div>
 </div>
-</div>
 {% endfor %}
-  </div>
-
+</div>
 {% endif %}
