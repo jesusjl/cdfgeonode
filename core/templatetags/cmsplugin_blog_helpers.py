@@ -119,9 +119,8 @@ def djangocms_blog_latest_story(context):
     request = context['request']
     language = get_language_from_request(request)
     try:
-
         ns = BlogConfig.objects.get(namespace="scientific-stories")
-        post = Post.objects.filter(app_config=ns).latest()
+        post = Post.objects.filter(app_config=ns).order_by('-date_published')[0]
     except:
         post = None
     return {
