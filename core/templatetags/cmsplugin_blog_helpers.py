@@ -22,6 +22,7 @@ def djangocms_blog_latest_post(context):
         ).latest()
     except:
         post = None
+        ns = None
     return {
         'post': post,
         'ns': ns,
@@ -42,6 +43,7 @@ def djangocms_blog_latest_posts(context):
         ).order_by('-date_published')[0:4]
     except:
         posts = None
+        ns = None
     return {
         'posts': posts,
         'ns': ns,
@@ -62,6 +64,7 @@ def djangocms_blog_latest_posts_detailed(context):
         ).order_by('-date_published')[1:5]
     except:
         posts = None
+        ns = None
     return {
         'posts': posts,
         'ns': ns,
@@ -105,6 +108,7 @@ def djangocms_blog_latest_story_list(context):
         ).order_by('-date_published')[1:4]
     except:
         posts = None
+        ns = None
     return {
         'posts': posts,
         'ns': ns,
@@ -123,6 +127,7 @@ def djangocms_blog_latest_story(context):
         post = Post.objects.filter(app_config=ns).order_by('-date_published')[0]
     except:
         post = None
+        ns = None
     return {
         'post': post,
         'ns': ns,
@@ -139,6 +144,7 @@ def djangocms_blog_latest_layers(context):
 
     except:
         layers = None
+        ns = None
     return {
         'layers': layers,
         'request': request,
@@ -154,6 +160,7 @@ def djangocms_blog_latest_maps(context):
 
     except:
         maps = None
+        ns = None
     return {
         'maps': maps,
         'request': request,
