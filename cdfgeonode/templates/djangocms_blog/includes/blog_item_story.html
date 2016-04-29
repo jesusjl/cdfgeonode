@@ -5,7 +5,7 @@
 <div class="row scientific-stories">
   <div class="col-md-9 ">
     <article id="post-{{ post.slug }}" class="post-item">
-      <div class="row">
+      <div class="row latest-maps">
         <div class="col-md-5 col-xs-5">
           {% if image and post.main_image %}
 
@@ -37,7 +37,7 @@
                 {% render_model post "abstract" "" "" 'truncatewords_html:TRUNCWORDS_COUNT'  %}
             {% endif %}
         </div>
-        <p><a href="{{ post.get_absolute_url }}">{% trans "read more" %} &raquo;</a></p>
+        <a href="{{ post.get_absolute_url }}">{% trans "read more" %} &raquo;</a>
 
 <!--
   <footer class="read-more">

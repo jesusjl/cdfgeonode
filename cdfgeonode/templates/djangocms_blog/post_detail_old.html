@@ -9,10 +9,6 @@
 {% block title %}{{ post.get_title }}{% endblock %}
 
 {% block content_blog %}{% spaceless %}
-{% if  post.app_config.namespace  == 'scientific-stories' %}
-<!-- render  scientific stories-->
-<div class="row">
-  <div class="col-md-12">
 <article id="post-{{ post.slug }}" class="post-item post-detail">
     <!-- <header> -->
     <div class="header">
@@ -23,31 +19,15 @@
       {#  {% endblock %}  #} -->
     <!-- </header> -->
   </div>
-
-{% else %}
-<!-- render news instead -->
-<article id="post-{{ post.slug }}" class="post-item post-detail">
-    <!-- <header> -->
-    <div class="header">
-
-        <h2>{% render_model post "title" %}</h2>
-        <!-- {#   {% block blog_meta %} #}
-        {#       {% include "djangocms_blog/includes/blog_meta.html" %}  #}
-      {#  {% endblock %}  #} -->
-    <!-- </header> -->
-  </div>
-
-
-
-
-{% endif %}
-  {% endspaceless %}
+    {% if post.main_image_id %}
+    <!-- <div class="blog-visual"> -->
+    
+    {% endif %}
+    {% endspaceless %}
     {% if post.app_config.use_placeholder %}
         <div class="blog-content">{% render_placeholder post.content %}</div>
     {% else %}
         <div class="blog-content">{% render_model post "post_text" "post_text" %}</div>
     {% endif %}
 </article>
-</div>
-</div>
 {% endblock content_blog %}

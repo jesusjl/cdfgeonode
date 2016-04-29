@@ -210,6 +210,8 @@ PARLER_LANGUAGES = {
     ),
 }
 
+BLOG_POSTS_LIST_TRUNCWORDS_COUNT = 20
+
 
 AUTH_USER_MODEL = 'people.Profile'
 

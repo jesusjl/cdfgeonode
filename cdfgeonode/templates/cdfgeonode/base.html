@@ -40,156 +40,78 @@
   <body class="{% block body_class %}{% endblock %}">
 
     {% block header %}
-
-    <div class="container-fluid social-bar ">
-
-    <div class="container">
-
-      <div class="navbar-header pull-right">
-
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-
-
-
-                <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span>
-
-            </button>
-
-            <!-- <a class="navbar-brand logo" href="#">        {% trans "CHARLES DARWIN FOUNDATION" %}</a> -->
-
-        </div>
-
-        <ul class="list-inlin e nav navbar-nav social pull-right">
-
-        <li>
-        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/darwinfoundation">
-          <i class="fa fa-facebook"></i>
-        </a>
-        </li>
-        <li>
-        <a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com/darwinfound">
-          <i class="fa fa-twitter"></i>
-        </a>
-        </li>
-        <li>
-        <a class="btn btn-social-icon btn-youtube" href="https://www.youtube.com/user/CDFdarwinfoundation">
-          <i class="fa fa-youtube"></i>
-        </a>
-        </li>
-        <li>
-        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/company/3568695?trk=tyah&trkInfo=tarId%3A1413565609620%2Ctas%3Acharles%20darwin%2Cidx%3A2-3-8">
-          <i class="fa fa-linkedin"></i>
-        </a>
-        </li>
-        <li>
-        <a class="btn btn-social-icon feed" href="http://darwinfoundation.org/{% trans "news" %}/feed/">
-        <i class="fa fa-feed"></i>
-      </a>
-        </li>
-        <li>
-        <a class="btn btn-social-icon newsletter" href="#">
-        <i class="fa fa-envelope"></i>
-      </a>
-        </li>
-      <li>
-        <a data-toggle="tooltip" data-container='body' title="Visit the exclusive CDF Shop" class="btn btn-social-icon" href="http://olgafisch.com/product-category/charles-darwin-foundation/">
-        <i data-placement="bottom"  data-toggle="tooltip" title="Visit the exclusive CDF Shop" class="fa fa-shopping-cart"></i>
-        </a>
-      </li>
-
-      <!-- <li>
-        <a class="btn btn-default" href="#">
-        <i class="fa fa-cog"></i> SHOP
-      </a>
-      </li> -->
-
-      <li>
-        <a href="{{ STATIC_URL }}"donate" class="donate btn btn-success">{% trans "Donate now" %}"</a>
-      </li>
-      <!-- <li>
-      <a class="btn btn-danger" href="#">
-        <i class="fa fa-trash-o fa-lg"></i> Delete</a>
-        </li> -->
-        </ul>
-
-
-    </div>
-  </div>
-
-  <!--end social -->
-
-  <div class="container-fluid logo">
-  <div class="container main-logo">
-    <a class=" hidden-xs blue navbar-brand logo pull-left" href="/"> <img src="{{ STATIC_URL }}img/logo-110x110.png"></a>
-    <h2 class="header-logo">
-      <span class="logo-letter-before">fundación</span>
-      <br>
-      <span class="logo-letter">Charles Darwin</span>
-
-        <br>
-        <span class="logo-letter-after">foundation</span>
-
-    </h2>
-
-  </div>
-
-
-  </div>
-      <div class="container-fluid menu">
+    <nav class="navbar navbar-default navbar-fixed-top map-view" role="navigation">
       <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-    <div id="navbarCollapse" class="navbar-collapse collapse ">
-      <ul class="nav navbar-nav">
-        {% block tabs %}
-        <li id="nav_layers">
-          <a href="{% url "layer_browse" %}">{% trans "Layers" %}</a>
-        </li>
-        <li id="nav_maps">
-          <a href="{% url "maps_browse" %}">{% trans "Maps" %}</a>
-        </li>
-        <li id="nav_documents">
-          <a href="{% url "document_browse" %}">{% trans "Documents" %}</a>
-        </li>
-       {% block extra_tab %}
-       {% endblock %}
-        <li id="nav_people">
-          <a href="{% url "profile_browse" %}">{% trans "People" %}</a>
-        </li>
-        <li id="nav_groups">
-          <a href="{% url "group_list" %}">{% trans "Groups" %}</a>
-        </li>
-        {% endblock %}
-      </ul>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="" href="{% url "home" %}"><img  class="tilt mini-logo" src="{{ STATIC_URL }}img/logo-110x110.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            {% block tabs %}
+            <li id="nav_layers">
+              <a href="{% url "layer_browse" %}">{% trans "Layers" %}</a>
+            </li>
+            <li id="nav_maps">
+              <a href="{% url "maps_browse" %}">{% trans "Maps" %}</a>
+            </li>
+            <li id="nav_documents">
+              <a href="{% url "document_browse" %}">{% trans "Documents" %}</a>
+            </li>
+           {% block extra_tab %}
+           {% endblock %}
+            <li id="nav_people">
+              <a href="{% url "profile_browse" %}">{% trans "People" %}</a>
+            </li>
+            <li id="nav_groups">
+              <a href="{% url "group_list" %}">{% trans "Groups" %}</a>
+            </li>
+            <li id="nav_wiki">
+              <a href="/wiki">{% trans "Wiki" %}</a>
+            </li>
+            {% endblock %}
+          </ul>
+          {% trans "Search" as search_text %}
+          <form class="navbar-form" id="search" action="{% url "search" %}" >
+            <div class="col-md-3">
+              <div class="input-group">
+                {% if HAYSTACK_SEARCH %}
+                <input id="search_input" type="text" placeholder="{{ search_text }}" class="form-control" name="q">
+                {% else %}
+                <input id="search_input" type="text" placeholder="{{ search_text }}" class="form-control" name="title__icontains">
+                {% endif %}
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                </span>
+              </div>
+            </div>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            {% if not user.is_authenticated and REGISTRATION_OPEN %}
+            <li><a href="{% url "account_signup" %}">{% trans "Register" %}</a></li>
+            {% endif %}
+            {% if user.is_authenticated %}
+            <li>
+              <a href="#" data-toggle="modal" data-target="#UserModal" role="button" aria-expanded="false">
+                {% avatar user 30 %} {{ user.username }}
+              </a>
+            </li>
+            {% else %}
+            <li>
+              <a href="#" data-toggle="modal" data-target="#SigninModal" role="button" >
+                {% trans "Sign in" %}
+              </a>
+            </li>
+            {% endif %}
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
-      <div class="col-md-4">
-      <ul class="nav navbar-nav navbar-right">
-        {% if not user.is_authenticated and REGISTRATION_OPEN %}
-        <li><a href="{% url "account_signup" %}">{% trans "Register" %}</a></li>
-        {% endif %}
-        {% if user.is_authenticated %}
-        <li>
-          <a href="#" data-toggle="modal" data-target="#UserModal" role="button" aria-expanded="false">
-            {% avatar user 30 %} {{ user.username }}
-          </a>
-        </li>
-        {% else %}
-        <li>
-          <a href="#" data-toggle="modal" data-target="#SigninModal" role="button" >
-            {% trans "Sign in" %}
-          </a>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-    </div>
-  </div>
-</div>
+    </nav>
     {% endblock header %}
 
     <div class="alert alert-danger alert-dismissible" role="alert" id="ieflag" style="display:none">
@@ -199,14 +121,7 @@
     </div>
 
   <div id="wrap">
-     <!-- erased by index.html-->
-
-
-    {% block custom_search_form %}{% endblock %}
     {% block middle %}
-
-
-
     <div class="container">
       {% include "_status_message.html" %}
       {% include "_announcements.html" %}
@@ -222,13 +137,11 @@
       </div>
       {% endblock %}
     </div>
-
     {% endblock middle %}
-
   </div>
 
     {% block footer %}
-    <footer class="footer navbar-fixed-bottom">
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -276,7 +189,7 @@
               </div>
               <div class="form-group">
                 <label for="id_password" class="sr-only">{% trans "Password" %}:</label>
-                <input id="id_password" class="form-control" name="password" placeholder="Password" type="password" />
+                <input id="id_password" class="form-control" name="password" placeholder="{% trans "Password" %}" type="password" />
               </div>
               <label class="checkbox">
                 <input type="checkbox" /> {% trans "Remember Me" %}
@@ -322,7 +235,7 @@
               {% block extra_user_menu %}
               {% endblock %}
               <li class="modal-divider"></li>
-              <li><a title="Help" rel="tooltip" href="/help/"><i class="fa fa-question-circle"></i> {% trans "Help" %}</a></li>
+              <li><a title="Help" rel="tooltip" href="{% url "help" %}"><i class="fa fa-question-circle"></i> {% trans "Help" %}</a></li>
             </ul>
           </div>
           <div class="modal-footer">
@@ -357,6 +270,7 @@
     <script src="{{ STATIC_URL }}geonode/js/utils/utils.js?v={{ VERSION }}"></script>
     <script src="{{ STATIC_URL }}geonode/js/base/base.js?v={{ VERSION }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
     {% include 'autocomplete_light/static.html' %}
     <script type="text/javascript" src="{% url 'django.views.i18n.javascript_catalog' %}"></script>
     {% block extra_script %}{% endblock extra_script %}

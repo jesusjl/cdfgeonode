@@ -18,7 +18,6 @@
 
     {% for post in post_list %}
     <!-- Check namespace of posts to include a different template -->
-    {{ post.app_config.namespace }}
     {% if  post.app_config.namespace  == 'scientific-stories' %}
        <!-- Aqui van las historias cientificas apuntar a blog_item_sstory.html -->
       {% include "djangocms_blog/includes/blog_item_story.html" with post=post image="true" TRUNCWORDS_COUNT=TRUNCWORDS_COUNT %}
