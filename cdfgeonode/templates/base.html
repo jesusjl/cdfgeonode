@@ -625,6 +625,7 @@
         <!-- <link href='{{ STATIC_URL }}js/smartmenus/css/sm-simple/sm-simple.css' rel='stylesheet' type='text/css' /> -->
 
     {% render_block "js" %}
+    {% block js_extra %}{% endblock %}
 
     {% block js %}
             <!-- <script src="{{ STATIC_URL }}js/jquery.simplemodal.1.4.4.min.js"></script> -->
@@ -657,7 +658,6 @@
 
     {% endblock %}
 
-    {% block js_extra %}{% endblock %}
 
     {% if not DEBUG %}
             <script type="text/javascript">

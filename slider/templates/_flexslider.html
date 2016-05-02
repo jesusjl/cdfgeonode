@@ -1,5 +1,6 @@
 {% load smart_load %}
-{% load thumbnail from easy_thumbnail as _thumbnail %}<div class="flexslider">
+{% load thumbnail from easy_thumbnail as _thumbnail %}
+<div class="flexslider">
     <ul class="slides">
         {% for slide in slides %}
         <li>{% if slide.link %}<a href="{{ slide.link }}">{% endif %}
