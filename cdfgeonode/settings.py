@@ -29,7 +29,7 @@ gettext = lambda s: s
 
 from django.utils.translation import ugettext
 
-
+DEBUG=False
 
 SITENAME = 'cdfgeonode'
 
@@ -130,6 +130,7 @@ DJANGO_CMS_INSTALLED_APPS = (
 #djangocms-blog
 
 'filer',
+'djangocms_link',
 'easy_thumbnails',
 #'cmsplugin_filer_image',
 'aldryn_apphooks_config',
@@ -146,12 +147,13 @@ DJANGO_CMS_INSTALLED_APPS = (
 #custom
 'slider',
 'core',
-
+'youtube',
+'people_fcd',
 )
 
 INSTALLED_APPS += DJANGO_CMS_INSTALLED_APPS
 
-
+YOUTUBE_API_V3_KEY = 'AIzaSyDhuJ7T6pvVEsg_dF18oXfWjWex6-Tv1Ic'
 
 # django-filer thumbnail
 

@@ -1,0 +1,17 @@
+{% load thumbnail sekizai_tags %}
+
+{% addtoblock "js" %}
+    <script>
+        $(document).ready(function(){
+            $(".youtube-video").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+        });
+    </script>
+{% endaddtoblock %}
+
+<div class="img-container">
+    <a href="{{ instance.video.get_embed_url }}" class="youtube-video">
+        <img class ="img-responsive center-block" src="{{ instance.video.thumbnail.url }}" class="img-polaroid">
+        <span class="play-icon"></span>
+    </a>
+    <span class="img-caption center-block">{{ instance.video.title }}</span>
+</div>
