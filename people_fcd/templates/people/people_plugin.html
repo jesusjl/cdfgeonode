@@ -1,5 +1,5 @@
-{% load thumbnail %}
-
+{% load smart_load %}
+{% load thumbnail from easy_thumbnail as _thumbnail %}
 {% for department in instance.department_group.group_departments.all %}
     {% if instance.department_group.group_departments.all.count > 1 %}
         <h2>{{ department.get_title }}</h2>
@@ -7,7 +7,7 @@
     {% for person in department.members.all %}
 
         <div class="col-md-3">
-            <img class="img-container people" src="{% if person.photo %}{% thumbnail person.photo 130x130 crop %}{% else %}{{ STATIC_URL }}img/placeholder_130x130.gif{% endif %}">
+            <img class="img-container people" src="{% if person.photo %}{% _thumbnail person.photo 130x130 crop %}{% else %}{{ STATIC_URL }}img/placeholder_130x130.gif{% endif %}">
         </div>
         <div class="col-md-9">
             <h4>{{ person.get_caption }}</h4>

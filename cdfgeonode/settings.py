@@ -29,7 +29,7 @@ gettext = lambda s: s
 
 from django.utils.translation import ugettext
 
-DEBUG=False
+DEBUG=True
 
 SITENAME = 'cdfgeonode'
 

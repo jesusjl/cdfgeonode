@@ -1,5 +1,6 @@
 {% extends "1-col.html" %}
-{% load thumbnail %}
+{% load smart_load %}
+{% load thumbnail from easy_thumbnail as _thumbnail %}
 {% spaceless %}
 {% block people %}
     The language: {{ lang }}
@@ -9,7 +10,7 @@
         {% for person in department.persons.all %}
         <div class="row person push-down">
             <div class="col-md-2">
-                <img class="img-polaroid" src="{% if person.photo %}{% thumbnail person.photo 130x130 crop %}{% else %}http://placehold.it/130x130&text=n/a{% endif %}">
+                <img class="img-polaroid" src="{% if person.photo %}{% _thumbnail person.photo 130x130 crop %}{% else %}http://placehold.it/130x130&text=n/a{% endif %}">
             </div>
             <div class="col-md-10">
                 <h4>{{ person.get_caption }}</h4>

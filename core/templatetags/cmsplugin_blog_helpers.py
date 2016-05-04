@@ -15,7 +15,7 @@ def djangocms_blog_latest_post(context):
     language = get_language_from_request(request)
     try:
         # cat = BlogCategoryTranslation.objects.get(slug='news')
-        ns = BlogConfig.objects.get(namespace="Blog")
+        ns = BlogConfig.objects.get(namespace="djangocms_blog")
 
         post = Post.objects.filter(
                 app_config=ns
@@ -36,7 +36,7 @@ def djangocms_blog_latest_posts(context):
     language = get_language_from_request(request)
     try:
         # cat = BlogCategoryTranslation.objects.get(slug='news')
-        ns = BlogConfig.objects.get(namespace="Blog")
+        ns = BlogConfig.objects.get(namespace="djangocms_blog")
 
         posts = Post.objects.filter(
                 app_config=ns
@@ -57,7 +57,7 @@ def djangocms_blog_latest_posts_detailed(context):
     language = get_language_from_request(request)
     try:
         # cat = BlogCategoryTranslation.objects.get(slug='news')
-        ns = BlogConfig.objects.get(namespace="Blog")
+        ns = BlogConfig.objects.get(namespace="djangocms_blog")
 
         posts = Post.objects.filter(
                 app_config=ns
@@ -116,8 +116,8 @@ def djangocms_blog_latest_story_list(context):
     }
 
 
+    # Last map published
 
-# Last map published
 @register.inclusion_tag('djangocms_blog/latest_story.html', takes_context=True)
 def djangocms_blog_latest_story(context):
     request = context['request']
