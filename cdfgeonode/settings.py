@@ -22,7 +22,9 @@
 import os
 from geonode.settings import *
 from django.conf import settings as django_settings
-#
+
+
+
 # General Django development settings
 #
 gettext = lambda s: s
@@ -30,6 +32,16 @@ gettext = lambda s: s
 from django.utils.translation import ugettext
 
 DEBUG=True
+
+## include local_settings after DEBUG=True if you want to activate debug mode
+## also notice thath do not override custom templates in template_dirs
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
+#
 
 SITENAME = 'cdfgeonode'
 
