@@ -244,7 +244,7 @@ CMS_TEMPLATES = (
     ('1-col.html', 'One column template'),
     ('1-col-donate.html',
         'One Column Template customized for the Donate page'),
-    ('djangocms_blog/post_list.html', 'Post List'),
+
     ('index.html', 'Geonode Homepage'),
     ('amazon.html', 'Amazon Template'),
 

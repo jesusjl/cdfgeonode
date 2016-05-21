@@ -8,68 +8,68 @@ from cms.utils import get_language_from_request
 
 register = template.Library()
 
-@register.inclusion_tag('djangocms_blog/latest_entry.html', takes_context=True)
-def djangocms_blog_latest_post(context):
-    """ Get the most recent post from Blog namespace """
-    request = context['request']
-    language = get_language_from_request(request)
-    try:
-        # cat = BlogCategoryTranslation.objects.get(slug='news')
-        ns = BlogConfig.objects.get(namespace="djangocms_blog")
+# @register.inclusion_tag('djangocms_blog/latest_entry.html', takes_context=True)
+# def djangocms_blog_latest_post(context):
+#     """ Get the most recent post from Blog namespace """
+#     request = context['request']
+#     language = get_language_from_request(request)
+#     try:
+#         # cat = BlogCategoryTranslation.objects.get(slug='news')
+#         ns = BlogConfig.objects.get(namespace="djangocms_blog")
+#
+#         post = Post.objects.filter(
+#                 app_config=ns
+#         ).latest()
+#     except:
+#         post = None
+#         ns = None
+#     return {
+#         'post': post,
+#         'ns': ns,
+#         'request': request,
+#     }
+#
+# @register.inclusion_tag('djangocms_blog/latest_posts_list.html', takes_context=True)
+# def djangocms_blog_latest_posts(context):
+#     """ Get 4 latest posts from Blog namespace """
+#     request = context['request']
+#     language = get_language_from_request(request)
+#     try:
+#         # cat = BlogCategoryTranslation.objects.get(slug='news')
+#         ns = BlogConfig.objects.get(namespace="djangocms_blog")
+#
+#         posts = Post.objects.filter(
+#                 app_config=ns
+#         ).order_by('-date_published')[0:4]
+#     except:
+#         posts = None
+#         ns = None
+#     return {
+#         'posts': posts,
+#         'ns': ns,
+#         'request': request,
+#     }
 
-        post = Post.objects.filter(
-                app_config=ns
-        ).latest()
-    except:
-        post = None
-        ns = None
-    return {
-        'post': post,
-        'ns': ns,
-        'request': request,
-    }
-
-@register.inclusion_tag('djangocms_blog/latest_posts_list.html', takes_context=True)
-def djangocms_blog_latest_posts(context):
-    """ Get 4 latest posts from Blog namespace """
-    request = context['request']
-    language = get_language_from_request(request)
-    try:
-        # cat = BlogCategoryTranslation.objects.get(slug='news')
-        ns = BlogConfig.objects.get(namespace="djangocms_blog")
-
-        posts = Post.objects.filter(
-                app_config=ns
-        ).order_by('-date_published')[0:4]
-    except:
-        posts = None
-        ns = None
-    return {
-        'posts': posts,
-        'ns': ns,
-        'request': request,
-    }
-
-@register.inclusion_tag('djangocms_blog/latest_entry_list.html', takes_context=True)
-def djangocms_blog_latest_posts_detailed(context):
-    """ Get 5 latest posts from Blog namespace but the first one """
-    request = context['request']
-    language = get_language_from_request(request)
-    try:
-        # cat = BlogCategoryTranslation.objects.get(slug='news')
-        ns = BlogConfig.objects.get(namespace="djangocms_blog")
-
-        posts = Post.objects.filter(
-                app_config=ns
-        ).order_by('-date_published')[1:5]
-    except:
-        posts = None
-        ns = None
-    return {
-        'posts': posts,
-        'ns': ns,
-        'request': request,
-    }
+# @register.inclusion_tag('djangocms_blog/latest_entry_list.html', takes_context=True)
+# def djangocms_blog_latest_posts_detailed(context):
+#     """ Get 5 latest posts from Blog namespace but the first one """
+#     request = context['request']
+#     language = get_language_from_request(request)
+#     try:
+#         # cat = BlogCategoryTranslation.objects.get(slug='news')
+#         ns = BlogConfig.objects.get(namespace="djangocms_blog")
+#
+#         posts = Post.objects.filter(
+#                 app_config=ns
+#         ).order_by('-date_published')[1:5]
+#     except:
+#         posts = None
+#         ns = None
+#     return {
+#         'posts': posts,
+#         'ns': ns,
+#         'request': request,
+#     }
 
 # Latest maps published
 

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n  cms_tags  slider_tags cmsplugin_blog_helpers %}
+{% load i18n  cms_tags  menu_tags slider_tags cmsplugin_blog_helpers %}
 {% block css_extra %}
     <link rel="stylesheet" href="{{ STATIC_URL }}js/vendor/flexslider-23b22ac/flexslider.css" type="text/css">
     <!-- <link href="{{ STATIC_URL }}css/site_base.css" rel="stylesheet"/> -->
@@ -16,6 +16,7 @@
 
 {% endblock %}
 {% block extra_tab %}
+{% show_menu %}
 
 {#{% block custom_menu %}{% endblock %}#}
 <!-- include here custom menu if not manage by django-cms -->
@@ -82,7 +83,6 @@
  <div class="row feature-article ">
    <div class=" col-md-12 col-xs-12 col-md-12">
 
-       {% djangocms_blog_latest_post %}
 </div>
 
 
@@ -91,7 +91,6 @@
 <div class="row latest-articles homepage-latest-post">
 
   <div class="col-md-12 col-xs-12 homepage-latest-post-aux clearfix ">
-    {% djangocms_blog_latest_posts_detailed %}
 
 
     <!-- prueba -->
