@@ -77,7 +77,7 @@ ROOT_URLCONF = 'cdfgeonode.urls'
 
 # Absolute path to the directory that holds static files like app media.
 # Example: "/home/media/media.lawrence.com/apps/"
-STATIC_ROOT = os.path.join(LOCAL_ROOT, "static_root")
+# STATIC_ROOT = os.path.join(LOCAL_ROOT, "static_root")
 
 # Absolute path to the directory that holds media.
 MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media/')
