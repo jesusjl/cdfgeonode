@@ -16,7 +16,11 @@ framework.
 import os
 import sys
 
-sys.path.append('/home/vagrant/cdfgeonode')
+import socket
+if 'galadarwin' in socket.gethostname():
+    sys.path.append('/home/galadarwin/cdfgeonode')
+else:
+    sys.path.append('/home/vagrant/cdfgeonode')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cdfgeonode.settings")
 
