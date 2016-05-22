@@ -80,7 +80,7 @@ ROOT_URLCONF = 'cdfgeonode.urls'
 # STATIC_ROOT = os.path.join(LOCAL_ROOT, "static_root")
 
 # Absolute path to the directory that holds media.
-MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media/')
+#MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media/')
 
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
