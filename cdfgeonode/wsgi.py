@@ -18,7 +18,8 @@ import sys
 
 import socket
 if 'galadarwin' in socket.gethostname():
-    sys.path.append('/home/galadarwin/cdfgeonode')
+    sys.path.append('/home/vagrant/cdfgeonode')
+
 else:
     sys.path.append('/home/vagrant/cdfgeonode')
 

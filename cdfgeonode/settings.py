@@ -72,7 +72,7 @@ ROOT_URLCONF = 'cdfgeonode.urls'
 
 
 # MEDIA_ROOT = '/var/www/geonode/uploaded/'
-STATIC_ROOT = '/var/www/geonode/static/'
+#STATIC_ROOT = '/var/www/geonode/static/'
 
 MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media/')
 
