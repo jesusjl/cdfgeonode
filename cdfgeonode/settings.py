@@ -82,7 +82,7 @@ ROOT_URLCONF = 'cdfgeonode.urls'
 # Absolute path to the directory that holds media.
 #MEDIA_ROOT = os.path.join(LOCAL_ROOT, 'media/')
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/uploaded/'
 STATIC_URL = '/static/'
 
 from django.utils.translation import ugettext_lazy as _
