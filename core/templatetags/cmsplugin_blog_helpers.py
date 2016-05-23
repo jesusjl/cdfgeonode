@@ -156,7 +156,7 @@ def djangocms_blog_latest_maps(context):
     request = context['request']
     language = get_language_from_request(request)
     try:
-        maps = Map.objects.all()[0:3]
+        maps = Map.objects.all().order_by('-date')[0:3]
 
     except:
         maps = None
