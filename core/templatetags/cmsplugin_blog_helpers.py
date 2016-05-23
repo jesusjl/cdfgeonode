@@ -115,6 +115,26 @@ def djangocms_blog_latest_story_list(context):
         'request': request,
     }
 
+@register.inclusion_tag('djangocms_blog/latest_story_list_footer.html', takes_context=True)
+def djangocms_blog_latest_story_list_footer(context):
+    request = context['request']
+    language = get_language_from_request(request)
+    try:
+
+        ns = BlogConfig.objects.get(namespace="scientific-stories")
+        posts = Post.objects.filter(
+            app_config=ns
+        ).order_by('-date_published')[1:4]
+    except:
+        posts = None
+        ns = None
+    return {
+        'posts': posts,
+        'ns': ns,
+        'request': request,
+    }
+
+
 
     # Last map published
 

@@ -1,0 +1,2510 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-23 15:24-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/fields.py:24
+msgid "When selecting a value, the form is reloaded to get the updated default"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/models.py:16
+msgid "type"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/models.py:18
+msgid "instance namespace"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/models.py:24
+msgid "Apphook config"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/models.py:25
+msgid "Apphook configs"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/models.py:36
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/models.py:38
+#, python-format
+msgid "%s / %s"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/tests/utils/example/cms_app.py:14
+msgid "Example"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/tests/utils/example/cms_appconfig.py:14
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:36
+msgid "application title"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/tests/utils/example/models.py:15
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/tests/utils/example/models.py:40
+msgid "title"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/tests/utils/example/models.py:17
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/tests/utils/example/models.py:34
+msgid "section"
+msgstr ""
+
+#: build/aldryn-apphooks-config/aldryn_apphooks_config/tests/utils/example/models.py:24
+msgid "config"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/admin.py:36
+msgid "Language Independent Fields"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/admin.py:39
+msgid "Advanced options"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_app.py:14
+#: build/aldryn-faq/aldryn_faq/menu.py:20
+msgid "FAQ"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:16
+msgid "1/2/"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:17
+msgid "1/question-slug/"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:18
+msgid "category-slug/2/"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:19
+msgid "category-slug/question-slug/"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:20
+msgid "1-category-slug/2/"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:21
+msgid "1-category-slug/question-slug/"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:25
+msgid "Allow"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:26
+msgid "Redirect to permalink (default)"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:27
+msgid "Permanent redirect to permalink"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:28
+msgid "Return 404: Not Found"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:39
+msgid "permalink type"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:41
+msgid ""
+"Choose the style of urls to use from the examples. (Note, all types are "
+"relative to apphook)"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:45
+msgid "non-permalink handling"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:48
+msgid "How to handle non-permalink urls?"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_appconfig.py:72
+msgid "untitled"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_plugins.py:25
+msgid "Question List"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_plugins.py:37
+msgid "Latest questions"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_plugins.py:48
+msgid "Top questions"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_plugins.py:59
+msgid "Most read questions"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_plugins.py:85
+msgid "List of categories"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_toolbar.py:161
+msgid "Configure addon"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_toolbar.py:172
+msgid "Category list"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_toolbar.py:179
+msgid "Add new category"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_toolbar.py:187
+msgid "Edit this category"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_toolbar.py:195
+msgid "Delete this category"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_toolbar.py:210
+msgid "Add new question"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_toolbar.py:218
+msgid "Edit this question"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_toolbar.py:226
+msgid "Delete this question"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_wizards.py:113
+#: build/aldryn-faq/aldryn_faq/cms_wizards.py:174
+msgid "Initial version."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_wizards.py:126
+msgid ""
+"Optional. If provided, will be added to the main body of the Question answer."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_wizards.py:179
+msgid "New FAQ category"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_wizards.py:182
+msgid "Create a new FAQ category."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_wizards.py:188
+msgid "New FAQ question"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/cms_wizards.py:191
+msgid "Create a new FAQ question."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:72
+#: build/aldryn-translation-tools/aldryn_translation_tools/models.py:89
+msgid "name"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:73
+msgid "Provide the category’s name"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:75
+#: build/aldryn-faq/aldryn_faq/models.py:141
+msgid "Slug"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:76
+#: build/aldryn-faq/aldryn_faq/models.py:142
+msgid ""
+"Provide a \"slug\" for this category or leave blank for an auto-generated "
+"one."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:79
+msgid "description"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:80
+msgid "Optional. Description of this category."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:83
+msgid "appconfig"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:88
+#: build/aldryn-faq/aldryn_faq/models.py:298
+msgid "category"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:89
+msgid "categories"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:137
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:6
+msgid "Title"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:138
+msgid "This should be a short form of the question"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:139
+msgid "Short description"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:159
+msgid "question"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:160
+msgid "questions"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:219
+msgid "The number of questions to be displayed."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:249
+#, python-format
+msgid "%(count)d question selected"
+msgid_plural "%(count)d questions selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:300
+msgid "position"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:306
+#: build/aldryn-faq/aldryn_faq/boilerplates/bootstrap3/templates/aldryn_faq/includes/question_list.html:41
+#: build/aldryn-faq/aldryn_faq/templates/aldryn_faq/includes/question_list.html:33
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:62
+#: cdfgeonode/templates/documents/document_metadata.html:65
+#: cdfgeonode/templates/layers/layer_metadata.html:70
+#: cdfgeonode/templates/maps/map_metadata.html:61
+msgid "Category"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/models.py:307
+#: cdfgeonode/templates/djangocms_blog/plugins/categories.html:3
+#: cdfgeonode/templates/search/_general_filters.html:4
+#: templates/search/_general_filters.html:4
+msgid "Categories"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/views.py:128
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/boilerplates/bootstrap3/templates/aldryn_faq/question_detail.html:35
+#: build/aldryn-faq/aldryn_faq/boilerplates/bootstrap3/templates/aldryn_faq/includes/question_list.html:51
+#: build/aldryn-faq/aldryn_faq/templates/aldryn_faq/question_detail.html:28
+#: build/aldryn-faq/aldryn_faq/templates/aldryn_faq/includes/question_list.html:39
+msgid "Back to Category"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/boilerplates/bootstrap3/templates/aldryn_faq/question_list.html:10
+#: build/aldryn-faq/aldryn_faq/templates/aldryn_faq/question_list.html:11
+msgid "Back to Overview"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/boilerplates/bootstrap3/templates/aldryn_faq/includes/question_list.html:45
+#: build/aldryn-faq/aldryn_faq/boilerplates/bootstrap3/templates/aldryn_faq/includes/ungrouped_question_list.html:26
+#: build/aldryn-faq/aldryn_faq/boilerplates/bootstrap3/templates/aldryn_faq/plugins/category_list.html:12
+#: build/aldryn-faq/aldryn_faq/boilerplates/legacy/templates/aldryn_faq/includes/question_groups.html:13
+#: build/aldryn-faq/aldryn_faq/boilerplates/legacy/templates/aldryn_faq/includes/question_list.html:27
+#: build/aldryn-faq/aldryn_faq/boilerplates/legacy/templates/aldryn_faq/plugins/category_list.html:8
+#: build/aldryn-faq/aldryn_faq/templates/aldryn_faq/includes/question_list.html:28
+#: build/aldryn-faq/aldryn_faq/templates/aldryn_faq/includes/question_list.html:35
+#: build/aldryn-faq/aldryn_faq/templates/aldryn_faq/includes/ungrouped_question_list.html:19
+#: build/aldryn-faq/aldryn_faq/templates/aldryn_faq/plugins/category_list.html:17
+msgid "No entry found."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/boilerplates/legacy/templates/aldryn_faq/question_detail.html:10
+#: build/aldryn-faq/aldryn_faq/boilerplates/legacy/templates/aldryn_faq/includes/question_list.html:32
+#: cdfgeonode/templates/djangocms_blog/post_list.html:34
+msgid "Back"
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/boilerplates/legacy/templates/aldryn_faq/includes/question_list.html:18
+msgid "No answer available."
+msgstr ""
+
+#: build/aldryn-faq/aldryn_faq/boilerplates/legacy/templates/aldryn_faq/includes/question_list.html:20
+msgid "Read more"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:126
+#, python-format
+msgid "All plugins in the placeholder \"%(placeholder)s\" were deleted."
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:133
+#, python-format
+msgid "Added plugin #%(plugin_id)s: %(plugin)s"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:138
+#, python-format
+msgid "Edited plugin #%(plugin_id)s: %(plugin)s"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:144
+#, python-format
+msgid "Copied plugins to %(placeholder)s"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:158
+#, python-format
+msgid "Moved plugins to %(placeholder)s"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:168
+#, python-format
+msgid "Deleted plugin #%(plugin_id)s: %(plugin)s"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:176
+#, python-format
+msgid "Initial version of %(object_repr)s.%(translation_info)s"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:234
+#, python-format
+msgid "Translation deletion for %(object_repr)s ('%(lang_code)s' language)."
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:264
+#, python-format
+msgid ""
+"The %(name)s \"%(obj)s\" was successfully reverted. You may edit it again "
+"below."
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/admin.py:375
+#, python-format
+msgid ""
+"The %(name)s \"%(obj)s\" was successfully recovered. You may edit it again "
+"below."
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/forms.py:17
+msgid "Translations to restore:"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/forms.py:18
+msgid "Please select translations which would be restored."
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/forms.py:55
+msgid "Cannot restore object, there are conflicts!"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/utils.py:52
+#, python-format
+msgid " ('%(language_code)s' translation)"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:8
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_reversion.html:8
+#: cdfgeonode/templates/menu/custom_menu.html:7
+#: wikifcd/templates/wikifcd/base_site.html:85
+msgid "Home"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:12
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_reversion.html:12
+msgid "History"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:13
+#, python-format
+msgid "Restore deleted %(verbose_name)s"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:19
+#, python-format
+msgid ""
+"\n"
+"            Are you sure you want to restore the %(object_name)s "
+"\"%(escaped_object)s\" to its version from %(revision_date)s?\n"
+"        "
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:25
+msgid "The following placeholders were deleted and will be restored:"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:34
+msgid "Warning there are conflicts"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:35
+msgid "Please restore required related objects first:"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:45
+msgid "The following conflicts would be recovered automatically"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:58
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_reversion.html:36
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_recover.html:59
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_reversion.html:37
+msgid "No, take me back"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_reversion.html:13
+#, python-format
+msgid "Revert %(verbose_name)s"
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_reversion.html:19
+#, python-format
+msgid ""
+"\n"
+"            Are you sure you want to revert the %(object_name)s "
+"\"%(escaped_object)s\" to its version of %(revision_date)s?\n"
+"            All of the following related items will also be reverted:\n"
+"        "
+msgstr ""
+
+#: build/aldryn-reversion/aldryn_reversion/templates/aldryn_reversion/confirm_reversion.html:25
+msgid "Objects"
+msgstr ""
+
+#: build/aldryn-search/aldryn_search/cms_app.py:13
+msgid "aldryn search"
+msgstr ""
+
+#: build/aldryn-search/aldryn_search/templates/aldryn_search/search_results.html:6
+msgid "enter your search term"
+msgstr ""
+
+#: build/aldryn-search/aldryn_search/templates/aldryn_search/search_results.html:16
+msgid "results"
+msgstr ""
+
+#: build/aldryn-search/aldryn_search/templates/aldryn_search/includes/pagination.html:7
+#, python-format
+msgid "%(from)s – %(until)s of %(count)s %(obj_string)s are displayed"
+msgstr ""
+
+#: build/aldryn-search/aldryn_search/templates/aldryn_search/includes/pagination.html:11
+#: cdfgeonode/templates/djangocms_blog/post_list.html:39
+msgid "previous"
+msgstr ""
+
+#: build/aldryn-search/aldryn_search/templates/aldryn_search/includes/pagination.html:25
+#: cdfgeonode/templates/djangocms_blog/post_list.html:45
+msgid "next"
+msgstr ""
+
+#: build/aldryn-search/aldryn_search/templates/aldryn_search/includes/search_items.html:12
+msgid "No results found for"
+msgstr ""
+
+#: build/aldryn-translation-tools/aldryn_translation_tools/admin.py:44
+msgid "Click to view or edit this {0}"
+msgstr ""
+
+#: build/aldryn-translation-tools/aldryn_translation_tools/models.py:91
+msgid "{0}-without-{1}"
+msgstr ""
+
+#: build/aldryn-translation-tools/test_addon/cms_app.py:12
+msgid "Simple"
+msgstr ""
+
+#: build/aldryn-translation-tools/test_addon/models.py:64
+msgid "short title"
+msgstr ""
+
+#: build/aldryn-translation-tools/test_addon/models.py:69
+msgid "unconventional model"
+msgstr ""
+
+#: build/aldryn-translation-tools/tests/test_models.py:126
+msgid "unnamed-simple-object"
+msgstr ""
+
+#: build/django-polymorphic/build/lib.linux-x86_64-2.7/polymorphic/admin.py:55
+#: build/django-polymorphic/build/lib.linux-x86_64-2.7/polymorphic/admin.py:70
+#: build/django-polymorphic/polymorphic/admin.py:55
+#: build/django-polymorphic/polymorphic/admin.py:70
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:45
+#: cdfgeonode/templates/layers/layer_detail.html:348
+msgid "Type"
+msgstr ""
+
+#: build/django-polymorphic/build/lib.linux-x86_64-2.7/polymorphic/admin.py:381
+#: build/django-polymorphic/polymorphic/admin.py:381
+#, python-format
+msgid "Add %s"
+msgstr ""
+
+#: build/django-polymorphic/build/lib.linux-x86_64-2.7/polymorphic/admin.py:451
+#: build/django-polymorphic/polymorphic/admin.py:451
+msgid "Contents"
+msgstr ""
+
+#: cdfgeonode/settings.py:197
+msgid "English"
+msgstr ""
+
+#: cdfgeonode/settings.py:198
+msgid "Spanish"
+msgstr ""
+
+#: cdfgeonode/settings.py:206
+msgid "en"
+msgstr ""
+
+#: cdfgeonode/settings.py:213
+msgid "es"
+msgstr ""
+
+#: cdfgeonode/settings.py:356
+msgid "Table of Contents"
+msgstr ""
+
+#: cdfgeonode/templates/amazon.html:13
+msgid "United States"
+msgstr ""
+
+#: cdfgeonode/templates/amazon.html:18
+msgid "Spain"
+msgstr ""
+
+#: cdfgeonode/templates/amazon.html:29
+msgid " United Kingdom"
+msgstr ""
+
+#: cdfgeonode/templates/amazon.html:34
+msgid "Canada"
+msgstr ""
+
+#: cdfgeonode/templates/amazon.html:41
+msgid "Germany"
+msgstr ""
+
+#: cdfgeonode/templates/amazon.html:46
+msgid "France"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:82 cdfgeonode/templates/base_shiny.html:72
+msgid "CHARLES DARWIN FOUNDATION"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:115 cdfgeonode/templates/base.html.py:403
+#: cdfgeonode/templates/base_shiny.html:99
+#: cdfgeonode/templates/base_shiny.html:239
+#: cdfgeonode/templates/homepage.html:159 cdfgeonode/templates/index.html:185
+msgid "news"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:189 cdfgeonode/templates/base_shiny.html:171
+#: cdfgeonode/templates/cdfgeonode/base.html:96
+msgid "Register"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:201 cdfgeonode/templates/base.html.py:479
+#: cdfgeonode/templates/base.html:497 cdfgeonode/templates/base_shiny.html:183
+#: cdfgeonode/templates/cdfgeonode/base.html:107
+#: cdfgeonode/templates/cdfgeonode/base.html:181
+#: cdfgeonode/templates/cdfgeonode/base.html:199
+msgid "Sign in"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:306
+#: cdfgeonode/templates/people/profile_detail.html:65
+msgid "Email"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:310
+msgid "First Name"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:316
+msgid "Last Name"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:320
+msgid "Nationality"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:366 cdfgeonode/templates/base_shiny.html:202
+msgid "ADDRESS"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:418 cdfgeonode/templates/base_shiny.html:254
+#: cdfgeonode/templates/homepage.html:90
+#: cdfgeonode/templates/djangocms_blog/latest_entry.html:7
+#: cdfgeonode/templates/djangocms_blog/latest_entry_list.html:7
+msgid "LATEST NEWS"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:429 cdfgeonode/templates/base_shiny.html:265
+msgid "CONTRIBUTORS"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:449
+msgid "Charles Darwin Foundation is a registered trademark. Visit us on "
+msgstr ""
+
+#: cdfgeonode/templates/base.html:450
+msgid "Charles Darwin Foundation"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:455
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:145
+#: cdfgeonode/templates/cdfgeonode/base.html:153
+msgid "Language"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:485 cdfgeonode/templates/base.html.py:486
+#: cdfgeonode/templates/cdfgeonode/base.html:187
+#: cdfgeonode/templates/cdfgeonode/base.html:188
+msgid "Username"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:489
+#: cdfgeonode/templates/cdfgeonode/base.html:191
+#: cdfgeonode/templates/cdfgeonode/base.html:192
+msgid "Password"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:493
+#: cdfgeonode/templates/cdfgeonode/base.html:195
+msgid "Remember Me"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:509
+#: cdfgeonode/templates/cdfgeonode/base.html:211
+msgid "Menu"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:513
+#: cdfgeonode/templates/cdfgeonode/base.html:215
+#: cdfgeonode/templates/layers/layer_list.html:14
+#: cdfgeonode/templates/upload/_layer_upload.html:22
+#: cdfgeonode/templates/upload/layer_upload.html:22
+#: cdfgeonode/templates/upload/layer_upload_base.html:15
+msgid "Upload Layers"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:515
+#: cdfgeonode/templates/cdfgeonode/base.html:217
+msgid "Profile"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:516
+#: cdfgeonode/templates/cdfgeonode/base.html:218
+msgid "Recent Activity"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:517
+#: cdfgeonode/templates/cdfgeonode/base.html:219
+msgid "Inbox"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:519
+#: cdfgeonode/templates/cdfgeonode/base.html:221
+#: cdfgeonode/templates/people/profile_detail.html:136
+msgid "Notifications"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:522
+#: cdfgeonode/templates/cdfgeonode/base.html:224
+#: cdfgeonode/templates/people/profile_detail.html:139
+msgid "Announcements"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:525
+#: cdfgeonode/templates/cdfgeonode/base.html:227
+#: cdfgeonode/templates/people/profile_detail.html:144
+msgid "Remote Services"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:526
+#: cdfgeonode/templates/cdfgeonode/base.html:228
+#: cdfgeonode/templates/people/profile_detail.html:145
+msgid "Invite User"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:528
+#: cdfgeonode/templates/cdfgeonode/base.html:230
+#: cdfgeonode/templates/people/profile_detail.html:146
+msgid "GeoServer"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:531
+#: cdfgeonode/templates/cdfgeonode/base.html:233
+#: cdfgeonode/templates/people/profile_detail.html:149
+msgid "Admin"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:536
+#: cdfgeonode/templates/cdfgeonode/base.html:238
+msgid "Help"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:542
+#: cdfgeonode/templates/cdfgeonode/base.html:244
+#: wikifcd/templates/wikifcd/base_site.html:65
+msgid "Log out"
+msgstr ""
+
+#: cdfgeonode/templates/base.html:584
+#: cdfgeonode/templates/cdfgeonode/base.html:283
+msgid "Type your search here ..."
+msgstr ""
+
+#: cdfgeonode/templates/base_shiny.html:121
+msgid "Donate now"
+msgstr ""
+
+#: cdfgeonode/templates/homepage.html:77
+msgid "FEATURE ARTICLE"
+msgstr ""
+
+#: cdfgeonode/templates/homepage.html:132 cdfgeonode/templates/index.html:158
+msgid "SUBSCRIBE"
+msgstr ""
+
+#: cdfgeonode/templates/homepage.html:174
+msgid "RESEARCH  "
+msgstr ""
+
+#: cdfgeonode/templates/homepage.html:178
+msgid "Invasive Species"
+msgstr ""
+
+#: cdfgeonode/templates/homepage.html:184
+msgid "Conservation and Management"
+msgstr ""
+
+#: cdfgeonode/templates/homepage.html:191
+msgid "Sustainability"
+msgstr ""
+
+#: cdfgeonode/templates/homepage.html:198
+msgid "Marine Research"
+msgstr ""
+
+#: cdfgeonode/templates/homepage.html:204
+msgid "Collections"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:10
+#: cdfgeonode/templates/cdfgeonode/index.html:6
+msgid "Welcome!"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:34 cdfgeonode/templates/site_index.html:13
+#: cdfgeonode/templates/cdfgeonode/site_index.html:14
+msgid "Welcome to our Geoportal"
+msgstr ""
+
+#: cdfgeonode/templates/index.html:62
+msgid "LATEST STORIES"
+msgstr "HISTORIAS RECIENTES"
+
+#: cdfgeonode/templates/index.html:77
+msgid "LATEST LAYERS"
+msgstr "CAPAS RECIENTES"
+
+#: cdfgeonode/templates/index.html:132 cdfgeonode/templates/index.html:138
+#: cdfgeonode/templates/index.html:144
+#: cdfgeonode/templates/cdfgeonode/index.html:49
+#: cdfgeonode/templates/cdfgeonode/index.html:59
+#: cdfgeonode/templates/cdfgeonode/index.html:69
+msgid "No"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:24
+#: cdfgeonode/templates/cdfgeonode/site_index.html:25
+msgid ""
+"\n"
+"            GeoNode is an open source platform for sharing geospatial data "
+"and maps.  If you have any questions about the software or service, join our "
+"<a href=\"https://groups.google.com/d/forum/geonode-users\">mailing list</"
+"a>.\n"
+"          "
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:28
+#: cdfgeonode/templates/cdfgeonode/site_index.html:29
+msgid "Need help"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:28
+#: cdfgeonode/templates/cdfgeonode/site_index.html:29
+msgid "Getting Started?"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:32
+#: cdfgeonode/templates/cdfgeonode/site_index.html:33
+#: cdfgeonode/templates/layers/layer_list.html:6
+#: cdfgeonode/templates/layers/layer_list.html:15
+#: cdfgeonode/templates/layers/layer_metadata.html:11
+#: cdfgeonode/templates/upload/_layer_upload.html:21
+#: cdfgeonode/templates/upload/layer_upload.html:21
+#: cdfgeonode/templates/upload/layer_upload_base.html:14
+msgid "Explore Layers"
+msgstr ""
+
+#: cdfgeonode/templates/site_index.html:35
+#: cdfgeonode/templates/cdfgeonode/site_index.html:36
+#: cdfgeonode/templates/maps/map_base.html:29
+#: cdfgeonode/templates/maps/map_base.html:39
+#: cdfgeonode/templates/maps/map_list.html:11
+#: cdfgeonode/templates/maps/map_metadata.html:11
+msgid "Explore Maps"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:3
+#: cdfgeonode/templates/cdfgeonode/base.html:150
+#: wikifcd/templates/wikifcd/base_site.html:86
+msgid "About"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:5
+msgid "Owner, Point of Contact, Metadata Author"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:10
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:84
+msgid "Owner"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:14
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:89
+#: cdfgeonode/templates/documents/document_metadata.html:33
+#: cdfgeonode/templates/documents/document_metadata.html:55
+#: cdfgeonode/templates/layers/layer_metadata.html:36
+#: cdfgeonode/templates/layers/layer_metadata.html:107
+#: cdfgeonode/templates/maps/map_metadata.html:51
+msgid "Point of Contact"
+msgstr ""
+
+#: cdfgeonode/templates/base/_resourcebase_contact_snippet.html:18
+#: cdfgeonode/templates/documents/document_metadata.html:29
+#: cdfgeonode/templates/layers/layer_metadata.html:32
+msgid "Metadata Author"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:11
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:103
+msgid "SRID"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:16
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:108
+msgid "License"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:29
+msgid "Abstract"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:34
+#: cdfgeonode/templates/search/_general_filters.html:47
+#: templates/search/_general_filters.html:47
+msgid "Date"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:50
+#: cdfgeonode/templates/people/profile_detail.html:103
+#: cdfgeonode/templates/search/_general_filters.html:19
+#: templates/search/_general_filters.html:19
+msgid "Keywords"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:72
+#: cdfgeonode/templates/search/_region_filter.html:5
+#: templates/search/_region_filter.html:5
+msgid "Regions"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:95
+msgid "More info"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:121
+msgid "Maintenance Frequency"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:126
+msgid "Restrictions"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:135
+msgid "Edition"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:140
+msgid "Purpose"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:150
+msgid "Temporal Extent"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:155
+msgid "Data Quality"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:160
+msgid "Supplemental Information"
+msgstr ""
+
+#: cdfgeonode/templates/base/resourcebase_info_panel.html:165
+msgid "Spatial Representation Type"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:58
+#: cdfgeonode/templates/groups/activity.html:26
+#: cdfgeonode/templates/menu/custom_menu.html:11
+#: cdfgeonode/templates/people/_profile_filters.html:5
+msgid "Layers"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:61
+#: cdfgeonode/templates/groups/activity.html:27
+#: cdfgeonode/templates/menu/custom_menu.html:14
+#: cdfgeonode/templates/people/_profile_filters.html:6
+msgid "Maps"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:64
+#: cdfgeonode/templates/menu/custom_menu.html:17
+#: cdfgeonode/templates/people/_profile_filters.html:7
+msgid "Documents"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:69
+#: cdfgeonode/templates/menu/custom_menu.html:24
+msgid "People"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:72
+#: cdfgeonode/templates/menu/custom_menu.html:27
+msgid "Groups"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:75
+msgid "Wiki"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:79
+#: cdfgeonode/templates/search/search.html:6
+#: cdfgeonode/templates/search/search.html:39 templates/search/search.html:6
+#: templates/search/search.html.py:12
+msgid "Search"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:148
+msgid "Powered by"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:148
+msgid "GeoNode"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:148
+msgid "version"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/base.html:149
+msgid "Developers"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:49
+#: cdfgeonode/templates/layers/layer_detail.html:223
+#, fuzzy
+msgid "Layer"
+msgid_plural "Layers"
+msgstr[0] ""
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+msgstr[1] "#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+
+#: cdfgeonode/templates/cdfgeonode/index.html:50
+msgid ""
+"Click to search for geospatial data published by other users, organizations "
+"and public sources. Download data in standard formats."
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:52
+msgid "Add layers"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:54
+msgid "Explore layers"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:59
+#: cdfgeonode/templates/maps/map_detail.html:127
+#, fuzzy
+msgid "Map"
+msgid_plural "Maps"
+msgstr[0] ""
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+msgstr[1] "#-#-#-#-#  django.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+
+#: cdfgeonode/templates/cdfgeonode/index.html:60
+msgid ""
+"Data is available for browsing, aggregating and styling to generate maps "
+"which can be shared publicly or restricted to specific users only."
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:62
+msgid "Create maps"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:64
+msgid "Explore maps"
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:69
+msgid "User"
+msgid_plural "Users"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:70
+msgid ""
+"GeoNode allows registered users to easily upload geospatial data in several "
+"formats including shapefile and GeoTiff."
+msgstr ""
+
+#: cdfgeonode/templates/cdfgeonode/index.html:71
+msgid "See users"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/latest_maps.html:6
+msgid "LATEST MAPS"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:31
+#: cdfgeonode/templates/djangocms_blog/plugins/archive.html:26
+#: cdfgeonode/templates/djangocms_blog/plugins/authors.html:15
+#: cdfgeonode/templates/djangocms_blog/plugins/latest_entries.html:7
+#: cdfgeonode/templates/djangocms_blog/plugins/tags.html:15
+msgid "No article found."
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:42
+msgid "Page"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/post_list.html:42
+msgid "of"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/includes/blog_item.html:15
+#: cdfgeonode/templates/djangocms_blog/includes/blog_item_story.html:28
+msgid "Posted by"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/includes/blog_item.html:37
+#: cdfgeonode/templates/djangocms_blog/includes/blog_item_story.html:40
+msgid "read more"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/includes/blog_meta.html:8
+msgid "by"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/archive.html:3
+msgid "Archive"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/archive.html:17
+#: cdfgeonode/templates/djangocms_blog/plugins/authors.html:10
+#: cdfgeonode/templates/djangocms_blog/plugins/categories.html:10
+#: cdfgeonode/templates/djangocms_blog/plugins/tags.html:10
+#, python-format
+msgid "1 article"
+msgid_plural "%(articles)s articles"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/archive.html:18
+#: cdfgeonode/templates/djangocms_blog/plugins/authors.html:11
+#: cdfgeonode/templates/djangocms_blog/plugins/categories.html:11
+#: cdfgeonode/templates/djangocms_blog/plugins/tags.html:11
+msgid "0 articles"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/authors.html:3
+msgid "Authors"
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/categories.html:15
+msgid "No categories found."
+msgstr ""
+
+#: cdfgeonode/templates/djangocms_blog/plugins/tags.html:3
+msgid "Tags"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:47
+msgid "External Resource"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:69
+msgid "Rate this document"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:73
+#: cdfgeonode/templates/layers/layer_detail.html:130
+#: cdfgeonode/templates/maps/map_detail.html:57
+msgid "Average Rating"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:94
+#: cdfgeonode/templates/documents/document_detail.html:96
+#: cdfgeonode/templates/documents/document_detail.html:98
+msgid "Download Document"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:102
+#: cdfgeonode/templates/layers/layer_detail.html:149
+msgid "Request Download"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:108
+#: cdfgeonode/templates/documents/document_detail.html:115
+msgid "Edit Document"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:123
+#: cdfgeonode/templates/layers/layer_detail.html:197
+#: cdfgeonode/templates/maps/map_detail.html:113
+msgid "Metadata"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:124
+#: cdfgeonode/templates/layers/layer_detail.html:198
+#: cdfgeonode/templates/layers/layer_detail.html:207
+#: cdfgeonode/templates/maps/map_detail.html:114
+#: cdfgeonode/templates/maps/map_detail.html:128
+#: cdfgeonode/templates/wiki/edit.html:5
+msgid "Edit"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:130
+msgid "Document"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:132
+#: cdfgeonode/templates/layers/layer_detail.html:225
+msgid "Replace"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:135
+#: cdfgeonode/templates/groups/group_members.html:33
+#: cdfgeonode/templates/groups/group_members.html:59
+#: cdfgeonode/templates/groups/group_members.html:86
+#: cdfgeonode/templates/layers/layer_detail.html:231
+#: cdfgeonode/templates/maps/map_detail.html:129
+msgid "Remove"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:142
+#: cdfgeonode/templates/documents/document_detail.html:166
+#: cdfgeonode/templates/layers/layer_detail.html:172
+#: cdfgeonode/templates/layers/layer_detail.html:238
+#: cdfgeonode/templates/layers/layer_detail.html:264
+#: cdfgeonode/templates/maps/map_detail.html:92
+#: cdfgeonode/templates/maps/map_detail.html:135
+msgid "Close"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:149
+#: cdfgeonode/templates/documents/document_detail.html:156
+#: cdfgeonode/templates/layers/layer_detail.html:246
+#: cdfgeonode/templates/layers/layer_detail.html:254
+msgid "Download Metadata"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:173
+msgid "Resource using this document"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:175
+msgid "List of resources using this document:"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:179
+msgid "This document is related to a "
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:182
+msgid "This document is not related to any maps or layers"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:189
+#: cdfgeonode/templates/documents/document_upload.html:30
+#: cdfgeonode/templates/groups/group_detail.html:61
+#: cdfgeonode/templates/layers/layer_detail.html:337
+#: cdfgeonode/templates/maps/map_detail.html:181
+#: cdfgeonode/templates/upload/_layer_upload.html:97
+#: cdfgeonode/templates/upload/layer_upload.html:97
+msgid "Permissions"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:190
+msgid "Click the button below to change the permissions of this document."
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_detail.html:191
+msgid "Change Document Permissions"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_list.html:6
+#: cdfgeonode/templates/documents/document_list.html:16
+#: cdfgeonode/templates/documents/document_metadata.html:16
+#: cdfgeonode/templates/documents/document_upload_base.html:13
+msgid "Explore Documents"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_list.html:15
+#: cdfgeonode/templates/documents/document_upload_base.html:14
+msgid "Upload Documents"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_metadata.html:17
+#: cdfgeonode/templates/layers/layer_metadata.html:12
+#: cdfgeonode/templates/maps/map_metadata.html:12
+msgid "Edit Metadata"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_metadata.html:22
+msgid "Editing details for"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_metadata.html:26
+#: cdfgeonode/templates/layers/layer_metadata.html:29
+#: cdfgeonode/templates/maps/map_metadata.html:29
+msgid "Error updating metadata.  Please check the following fields: "
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_metadata.html:48
+#: cdfgeonode/templates/documents/document_metadata.html:82
+#: cdfgeonode/templates/groups/group_update.html:26
+#: cdfgeonode/templates/layers/layer_metadata.html:59
+#: cdfgeonode/templates/layers/layer_metadata.html:118
+#: cdfgeonode/templates/maps/map_metadata.html:44
+#: cdfgeonode/templates/maps/map_metadata.html:78
+msgid "Update"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_metadata.html:60
+#: cdfgeonode/templates/layers/layer_metadata.html:112
+#: cdfgeonode/templates/maps/map_metadata.html:56
+msgid "Metadata Provider"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_remove.html:4
+#: cdfgeonode/templates/maps/map_remove.html:6
+msgid "Deleting"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_remove.html:8
+msgid "Remove Document"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_remove.html:13
+#, python-format
+msgid ""
+"\n"
+"          Are you sure you want to remove <a href="
+"\"%(document.get_absolute_url)s\">%(document_title)s</a>?\n"
+"        "
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_remove.html:20
+#: cdfgeonode/templates/groups/group_remove.html:19
+#: cdfgeonode/templates/maps/map_remove.html:22
+msgid "Yes, I am sure"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_remove.html:21
+#: cdfgeonode/templates/groups/group_remove.html:20
+#: cdfgeonode/templates/maps/map_remove.html:23
+msgid "No, don't remove it"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_replace.html:4
+#: cdfgeonode/templates/documents/document_replace.html:28
+msgid "Replace Document"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_replace.html:16
+msgid "Replace "
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_replace.html:27
+#: cdfgeonode/templates/search/_search_content.html:24
+#: cdfgeonode/templates/upload/_layer_upload.html:90
+#: cdfgeonode/templates/upload/layer_upload.html:90
+msgid "Clear"
+msgstr ""
+
+#: cdfgeonode/templates/documents/document_upload.html:5
+msgid "Upload Document"
+msgstr ""
+
+#: cdfgeonode/templates/groups/activity.html:7
+#: cdfgeonode/templates/groups/activity.html:8
+#: cdfgeonode/templates/groups/activity.html:19
+msgid "Activity Feed for"
+msgstr ""
+
+#: cdfgeonode/templates/groups/activity.html:25
+#: cdfgeonode/templates/groups/group_members.html:13
+msgid "All"
+msgstr ""
+
+#: cdfgeonode/templates/groups/activity.html:28
+msgid "Comments"
+msgstr ""
+
+#: cdfgeonode/templates/groups/activity.html:36
+#: cdfgeonode/templates/groups/activity.html:45
+#: cdfgeonode/templates/groups/activity.html:54
+#: cdfgeonode/templates/groups/activity.html:63
+msgid "No actions yet"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_base.html:19
+#: cdfgeonode/templates/groups/group_list.html:5
+#: cdfgeonode/templates/groups/group_list.html:14
+msgid "Explore Groups"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_base.html:20
+#: cdfgeonode/templates/groups/group_create.html:11
+msgid "Create a Group"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_base.html:22
+#: cdfgeonode/templates/groups/group_update.html:11
+msgid "Update Group"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_base.html:23
+msgid "Remove Group"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_create.html:5
+#: cdfgeonode/templates/groups/group_update.html:5
+msgid "Create Group"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_create.html:26
+msgid "Create"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:29
+msgid "This group has not created a logo."
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:53
+msgid "Edit Group Details"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:54
+msgid "Manage Group Members"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:55
+msgid "Delete this Group"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:58
+msgid "Group Activities"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:63
+#, python-format
+msgid ""
+"\n"
+"            This group is <strong>%(access)s</strong>.\n"
+"          "
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:67
+msgid "Anyone may join this group."
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:75
+msgid "Anyone may view this group but membership is by invitation only."
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:77
+msgid "Membership is by invitation only."
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:82
+#: cdfgeonode/templates/groups/group_members.html:14
+msgid "Managers"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_detail.html:94
+#: cdfgeonode/templates/groups/group_invite_response.html:7
+#: cdfgeonode/templates/groups/group_members.html:9
+#: cdfgeonode/templates/groups/group_members.html:15
+msgid "Members"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_invite_response.html:10
+msgid "Membership Request"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_invite_response.html:14
+msgid "Don't Join"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_invite_response.html:15
+msgid "Join Group"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_list.html:12
+msgid "Create a New Group"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_list.html:24
+#: cdfgeonode/templates/people/profile_list.html:22
+#: cdfgeonode/templates/search/_sort_filters.html:10
+#: templates/search/_sort_filters.html:10
+msgid "Most recent"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_list.html:25
+#: cdfgeonode/templates/people/profile_list.html:23
+#: cdfgeonode/templates/search/_sort_filters.html:11
+#: templates/search/_sort_filters.html:11
+msgid "Less recent"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_list.html:26
+#: cdfgeonode/templates/people/profile_list.html:24
+#: cdfgeonode/templates/search/_sort_filters.html:12
+#: templates/search/_sort_filters.html:12
+msgid "A - Z"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_list.html:27
+#: cdfgeonode/templates/people/profile_list.html:25
+#: cdfgeonode/templates/search/_sort_filters.html:13
+#: templates/search/_sort_filters.html:13
+msgid "Z - A"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_list.html:28
+#: cdfgeonode/templates/people/profile_list.html:26
+#: cdfgeonode/templates/search/_sort_filters.html:14
+#: templates/search/_sort_filters.html:14
+msgid "Most popular"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_members.html:8
+msgid "Edit Members for"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_members.html:28
+#: cdfgeonode/templates/groups/group_members.html:54
+#: cdfgeonode/templates/groups/group_members.html:81
+msgid "Manager"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_members.html:37
+#: cdfgeonode/templates/groups/group_members.html:63
+#: cdfgeonode/templates/groups/group_members.html:90
+msgid "Role"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_members.html:99
+msgid "Add members"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_members.html:110
+msgid "Invite people"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_remove.html:12
+#, python-format
+msgid ""
+"\n"
+"          Are you sure you want to remove the group: %(group_title)s?\n"
+"        "
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_remove_maps_data.html:6
+msgid "Remove Maps/Data from Group"
+msgstr ""
+
+#: cdfgeonode/templates/groups/group_remove_maps_data.html:15
+msgid "Remove selected maps/data"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:61
+msgid "Attribute Name"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:62
+#: cdfgeonode/templates/layers/layer_metadata.html:90
+msgid "Label"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:63
+#: cdfgeonode/templates/layers/layer_metadata.html:91
+#: cdfgeonode/templates/people/profile_detail.html:98
+msgid "Description"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:65
+msgid "Range"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:66
+msgid "Average"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:67
+msgid "Median"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:68
+msgid "Standard Deviation"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:126
+msgid "Rate this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:146
+#: cdfgeonode/templates/layers/layer_detail.html:160
+msgid "Download Layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:183
+#: cdfgeonode/templates/layers/layer_detail.html:190
+msgid "Edit Layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:205
+#: cdfgeonode/templates/layers/layer_detail.html:314
+msgid "Styles"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:209
+msgid "Manage"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:216
+#: cdfgeonode/templates/maps/map_detail.html:120
+msgid "Thumbnail"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:217
+#: cdfgeonode/templates/maps/map_detail.html:121
+msgid "Set"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:228
+msgid "Edit data"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:272
+msgid "Legend"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:282
+msgid "Maps using this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:284
+msgid "List of maps using this layer:"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:290
+msgid "This layer is not currently used in any maps."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:295
+msgid "Create a map using this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:296
+msgid "Click the button below to generate a new map based on this layer."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:297
+msgid "Create a Map"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:302
+msgid "Documents related to this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:303
+msgid "List of documents related to this layer:"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:315
+msgid ""
+"The following styles are associated with this layer. Choose a style to view "
+"it in the preview map."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:328
+msgid "No styles associated with this layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:338
+msgid "Click the button below to change the permissions of this layer."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:339
+msgid "Change Layer Permissions"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:346
+msgid "External service layer"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_detail.html:347
+msgid "Source"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:17
+#, python-format
+msgid ""
+"\n"
+"        Editing details for %(layer_title)s\n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:23
+msgid ""
+"Note: this layer's orginal metadata was populated by importing a metadata "
+"XML file.\n"
+"          GeoNode's metadata import supports a subset of ISO, FGDC, and "
+"Dublin Core metadata elements.\n"
+"          Some of your original metadata may have been lost."
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:45
+#: cdfgeonode/templates/layers/layer_metadata.html:85
+msgid "Attributes"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:89
+msgid "Attribute"
+msgstr ""
+
+#: cdfgeonode/templates/layers/layer_metadata.html:92
+msgid "Display Order"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:53
+msgid "Rate this Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:75
+#: cdfgeonode/templates/maps/map_detail.html:83
+msgid "Download Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:87
+msgid "Download Data Layers"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:88
+msgid "Download Web Map Context"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:99
+#: cdfgeonode/templates/maps/map_detail.html:106
+msgid "Edit Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:142
+msgid "View Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:152
+msgid "Map Layers"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:153
+msgid "This map uses the following layers:"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:169
+msgid "Documents related to this map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:170
+msgid "List of documents related to this map:"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:182
+msgid "Specify which users can view or modify this map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:183
+msgid "Change Permissions of this Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:189
+msgid "Copy this map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:190
+msgid "Duplicate this map and modify it for your own purposes"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:191
+#: cdfgeonode/templates/maps/map_list.html:10
+msgid "Create a New Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:196
+msgid "Map WMS"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:198
+msgid "WMS layer group for local map layers"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:199
+msgid "on"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:199
+msgid "local OWS"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:202
+msgid "Publish local map layers as WMS layer group"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_detail.html:203
+msgid "Publish Map WMS"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:6
+msgid "Download"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:8
+msgid ""
+"\n"
+"      Here you can download all the layers of this map that\n"
+"      are hosted on this GeoNode.\n"
+"    "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:22
+msgid ""
+"\n"
+"      <div class=\"alert alert-warning\">Could not find downloadable layers "
+"for this map. You can go back to  \n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:29
+msgid ""
+"\n"
+"        Additionally, the map contains these layers which will not be "
+"downloaded\n"
+"        due to security restrictions:\n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:41
+msgid ""
+"\n"
+"        Finally, the map contains these layers which will not be downloaded\n"
+"        because they are not available directly from this GeoNode:\n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:54
+msgid "Downloading"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:58
+#: cdfgeonode/templates/upload/_layer_upload.html:43
+#: cdfgeonode/templates/upload/layer_upload.html:43
+msgid "Cancel"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:59
+msgid "Retry"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:65
+msgid "Start downloading this map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:95
+msgid "Download Complete"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_download.html:105
+msgid "Download Failed"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_metadata.html:17
+#, python-format
+msgid ""
+"\n"
+"        Editing details for %(map_title)s\n"
+"      "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_metadata.html:23
+msgid ""
+"Note: this map's orginal metadata was populated by importing a metadata XML "
+"file.\n"
+"        GeoNode's metadata import supports a subset of ISO, FGDC, and Dublin "
+"Core metadata elements.\n"
+"        Some of your original metadata may have been lost."
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_remove.html:10
+msgid "Remove Map"
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_remove.html:15
+#, python-format
+msgid ""
+"\n"
+"          Are you sure you want to remove <a href=\"%(map.get_absolute_url)s"
+"\">%(map_title)s</a>?\n"
+"        "
+msgstr ""
+
+#: cdfgeonode/templates/maps/map_view.html:5
+msgid "GeoExplorer"
+msgstr ""
+
+#: cdfgeonode/templates/people/_profile_about_item.html:18
+msgid "No Group"
+msgstr ""
+
+#: cdfgeonode/templates/people/_profile_filters.html:4
+msgid "All contents"
+msgstr ""
+
+#: cdfgeonode/templates/people/forgot_username_form.html:6
+msgid "Forgot Username"
+msgstr ""
+
+#: cdfgeonode/templates/people/forgot_username_form.html:10
+msgid ""
+"Enter your email address and click the submit button. <br />Your username "
+"will be sent to you."
+msgstr ""
+
+#: cdfgeonode/templates/people/forgot_username_form.html:15
+msgid "Submit"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_create.html:8
+#: cdfgeonode/templates/people/profile_create.html:14
+msgid "Create Profile"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:7
+msgid "Profile of "
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:69
+#: cdfgeonode/templates/people/profile_detail.html:74
+#: cdfgeonode/templates/people/profile_detail.html:78
+#: cdfgeonode/templates/people/profile_detail.html:83
+#: cdfgeonode/templates/people/profile_detail.html:95
+#: cdfgeonode/templates/people/profile_detail.html:99
+msgid "Not provided."
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:73
+msgid "Position"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:77
+msgid "Organization"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:82
+msgid "Location"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:86
+msgid "Voice"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:94
+msgid "Fax"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:110
+msgid "Not provided"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:120
+msgid "Message User"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:124
+#: cdfgeonode/templates/people/profile_detail.html:158
+msgid "Edit profile"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:125
+msgid "Change password"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:128
+msgid "Upload new layers"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:129
+msgid "Create a new map"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:131
+msgid "My Activities"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:162
+msgid "User Activities"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_detail.html:175
+msgid "Resources"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_edit.html:10
+msgid "Edit Your Profile"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_edit.html:12
+msgid "Edit Profile for"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_edit.html:19
+msgid "Change your avatar"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_edit.html:30
+msgid "Update profile"
+msgstr ""
+
+#: cdfgeonode/templates/people/profile_list.html:11
+msgid "Explore People"
+msgstr ""
+
+#: cdfgeonode/templates/search/_extent_filter.html:3
+#: templates/search/_extent_filter.html:3
+msgid "Extent"
+msgstr ""
+
+#: cdfgeonode/templates/search/_general_filters.html:33
+#: templates/search/_general_filters.html:33
+msgid "Owners"
+msgstr ""
+
+#: cdfgeonode/templates/search/_general_filters.html:49
+#: templates/search/_general_filters.html:49
+msgid "Date begins after:"
+msgstr ""
+
+#: cdfgeonode/templates/search/_general_filters.html:50
+#: cdfgeonode/templates/search/_general_filters.html:54
+#: templates/search/_general_filters.html:50
+#: templates/search/_general_filters.html:54
+msgid "yyyy-mm-dd"
+msgstr ""
+
+#: cdfgeonode/templates/search/_general_filters.html:53
+#: templates/search/_general_filters.html:53
+msgid "Date ends before:"
+msgstr ""
+
+#: cdfgeonode/templates/search/_search_content.html:16
+msgid "Create a map"
+msgstr ""
+
+#: cdfgeonode/templates/search/_search_content.html:23
+msgid "Filters"
+msgstr ""
+
+#: cdfgeonode/templates/search/_text_filter.html:5
+msgid "Text"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:5
+#: cdfgeonode/templates/upload/layer_upload.html:5
+#: cdfgeonode/templates/upload/layer_upload_crs.html:7
+#: cdfgeonode/templates/upload/layer_upload_csv.html:7
+msgid "Upload Layer"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:28
+#: cdfgeonode/templates/upload/layer_upload.html:28
+msgid "Incomplete Uploads"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:29
+#: cdfgeonode/templates/upload/layer_upload.html:29
+msgid "You have the following incomplete uploads"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:32
+#: cdfgeonode/templates/upload/layer_upload.html:32
+msgid "last updated on"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:34
+#: cdfgeonode/templates/upload/layer_upload.html:34
+msgid "Resume"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:35
+#: cdfgeonode/templates/upload/_layer_upload.html:42
+#: cdfgeonode/templates/upload/layer_upload.html:35
+#: cdfgeonode/templates/upload/layer_upload.html:42
+msgid "Delete"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:41
+#: cdfgeonode/templates/upload/layer_upload.html:41
+msgid "Are you sure you want to delete this upload?"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:44
+#: cdfgeonode/templates/upload/layer_upload.html:44
+msgid "Delete, and don't ask me again."
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:61
+#: cdfgeonode/templates/upload/layer_upload.html:61
+msgid "Drop files here"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:64
+#: cdfgeonode/templates/upload/layer_upload.html:64
+msgid " or select them one by one:"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:72
+#: cdfgeonode/templates/upload/layer_upload.html:72
+msgid "Files to be uploaded"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:77
+#: cdfgeonode/templates/upload/layer_upload.html:77
+msgid "Select the charset or leave default"
+msgstr ""
+
+#: cdfgeonode/templates/upload/_layer_upload.html:91
+#: cdfgeonode/templates/upload/layer_upload.html:91
+msgid "Upload files"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_crs.html:10
+msgid "Provide CRS for "
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_crs.html:14
+msgid "Coordinate Reference System"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_crs.html:17
+msgid ""
+"\n"
+"        A coordinate reference system for this layer could not be "
+"determined.\n"
+"        Locate or enter the appropriate ESPG code for this layer below.\n"
+"        One way to do this is do visit:\n"
+"        <a href=\"http://prj2epsg.org/search\" target=\"_\">prj2epsg</a>\n"
+"        and enter the following:\n"
+"    "
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_crs.html:32
+#: cdfgeonode/templates/upload/layer_upload_csv.html:49
+#: cdfgeonode/templates/upload/layer_upload_time.html:101
+msgid "Next"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_crs.html:35
+msgid ""
+"\n"
+"        There is a problem recognizing the projection of this data. Please\n"
+"        reproject this data to a more common projection.\n"
+"        "
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_csv.html:11
+msgid "Geospatial Data"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_csv.html:12
+msgid ""
+"Please indicate which attributes contain the latitude and longitude "
+"coordinates in the CSV data."
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_csv.html:14
+msgid ""
+"With this data, GeoNode was able to guess which attributes contain the\n"
+"latitude and longitude coordinates, but please confirm that the correct\n"
+"attributes are selected below."
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_csv.html:24
+msgid "Latitude"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_csv.html:26
+#: cdfgeonode/templates/upload/layer_upload_csv.html:39
+msgid "Select an attribute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_csv.html:37
+msgid "Longitude"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_csv.html:57
+msgid ""
+"We did not detect columns that could be used for the latitude and "
+"longitude.\n"
+"Please verify that you have two columns in your csv file that can be used "
+"for\n"
+"the latitude and longitude."
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_invalid.html:6
+#: cdfgeonode/templates/upload/no_upload.html:6
+msgid "Your upload is either complete or you haven't resumed an earlier one."
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_invalid.html:7
+msgid "Return to"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_invalid.html:7
+msgid "Upload Form"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:7
+msgid "Upload Layer Step 2"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:15
+msgid "Editing details for "
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:19
+msgid "Time Options"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:22
+msgid "Choose time attribute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:25
+msgid "This data does not have a time attribute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:30
+#: cdfgeonode/templates/upload/layer_upload_time.html:57
+msgid "Existing Time Attribute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:36
+#: cdfgeonode/templates/upload/layer_upload_time.html:63
+msgid "Convert Text Attribute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:38
+#: cdfgeonode/templates/upload/layer_upload_time.html:65
+msgid "Date Format"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:49
+#: cdfgeonode/templates/upload/layer_upload_time.html:76
+msgid "Convert Number (As Year)"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:53
+msgid "Choose optional end time attribute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:81
+msgid "Present time attribute as"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:84
+msgid "List"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:84
+msgid "of all the distinct time values"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:88
+msgid "Intervals"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:88
+msgid "defined by the resolution"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:92
+msgid "Continuous Intervals"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:92
+msgid ""
+"for data that is frequently updated, resolution describes the frequency of "
+"updates"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:96
+msgid "Resolution of time attribute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:108
+msgid "Need Help?"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:109
+msgid "Enabling Time"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:110
+msgid ""
+"A feature can currently support one or two time attributes. If a single\n"
+"    attribute is used, the feature is considered relevant at that single "
+"point in time. If two\n"
+"    attributes are used, the second attribute represents the end of a valid "
+"period for the\n"
+"    feature."
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:114
+msgid "Selecting an Attribute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:115
+msgid "A time attribute can be one of"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:117
+msgid "An existing date"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:118
+msgid "Text that can be converted to a timestamp"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:119
+msgid "A number representing a year"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:122
+msgid ""
+"\n"
+"    For text attributes, one can specify a custom format or use the 'best "
+"guess' approach.\n"
+"    The most common formatting flags are:\n"
+"    "
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:128
+msgid "year"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:129
+msgid "month"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:130
+msgid "day of month"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:131
+#: cdfgeonode/templates/upload/layer_upload_time.html:132
+msgid "hour of day"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:133
+msgid "minute in hour"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:134
+msgid "second in minute"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:137
+msgid "Note that single quotes represent a literal character."
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:138
+msgid ""
+"To remove ambiguity, repeat a code to represent the maximum number of digits "
+"- for example yyyy"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:140
+msgid "The 'best guess' will handle date and optional time variants of"
+msgstr ""
+
+#: cdfgeonode/templates/upload/layer_upload_time.html:141
+msgid "In terms of the formatting flags noted above, these are"
+msgstr ""
+
+#: cdfgeonode/templates/upload/no_upload.html:7
+msgid ""
+"Returning to the upload starting page in <span id=\"cnt\">5</span>seconds "
+msgstr ""
+
+#: cdfgeonode/templates/upload/no_upload.html:8
+msgid " Or just go "
+msgstr ""
+
+#: cdfgeonode/templates/upload/no_upload.html:8
+msgid "now"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/base_site.html:14
+#: wikifcd/templates/wikifcd/base_site.html:44
+msgid "Search..."
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:11
+msgid ""
+"<strong>Warning:</strong> You are not logged in. Your IP address will be "
+"logged."
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:12
+msgid "Click here to log in"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:41
+msgid "Preview"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:45
+#: cdfgeonode/templates/wiki/edit.html:72
+msgid "Save changes"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:50
+msgid "Delete article"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/edit.html:68
+msgid "Back to editor"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:13
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:39
+msgid "Sub-articles for"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:25
+msgid "No sub-articles"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:28
+msgid "...and more"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:32
+msgid "Browse articles in this level"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:48
+msgid "New article next to"
+msgstr ""
+
+#: cdfgeonode/templates/wiki/includes/breadcrumbs.html:53
+msgid "New article below"
+msgstr ""
+
+#: people_fcd/cms_app.py:6
+msgid "People App"
+msgstr ""
+
+#: people_fcd/cms_plugins.py:10
+msgid "People Plugin"
+msgstr ""
+
+#: people_fcd/templates/people/list.html:7
+msgid "List of persons"
+msgstr ""
+
+#: wikifcd/templates/wikifcd/base_site.html:75
+msgid "Log in"
+msgstr ""
+
+#: wikifcd/templates/wikifcd/base_site.html:78
+msgid "Sign up"
+msgstr ""
+
+#: wikifcd/templates/wikifcd/base_site.html:119
+msgid ""
+"Powered by a<a href=\"http://www.django-wiki.org\">django-wiki</a>, an open "
+"source application under the <a href=\"http://www.gnu.org/licenses/quick-"
+"guide-gplv3.html\">GPLv3</a> license. Let knowledge be the cure."
+msgstr ""
+
+#: youtube/cms_plugin.py:10
+msgid "Youtube"
+msgstr ""
+
+#: youtube/models.py:26
+msgid "Leave empty to use the original video title"
+msgstr ""

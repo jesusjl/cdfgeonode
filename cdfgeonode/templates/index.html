@@ -1,6 +1,6 @@
 {% extends "site_base.html" %}
 {% load i18n  static cmsplugin_blog_helpers %}
-z
+
 {% load staticfiles %}
 <!-- {#  {% load cms_tags sekizai_tags menu_tags  %} #}  -->
 
@@ -33,7 +33,7 @@ z
                    <div class=" main-page">
                      <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
                    <span>
-                     The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents. </p>
+                    <p>{% trans "The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents." %}</p>
                    </span>
 
                    </div>
@@ -124,16 +124,16 @@ z
       {% with facet_type='home' %}
        {% facets as facets %}
         <div class="col-md-12 geonode-resources">
-  <h3 class='research'>Catalog</h3>
+  <h3 class='research'>{% trans "Catalog" %}</h3>
           <div class="row">
             <div class="col-md-4">
-              <h2>LAYERS</h2>
+              <h2>{% trans "LAYERS" %}</h2>
               <p>
               <a href="{% url "layer_browse" %}">{{ facets.layer|default:_("No") }}</a>
               </p>
             </div>
             <div class="col-md-4">
-              <h2>MAPS</h2>
+              <h2>{% trans "MAPS" %}</h2>
               <p>
               <a href="{% url "maps_browse" %}">{{ facets.map|default:_("No") }}</a>
             </p>
