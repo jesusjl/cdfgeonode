@@ -19,7 +19,7 @@
   <p>
   {{ post.abstract|safe | truncatechars:70}}
 
-    <a class="btn btn-default" href="{{ map.get_absolute_url }}"> See story </a>
+    <a class="btn btn-default" href="{{ post.get_absolute_url }}">{% trans "See story" %} </a>
 </p>
 </div>
  </div>

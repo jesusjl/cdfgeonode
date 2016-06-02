@@ -20,11 +20,11 @@ msgstr ""
 
 #: settings.py:197
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: settings.py:198
 msgid "Spanish"
-msgstr ""
+msgstr "Español"
 
 #: settings.py:206
 msgid "en"
@@ -40,11 +40,11 @@ msgstr ""
 
 #: templates/amazon.html:13
 msgid "United States"
-msgstr ""
+msgstr "Estados Unidos"
 
 #: templates/amazon.html:18
 msgid "Spain"
-msgstr ""
+msgstr "España"
 
 #: templates/amazon.html:29
 msgid " United Kingdom"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: templates/base.html:82 templates/base_shiny.html:72
 msgid "CHARLES DARWIN FOUNDATION"
-msgstr ""
+msgstr "FUNDACIÓN CHARLES DARWIN"
 
 #: templates/base.html:115 templates/base.html.py:403
 #: templates/base_shiny.html:99 templates/base_shiny.html.py:239
@@ -89,25 +89,25 @@ msgstr ""
 
 #: templates/base.html:310
 msgid "First Name"
-msgstr ""
+msgstr "Nombre"
 
 #: templates/base.html:316
 msgid "Last Name"
-msgstr ""
+msgstr "Apellidos"
 
 #: templates/base.html:320
 msgid "Nationality"
-msgstr ""
+msgstr "Nacionalidad"
 
 #: templates/base.html:366 templates/base_shiny.html:202
 msgid "ADDRESS"
-msgstr ""
+msgstr "DIRECCIÓN"
 
 #: templates/base.html:418 templates/base_shiny.html:254
 #: templates/homepage.html:90 templates/djangocms_blog/latest_entry.html:7
 #: templates/djangocms_blog/latest_entry_list.html:7
 msgid "LATEST NEWS"
-msgstr ""
+msgstr "ÚLTIMAS NOTICIAS"
 
 #: templates/base.html:429 templates/base_shiny.html:265
 msgid "CONTRIBUTORS"
@@ -115,30 +115,30 @@ msgstr ""
 
 #: templates/base.html:449
 msgid "Charles Darwin Foundation is a registered trademark. Visit us on "
-msgstr ""
+msgstr "la Fundación Charles Darwin es una marca registrada. Visítanos en"
 
 #: templates/base.html:450
 msgid "Charles Darwin Foundation"
-msgstr ""
+msgstr "Fundación Charles Darwin"
 
 #: templates/base.html:455 templates/base/resourcebase_info_panel.html:145
 #: templates/cdfgeonode/base.html:153
 msgid "Language"
-msgstr ""
+msgstr "Lenguage"
 
 #: templates/base.html:485 templates/base.html.py:486
 #: templates/cdfgeonode/base.html:187 templates/cdfgeonode/base.html.py:188
 msgid "Username"
-msgstr ""
+msgstr "Nombre de usuario"
 
 #: templates/base.html:489 templates/cdfgeonode/base.html:191
 #: templates/cdfgeonode/base.html.py:192
 msgid "Password"
-msgstr ""
+msgstr "Clave"
 
 #: templates/base.html:493 templates/cdfgeonode/base.html:195
 msgid "Remember Me"
-msgstr ""
+msgstr "Recuérdame"
 
 #: templates/base.html:509 templates/cdfgeonode/base.html:211
 msgid "Menu"
@@ -149,15 +149,15 @@ msgstr ""
 #: templates/upload/layer_upload.html:22
 #: templates/upload/layer_upload_base.html:15
 msgid "Upload Layers"
-msgstr ""
+msgstr "Subir Capas"
 
 #: templates/base.html:515 templates/cdfgeonode/base.html:217
 msgid "Profile"
-msgstr ""
+msgstr "Perfil"
 
 #: templates/base.html:516 templates/cdfgeonode/base.html:218
 msgid "Recent Activity"
-msgstr ""
+msgstr "Actividad Reciente"
 
 #: templates/base.html:517 templates/cdfgeonode/base.html:219
 msgid "Inbox"
@@ -166,22 +166,22 @@ msgstr ""
 #: templates/base.html:519 templates/cdfgeonode/base.html:221
 #: templates/people/profile_detail.html:136
 msgid "Notifications"
-msgstr ""
+msgstr "Notificaciones"
 
 #: templates/base.html:522 templates/cdfgeonode/base.html:224
 #: templates/people/profile_detail.html:139
 msgid "Announcements"
-msgstr ""
+msgstr "Anuncios"
 
 #: templates/base.html:525 templates/cdfgeonode/base.html:227
 #: templates/people/profile_detail.html:144
 msgid "Remote Services"
-msgstr ""
+msgstr "Servicios Remotos"
 
 #: templates/base.html:526 templates/cdfgeonode/base.html:228
 #: templates/people/profile_detail.html:145
 msgid "Invite User"
-msgstr ""
+msgstr "Invitar a usuario"
 
 #: templates/base.html:528 templates/cdfgeonode/base.html:230
 #: templates/people/profile_detail.html:146
@@ -195,7 +195,7 @@ msgstr ""
 
 #: templates/base.html:536 templates/cdfgeonode/base.html:238
 msgid "Help"
-msgstr ""
+msgstr "Ayuda"
 
 #: templates/base.html:542 templates/cdfgeonode/base.html:244
 msgid "Log out"
@@ -207,31 +207,31 @@ msgstr ""
 
 #: templates/base_shiny.html:121
 msgid "Donate now"
-msgstr ""
+msgstr "Dona ahora"
 
 #: templates/homepage.html:77
 msgid "FEATURE ARTICLE"
-msgstr ""
+msgstr "ARTÍCULO DESTACADO"
 
 #: templates/homepage.html:112 templates/index.html:158
 msgid "SUBSCRIBE"
-msgstr ""
+msgstr "SUSCRIBIR"
 
 #: templates/homepage.html:154
 msgid "RESEARCH  "
-msgstr ""
+msgstr "INVESTIGACIÓN"
 
 #: templates/homepage.html:158
 msgid "Invasive Species"
-msgstr ""
+msgstr "Especies Invasoras"
 
 #: templates/homepage.html:164
 msgid "Conservation and Management"
-msgstr ""
+msgstr "Conservación y Manejo"
 
 #: templates/homepage.html:171
 msgid "Sustainability"
-msgstr ""
+msgstr "Ssotenibilidad"
 
 #: templates/homepage.html:178
 msgid "Marine Research"
@@ -243,7 +243,7 @@ msgstr ""
 
 #: templates/index.html:10 templates/cdfgeonode/index.html:6
 msgid "Welcome!"
-msgstr ""
+msgstr "Bienvenido"
 
 #: templates/index.html:34 templates/site_index.html:13
 #: templates/cdfgeonode/site_index.html:14
@@ -260,11 +260,11 @@ msgstr ""
 
 #: templates/index.html:62
 msgid "LATEST STORIES"
-msgstr ""
+msgstr "HISTORIAS RECIENTES"
 
 #: templates/index.html:77
 msgid "LATEST LAYERS"
-msgstr ""
+msgstr "CAPAS RECIENTES"
 
 #: templates/index.html:127
 msgid "Catalog"
@@ -309,18 +309,18 @@ msgstr ""
 #: templates/upload/layer_upload.html:21
 #: templates/upload/layer_upload_base.html:14
 msgid "Explore Layers"
-msgstr ""
+msgstr "Explora capas"
 
 #: templates/site_index.html:35 templates/cdfgeonode/site_index.html:36
 #: templates/maps/map_base.html:29 templates/maps/map_base.html.py:39
 #: templates/maps/map_list.html:11 templates/maps/map_metadata.html:11
 msgid "Explore Maps"
-msgstr ""
+msgstr "Explora Mapas"
 
 #: templates/base/_resourcebase_contact_snippet.html:3
 #: templates/cdfgeonode/base.html:150
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: templates/base/_resourcebase_contact_snippet.html:5
 msgid "Owner, Point of Contact, Metadata Author"
@@ -339,17 +339,17 @@ msgstr ""
 #: templates/layers/layer_metadata.html:107
 #: templates/maps/map_metadata.html:51
 msgid "Point of Contact"
-msgstr ""
+msgstr "Punto de contacto"
 
 #: templates/base/_resourcebase_contact_snippet.html:18
 #: templates/documents/document_metadata.html:29
 #: templates/layers/layer_metadata.html:32
 msgid "Metadata Author"
-msgstr ""
+msgstr "Autor del Metadato"
 
 #: templates/base/resourcebase_info_panel.html:6
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: templates/base/resourcebase_info_panel.html:11
 #: templates/base/resourcebase_info_panel.html:103
@@ -359,7 +359,7 @@ msgstr ""
 #: templates/base/resourcebase_info_panel.html:16
 #: templates/base/resourcebase_info_panel.html:108
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #: templates/base/resourcebase_info_panel.html:29
 msgid "Abstract"
@@ -368,65 +368,65 @@ msgstr ""
 #: templates/base/resourcebase_info_panel.html:34
 #: templates/search/_general_filters.html:47
 msgid "Date"
-msgstr ""
+msgstr "Fecha"
 
 #: templates/base/resourcebase_info_panel.html:45
 #: templates/layers/layer_detail.html:348
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: templates/base/resourcebase_info_panel.html:50
 #: templates/people/profile_detail.html:103
 #: templates/search/_general_filters.html:19
 msgid "Keywords"
-msgstr ""
+msgstr "Palabras claves"
 
 #: templates/base/resourcebase_info_panel.html:62
 #: templates/documents/document_metadata.html:65
 #: templates/layers/layer_metadata.html:70 templates/maps/map_metadata.html:61
 msgid "Category"
-msgstr ""
+msgstr "Categoría"
 
 #: templates/base/resourcebase_info_panel.html:72
 #: templates/search/_region_filter.html:5
 msgid "Regions"
-msgstr ""
+msgstr "Regiones"
 
 #: templates/base/resourcebase_info_panel.html:95
 msgid "More info"
-msgstr ""
+msgstr "Más información"
 
 #: templates/base/resourcebase_info_panel.html:121
 msgid "Maintenance Frequency"
-msgstr ""
+msgstr "Frecuencia de mantenimiento"
 
 #: templates/base/resourcebase_info_panel.html:126
 msgid "Restrictions"
-msgstr ""
+msgstr "Restricciones"
 
 #: templates/base/resourcebase_info_panel.html:135
 msgid "Edition"
-msgstr ""
+msgstr "Edición"
 
 #: templates/base/resourcebase_info_panel.html:140
 msgid "Purpose"
-msgstr ""
+msgstr "Propósito"
 
 #: templates/base/resourcebase_info_panel.html:150
 msgid "Temporal Extent"
-msgstr ""
+msgstr "Extensión Temporal"
 
 #: templates/base/resourcebase_info_panel.html:155
 msgid "Data Quality"
-msgstr ""
+msgstr "Calidad de los Datos"
 
 #: templates/base/resourcebase_info_panel.html:160
 msgid "Supplemental Information"
-msgstr ""
+msgstr "Imformación Complementaria"
 
 #: templates/base/resourcebase_info_panel.html:165
 msgid "Spatial Representation Type"
-msgstr ""
+msgstr "Tipo de Representación Espacial"
 
 #: templates/cdfgeonode/base.html:58 templates/groups/activity.html:26
 #: templates/menu/custom_menu.html:11 templates/people/_profile_filters.html:5
@@ -441,15 +441,15 @@ msgstr "Mapas"
 #: templates/cdfgeonode/base.html:64 templates/menu/custom_menu.html:17
 #: templates/people/_profile_filters.html:7
 msgid "Documents"
-msgstr ""
+msgstr "Documentos"
 
 #: templates/cdfgeonode/base.html:69 templates/menu/custom_menu.html:24
 msgid "People"
-msgstr ""
+msgstr "Gente"
 
 #: templates/cdfgeonode/base.html:72 templates/menu/custom_menu.html:27
 msgid "Groups"
-msgstr ""
+msgstr "Grupos"
 
 #: templates/cdfgeonode/base.html:75
 msgid "Wiki"
@@ -458,7 +458,7 @@ msgstr ""
 #: templates/cdfgeonode/base.html:79 templates/search/search.html:6
 #: templates/search/search.html.py:39
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: templates/cdfgeonode/base.html:148
 msgid "Powered by"
@@ -474,7 +474,7 @@ msgstr ""
 
 #: templates/cdfgeonode/base.html:149
 msgid "Developers"
-msgstr ""
+msgstr "Desarroladores"
 
 #: templates/cdfgeonode/index.html:49 templates/layers/layer_detail.html:223
 msgid "Layer"
@@ -490,11 +490,11 @@ msgstr ""
 
 #: templates/cdfgeonode/index.html:52
 msgid "Add layers"
-msgstr ""
+msgstr "Añadir capas"
 
 #: templates/cdfgeonode/index.html:54
 msgid "Explore layers"
-msgstr ""
+msgstr "Explorar capas"
 
 #: templates/cdfgeonode/index.html:59 templates/maps/map_detail.html:127
 msgid "Map"
@@ -514,7 +514,7 @@ msgstr "Crea mapas"
 
 #: templates/cdfgeonode/index.html:64
 msgid "Explore maps"
-msgstr ""
+msgstr "Explorar mapas"
 
 #: templates/cdfgeonode/index.html:69
 msgid "User"
@@ -530,11 +530,11 @@ msgstr ""
 
 #: templates/cdfgeonode/index.html:71
 msgid "See users"
-msgstr ""
+msgstr "Ver usuarios"
 
 #: templates/djangocms_blog/latest_maps.html:6
 msgid "LATEST MAPS"
-msgstr ""
+msgstr "ÚLTIMOS MAPAS"
 
 #: templates/djangocms_blog/post_list.html:31
 #: templates/djangocms_blog/plugins/archive.html:26
@@ -554,33 +554,33 @@ msgstr ""
 
 #: templates/djangocms_blog/post_list.html:42
 msgid "Page"
-msgstr ""
+msgstr "Página"
 
 #: templates/djangocms_blog/post_list.html:42
 msgid "of"
-msgstr ""
+msgstr "de"
 
 #: templates/djangocms_blog/post_list.html:45
 msgid "next"
-msgstr ""
+msgstr "siguiente"
 
 #: templates/djangocms_blog/includes/blog_item.html:15
 #: templates/djangocms_blog/includes/blog_item_story.html:28
 msgid "Posted by"
-msgstr ""
+msgstr "Publicado por"
 
 #: templates/djangocms_blog/includes/blog_item.html:37
 #: templates/djangocms_blog/includes/blog_item_story.html:40
 msgid "read more"
-msgstr ""
+msgstr "leer más"
 
 #: templates/djangocms_blog/includes/blog_meta.html:8
 msgid "by"
-msgstr ""
+msgstr "por"
 
 #: templates/djangocms_blog/plugins/archive.html:3
 msgid "Archive"
-msgstr ""
+msgstr "Archivo"
 
 #: templates/djangocms_blog/plugins/archive.html:17
 #: templates/djangocms_blog/plugins/authors.html:10
@@ -606,7 +606,7 @@ msgstr ""
 #: templates/djangocms_blog/plugins/categories.html:3
 #: templates/search/_general_filters.html:4
 msgid "Categories"
-msgstr ""
+msgstr "Categorías"
 
 #: templates/djangocms_blog/plugins/categories.html:15
 msgid "No categories found."
@@ -614,7 +614,7 @@ msgstr ""
 
 #: templates/djangocms_blog/plugins/tags.html:3
 msgid "Tags"
-msgstr ""
+msgstr "Etiquetas"
 
 #: templates/documents/document_detail.html:47
 msgid "External Resource"
@@ -622,7 +622,7 @@ msgstr ""
 
 #: templates/documents/document_detail.html:69
 msgid "Rate this document"
-msgstr ""
+msgstr "Valora este documento"
 
 #: templates/documents/document_detail.html:73
 #: templates/layers/layer_detail.html:130 templates/maps/map_detail.html:57
