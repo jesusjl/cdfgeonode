@@ -1169,7 +1169,7 @@ msgid "View Map"
 msgstr ""
 
 #: templates/maps/map_detail.html:152
- msgid "Map Layers"
+msgid "Map Layers"
 msgstr "Capas"
 
 #: templates/maps/map_detail.html:153
