@@ -17,17 +17,12 @@
 {% endblock %}
 
 {% block custom_language %}
-{% if LANGUAGE_CODE  %}
-       <ul class="list-inline lang pull-right">
-         <li>
-        <a href="/en{{ request.get_full_path }}">English</a> &nbsp; |
-     </li>
-     <li>
+{% ifequal LANGUAGE_CODE "en" %}
+       <a href="/es/">Spanish</a>
+{% else %}
+       <a href="/en/">English</a>
+{% endifequal %}
 
-       <a href="/es{{ request.get_full_path }}">Espa&ntilde;ol</a>
-     </li>
-   </ul>
-{% endif %}
 {% endblock %}
 
 {% block middle %}

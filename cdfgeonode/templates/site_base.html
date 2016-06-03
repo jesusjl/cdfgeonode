@@ -1,1 +1,14 @@
 {% extends "base.html" %}
+
+<!-- Workaround to make geonode translation works but redirect to homepage to swtich
+language, so user needs to come back to the previous url -->
+<!-- only for geonode, djangocms use it custom language -->
+
+{% block custom_language %}
+{% ifequal LANGUAGE_CODE "en" %}
+       <a href="/es/">Spanish</a>
+{% else %}
+       <a href="/en/">English</a>
+{% endifequal %}
+
+{% endblock %}
