@@ -458,8 +458,9 @@
             <!-- language form -->
             <ul class="list-inline lang pull-right">
 
-            {% language_chooser "menu/language_chooser.html" %}
-
+              {% block custom_language %}
+              {% language_chooser "menu/language_chooser.html" %}
+              {% endblock%}
             </ul>
 
 
@@ -467,7 +468,9 @@
         </div>
       </div>
     </footer>
+
     {% endblock footer %}
+
 
 
     <!-- Modal must stay outside the navbar -->

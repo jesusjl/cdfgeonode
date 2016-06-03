@@ -194,9 +194,17 @@ LANGUAGE_CODE = 'en'
 
 LANGUAGES = (
     ## Customize this
-    ('en', gettext('English')),
-    ('es', gettext('Spanish')),
+     ('en', 'English'),
+    ('es', 'Español'),
 )
+
+USE_I18N = True
+
+MODELTRANSLATION_LANGUAGES = ['en', ]
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
+
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('en',)
 
 CMS_LANGUAGES = {
     ## Customize this

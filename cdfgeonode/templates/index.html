@@ -16,6 +16,20 @@
 
 {% endblock %}
 
+{% block custom_language %}
+{% if LANGUAGE_CODE  %}
+       <ul class="list-inline lang pull-right">
+         <li>
+        <a href="/en{{ request.get_full_path }}">English</a> &nbsp; |
+     </li>
+     <li>
+
+       <a href="/es{{ request.get_full_path }}">Espa&ntilde;ol</a>
+     </li>
+   </ul>
+{% endif %}
+{% endblock %}
+
 {% block middle %}
   {# {{ block.super }} #} <!-- render parent -->
   <br>

@@ -1,0 +1,821 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-03 15:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:45
+#, c-format
+msgid "Available %s"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:46
+#, c-format
+msgid ""
+"This is the list of available %s. You may choose some by selecting them in "
+"the box below and then clicking the \"Choose\" arrow between the two boxes."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:53
+#, c-format
+msgid "Type into this box to filter down the list of available %s."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:57
+msgid "Filter"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:61
+msgid "Choose all"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:61
+#, c-format
+msgid "Click to choose all %s at once."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:67
+msgid "Choose"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:69
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:527
+msgid "Remove"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:75
+#, c-format
+msgid "Chosen %s"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:76
+#, c-format
+msgid ""
+"This is the list of chosen %s. You may remove some by selecting them in the "
+"box below and then clicking the \"Remove\" arrow between the two boxes."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:80
+msgid "Remove all"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/SelectFilter2.js:80
+#, c-format
+msgid "Click to remove all chosen %s at once."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/actions.js:18
+#: cdfgeonode/sitestatic/admin/js/actions.min.js:1
+msgid "%(sel)s of %(cnt)s selected"
+msgid_plural "%(sel)s of %(cnt)s selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/admin/js/actions.js:109
+#: cdfgeonode/sitestatic/admin/js/actions.min.js:5
+msgid ""
+"You have unsaved changes on individual editable fields. If you run an "
+"action, your unsaved changes will be lost."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/actions.js:121
+#: cdfgeonode/sitestatic/admin/js/actions.min.js:5
+msgid ""
+"You have selected an action, but you haven't saved your changes to "
+"individual fields yet. Please click OK to save. You'll need to re-run the "
+"action."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/actions.js:123
+#: cdfgeonode/sitestatic/admin/js/actions.min.js:6
+msgid ""
+"You have selected an action, and you haven't made any changes on individual "
+"fields. You're probably looking for the Go button rather than the Save "
+"button."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/calendar.js:26
+#: cdfgeonode/sitestatic/admin/js/dateparse.js:32
+msgid ""
+"January February March April May June July August September October November "
+"December"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/calendar.js:27
+msgid "S M T W T F S"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/collapse.js:8
+#: cdfgeonode/sitestatic/admin/js/collapse.js:19
+#: cdfgeonode/sitestatic/admin/js/collapse.min.js:1
+msgid "Show"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/collapse.js:15
+#: cdfgeonode/sitestatic/admin/js/collapse.min.js:1
+msgid "Hide"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/dateparse.js:33
+msgid "Sunday Monday Tuesday Wednesday Thursday Friday Saturday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:49
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:85
+msgid "Now"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:53
+msgid "Clock"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:81
+msgid "Choose a time"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:86
+msgid "Midnight"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:87
+msgid "6 a.m."
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:88
+msgid "Noon"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:92
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:204
+msgid "Cancel"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:144
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:197
+msgid "Today"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:148
+msgid "Calendar"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:195
+msgid "Yesterday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/admin/js/admin/DateTimeShortcuts.js:199
+msgid "Tomorrow"
+msgstr ""
+
+#: cdfgeonode/sitestatic/cms/js/change_form.js:30
+msgid ""
+"Are you sure you want to change the %(field_name)s without saving the page "
+"first?"
+msgstr ""
+
+#: cdfgeonode/sitestatic/cms/js/change_form.js:66
+msgid ""
+"Not all plugins are saved. Are you sure you want to save the page?\n"
+"You may lose your changes. To prevent that, press 'Cancel' and save every "
+"unsaved plugin first."
+msgstr ""
+
+#: cdfgeonode/sitestatic/cms/js/change_form.js:127
+#: cdfgeonode/sitestatic/cms/js/modules/cms.changeform.js:60
+msgid "Are you sure you want to change tabs without saving the page first?"
+msgstr ""
+
+#: cdfgeonode/sitestatic/cms/js/plugin_editor.js:134
+msgid "Are you sure you want to delete this plugin?"
+msgstr ""
+
+#: cdfgeonode/sitestatic/cmsplugin_blog/change_form.js:6
+msgid ""
+"Not all plugins are saved. Are you sure you want to save the page?\n"
+"All unsaved plugin content will tried to save."
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/extjs/GeoNode.js:72
+msgid "Add user..."
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/extjs/GeoNode.js:72
+msgid "Who can view and download this data?"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/extjs/GeoNode.js:72
+msgid "Anyone"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/extjs/GeoNode.js:72
+msgid "Any registered user"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/extjs/GeoNode.js:72
+msgid "Only users who can edit"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/extjs/GeoNode.js:72
+msgid "Who can edit this data?"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/extjs/GeoNode.js:72
+msgid "Only the following users or groups:"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/extjs/GeoNode.js:72
+msgid "Who can manage and edit this data?"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/search/search.js:373
+msgid "Enter your text here ..."
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/search/search.js:408
+msgid "Enter your region here ..."
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileType.js:33
+#, c-format
+msgid "Missing a %s file, which is required"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:7
+msgid "ESRI Shapefile"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:13
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:18
+msgid "GeoTIFF"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:24
+msgid "Comma Separated Value"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:29
+msgid "Google Earth KML"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:34
+msgid "GeoJSON"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:39
+msgid "Zip Archive"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:45
+msgid "ERDAS Imagine"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:50
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:55
+msgid "National Imagery Transmission Format"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:61
+msgid "Controlled Image Base-1 Meter"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:68
+msgid "Controlled Image Base-5 Meter"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:75
+msgid "Controlled Image Base-10 Meter"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:82
+msgid "CADRG-Global Navigation Chart"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:89
+msgid "CADRG-Jet Navigation Chart"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:96
+msgid "CADRG-Operational Navigation Chart"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:103
+msgid "CADRG-Tactical Pilotage Chart"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:110
+msgid "CADRG-Joint Operations Graphic"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:117
+msgid "CADRG-Topographic Line Map 100K"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:124
+msgid "CADRG-Topographic Line Map 50K"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:131
+msgid "JPEG2000"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/FileTypes.js:136
+msgid "MrSID-Multi-resolution Seamless Image Database"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:234
+msgid "Layer Info"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:235
+msgid "Edit Metadata"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:236
+msgid "Manage Styles"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:239
+msgid "The column %1 was renamed to %2 <br/>"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:245
+msgid "Your layer was successfully uploaded"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:274
+msgid "Performing Final GeoServer Config Step"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:289
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:315
+msgid "You need to specify more information in order to complete your upload"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:307
+msgid "You need to specify more information in order to complete your upload."
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:307
+msgid "You can continue configuring your layer."
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:325
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:411
+msgid "Unexpected Error"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:341
+msgid "Performing GeoServer Config Step"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:418
+msgid "Layer files uploaded, configuring in GeoServer"
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/LayerInfo.js:433
+msgid "Select or create a Geogig repository."
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/upload.js:125
+#, c-format
+msgid "The file %s is an unsupported file type, please select another file."
+msgstr ""
+
+#: cdfgeonode/sitestatic/geonode/js/upload/upload.js:262
+msgid ""
+"You are trying to upload an incomplete set of files or not all mandatory "
+"options have been validated.\n"
+"\n"
+"Please check for errors in the form!"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:51
+msgid "p.m."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:52
+msgid "a.m."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:56
+msgid "PM"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:57
+msgid "AM"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:62
+msgid "jan"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:62
+msgid "feb"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:62
+msgid "mar"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:62
+msgid "apr"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:62
+msgid "may"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:62
+msgid "jun"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:63
+msgid "jul"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:63
+msgid "aug"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:63
+msgid "sep"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:63
+msgid "oct"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:63
+msgid "nov"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:63
+msgid "dec"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:83
+msgid "Sun"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:83
+msgid "Mon"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:83
+msgid "Tue"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:83
+msgid "Wed"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:84
+msgid "Thu"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:84
+msgid "Fri"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:84
+msgid "Sat"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:93
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:94
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:95
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:96
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:97
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:98
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:99
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:100
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:101
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:102
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:103
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:104
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:116
+msgid "January"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:116
+msgid "February"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:116
+msgid "March"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:116
+msgid "April"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:116
+msgid "May"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:116
+msgid "June"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:117
+msgid "July"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:117
+msgid "August"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:117
+msgid "September"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:117
+msgid "October"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:117
+msgid "November"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:117
+msgid "December"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:152
+msgid "Sunday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:152
+msgid "Monday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:152
+msgid "Tuesday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:152
+msgid "Wednesday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:153
+msgid "Thursday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:153
+msgid "Friday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:153
+msgid "Saturday"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:177
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:178
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:179
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:180
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:181
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:182
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:183
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:184
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:185
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:186
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:187
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:188
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:203
+msgid "midnight"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/date.js:204
+msgid "noon"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:5
+msgid "year"
+msgid_plural "years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:6
+msgid "month"
+msgid_plural "months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:7
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:8
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:9
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:10
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:21
+msgid "minutes"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:32
+msgid "%(number)s %(type)s"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:41
+msgid ", %(number)s %(type)s"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:66
+#: cdfgeonode/sitestatic/missing/humanize.js:118
+msgctxt "naturaltime"
+msgid "%(delta)s ago"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:69
+#: cdfgeonode/sitestatic/missing/humanize.js:92
+msgid "now"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:72
+msgid "a second ago"
+msgid_plural "%(count)s seconds ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:75
+msgid "a minute ago"
+msgid_plural "%(count)s minutes ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:78
+msgid "an hour ago"
+msgid_plural "%(count)s hours ago"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:89
+#: cdfgeonode/sitestatic/missing/humanize.js:127
+msgctxt "naturaltime"
+msgid "%(delta)s from now"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:95
+msgid "a second from now"
+msgid_plural "%(count)s seconds from now"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:98
+msgid "a minute from now"
+msgid_plural "%(count)s minutes from now"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:101
+msgid "an hour from now"
+msgid_plural "%(count)s hours from now"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:114
+msgid "just now"
+msgstr ""
+
+#: cdfgeonode/sitestatic/missing/humanize.js:123
+msgid "less than minute from now"
+msgstr ""
+
+#: cdfgeonode/sitestatic/treebeard/treebeard-admin.js:158
+msgid "Abort"
+msgstr ""
+
+#: cdfgeonode/sitestatic/treebeard/treebeard-admin.js:180
+msgid "As Sibling"
+msgstr ""
+
+#: cdfgeonode/sitestatic/treebeard/treebeard-admin.js:198
+msgid "As child"
+msgstr ""
