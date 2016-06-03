@@ -5,10 +5,15 @@ language, so user needs to come back to the previous url -->
 <!-- only for geonode, djangocms use it custom language -->
 
 {% block custom_language %}
-{% ifequal LANGUAGE_CODE "en" %}
-       <a href="/es/">Spanish</a>
-{% else %}
-       <a href="/en/">English</a>
-{% endifequal %}
+{% if LANGUAGE_CODE "en" %}
+  <ul class="list-inline lang pull-right">
+    <li>
+    <a href="/es/">Espa&acute;</a>  &nbsp; |
+    </li>
+    <li>
+    <a href="/en/">English</a>
+    </li>
+  </ul>
+{% endif %}
 
 {% endblock %}
