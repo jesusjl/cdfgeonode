@@ -16,15 +16,6 @@
 
 {% endblock %}
 
-{% block custom_language %}
-{% ifequal LANGUAGE_CODE "en" %}
-       <a href="/es/">Spanish</a>
-{% else %}
-       <a href="/en/">English</a>
-{% endifequal %}
-
-{% endblock %}
-
 {% block middle %}
   {# {{ block.super }} #} <!-- render parent -->
   <br>
