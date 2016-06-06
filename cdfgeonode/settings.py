@@ -195,7 +195,7 @@ LANGUAGE_CODE = 'en'
 LANGUAGES = (
     ## Customize this
      ('en', 'English'),
-    ('es', 'Español'),
+    ('es', 'Spanish'),
 )
 
 USE_I18N = True
