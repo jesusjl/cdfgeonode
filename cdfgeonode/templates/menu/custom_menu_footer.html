@@ -1,0 +1,33 @@
+{% load i18n menu_tags %}
+{% load url from future %}
+  <ul class="footer-menu">
+
+  {% block tabs %}
+  <li id="nav_home">
+    <a href="{% url "home" %}">{% trans "Home" %}</a>
+  </li>
+  {% show_menu 0 100 100 100 %}
+  <li id="nav_layers">
+    <a href="{% url "layer_browse" %}">{% trans "Layers" %}</a>
+  </li>
+  <li id="nav_maps">
+    <a href="{% url "maps_browse" %}">{% trans "Maps" %}</a>
+  </li>
+  <li id="nav_documents">
+    <a href="{% url "document_browse" %}">{% trans "Documents" %}</a>
+  </li>
+
+
+ {% block extra_tab %}
+ {% endblock %}
+  <li id="nav_people">
+    <a href="{% url "profile_browse" %}">{% trans "People" %}</a>
+  </li>
+  <li id="nav_groups">
+    <a href="{% url "group_list" %}">{% trans "Groups" %}</a>
+  </li>
+  <li>
+   <a href="/wiki/">Wiki</a>
+  </li>
+  {% endblock %}
+</ul>

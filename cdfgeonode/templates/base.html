@@ -366,15 +366,17 @@
               <div class="footer-columns">
                 <h4>{% trans "ADDRESS" %}</h4>
                 {% static_placeholder "footer"  %}
+              
+
               </div>
           </div>
 
             <div class="col-md-3 col-xs-12">
                 <div class=" footer-columns">
                   <h4>MENU</h4>
-                  <ul class="footer-menu">
-                  {#  {% show_menu 0 0 100 100  %} #}
-                </ul>
+
+                  {% include "menu/custom_menu_footer.html"%}
+
 
           </div>
             </div>
