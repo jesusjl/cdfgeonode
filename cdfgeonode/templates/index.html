@@ -1,5 +1,5 @@
 {% extends "site_base.html" %}
-{% load i18n  static cmsplugin_blog_helpers %}
+{% load i18n cms_tags static cmsplugin_blog_helpers %}
 
 {% load staticfiles %}
 <!-- {#  {% load cms_tags sekizai_tags menu_tags  %} #}  -->
@@ -18,33 +18,8 @@
 
 {% block middle %}
   {# {{ block.super }} #} <!-- render parent -->
-  <br>
-   <!-- <div class="container"> -->
-     <div class="row">
-       <div class="col-md-8">
-         <div class="center-column">
-           <div class="tab">{% trans "WELCOME"  %}</div>
-         <div class='row'>
-          <div class='col-md-12'>
-            <div class="row feature-article ">
-              <div class=" col-md-12 col-xs-12 col-md-12">
-         {% block hero %}
 
-                   <div class=" main-page">
-                     <h4 class="page-title welcome">{% trans "Welcome to our Geoportal" %}</h4>
-                   <span>
-                    <p>{% trans "The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents." %}</p>
-                   </span>
-
-                   </div>
-                  <h3>
-         {% endblock %}
-       </div>
-       </div>
-       </div>
-       </div>
-
-
+   <!-- block hero moved to base.html to allow django-cms editing -->
        {% block body %}
 
 
@@ -197,6 +172,14 @@
   </div>
      </div>
        </div> <!-- end row -->
+
+       <div class="row">
+       <div class="col-md-12 col-xs-12 col-md-12 ">
+               <!-- <div class="tab"></div> -->
+        {% placeholder "example" %}
+        </div>
+      </div>
+
   {% verbatim %}
   <div ng-app="featured">
     <div ng-repeat="item in featured">

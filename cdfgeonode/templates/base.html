@@ -255,8 +255,37 @@
       {% include "_status_message.html" %}
       {% include "_announcements.html" %}
       {% include "_messages.html" %}
+      <br>
+       <!-- <div class="container"> -->
+         <div class="row">
+           <div class="col-md-8">
+             <div class="center-column">
+               <div class="tab">{% trans "WELCOME"  %}</div>
+             <div class='row'>
+              <div class='col-md-12'>
+                <div class="row feature-article ">
+                  <div class=" col-md-12 col-xs-12 col-md-12">
+             {% block hero %}
+
+                       <div class=" main-page">
+                         
+                       <span>
+                         {% placeholder "welcome"%}
+                        <!-- <p>{# {% trans "The CDF Geoportal provides users with a platform for sharing geospatial data, maps and related documents." #} %}</p> -->
+                       </span>
+
+                       </div>
+                      <h3>
+             {% endblock %}
+
+           </div>
+           </div>
+           </div>
+           </div>
+
 
       {% block middle %}
+
         {% block body_outer %}
              {% block body %}
                 {% block base_content %}
@@ -366,7 +395,7 @@
               <div class="footer-columns">
                 <h4>{% trans "ADDRESS" %}</h4>
                 {% static_placeholder "footer"  %}
-              
+
 
               </div>
           </div>

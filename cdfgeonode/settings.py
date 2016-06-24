@@ -271,7 +271,7 @@ CMS_TEMPLATES = (
     ('1-col-donate.html',
         'One Column Template customized for the Donate page'),
 
-    ('index.html', 'Geonode Homepage'),
+    
     ('amazon.html', 'Amazon Template'),
 
 )
