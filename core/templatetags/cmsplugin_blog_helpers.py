@@ -124,7 +124,7 @@ def djangocms_blog_latest_story_list_footer(context):
         ns = BlogConfig.objects.get(namespace="scientific-stories")
         posts = Post.objects.filter(
             app_config=ns
-        ).order_by('-date_published')[1:4]
+        ).order_by('-date_published')[0:3]
     except:
         posts = None
         ns = None
