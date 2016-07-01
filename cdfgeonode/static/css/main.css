@@ -1370,3 +1370,7 @@ iframe {
 .center-img img {
   margin: 0 auto;
 }
+.blog-content .filer-image {
+  display: block;
+  margin: 0 auto;
+}
