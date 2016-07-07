@@ -173,13 +173,14 @@
       <div class="row">
         <div class="col-md-8 col-sm-10">
     <div id="navbarCollapse" class="navbar-collapse collapse ">
-      {% block custom_menu %}
-      {% include "menu/custom_menu.html"%}
-      <ul id="main-menu" class=" nav navbar-nav sm sm-horizontal sm-simple">
 
+
+
+      <ul id="main-menu" class=" nav navbar-nav sm sm-horizontal sm-simple">
+        {% show_menu 0 100 100 100 %}
 
       </ul>
-      {% endblock %}
+
 
         </div><!--/.nav-collapse -->
 
@@ -459,9 +460,9 @@
                 <!-- <div class=" footer-columns"> -->
                 <div>
                   <h4>MENU</h4>
-
-                  {% include "menu/custom_menu_footer.html"%}
-
+                  <!-- remove harcoded menu -->
+                  {#{% include "menu/custom_menu_footer.html"%}#}
+                    {% show_menu 0 100 100 100 %}
 
           </div>
             </div>
